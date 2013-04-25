@@ -1,0 +1,31 @@
+#!/bin/sh
+
+REPO=$1
+
+TMP=`mktemp`
+MACHINE_LAYERS="meta-fsl-arm meta-fsl-arm-extra"
+DST=`dirname $0`/../release-notes/source/machine-list.inc
+
+for l in $MACHINE_LAYERS; do
+	MACHINES=`cd $REPO; repo forall $l -c 'find -wholename "*/conf/machine/*.conf" | sed "s,./\(.*\),$REPO_PATH/\1,g"'`
+	for m in $MACHINES; do
+		machine=`basename $m | sed 's,\.conf$,,g'`
+		name=`sed -n 's,#@NAME:\s*\(.*\),\1,p' $REPO/$m`
+		soc=`sed -n 's,#@SOC:\s*\(.*\),\1,p' $REPO/$m`
+
+		printf "%-25s  %-50s  %-10s  %-10s\n" "$machine" "$name" "$soc" "$l" >> $TMP
+	done
+done
+
+cat > $DST <<EOF
+=========================  ==================================================  ==========  ==========
+         Machine             Name                                                 SoC        Layer
+=========================  ==================================================  ==========  ==========
+EOF
+
+sort -u -k 2 $TMP >> $DST
+
+cat >> $DST <<EOF
+=========================  ==================================================  ==========  ==========
+EOF
+rm $TMP
