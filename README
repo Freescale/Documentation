@@ -1,0 +1,9 @@
+Freescale Community BSP Documentation
+
+The documentation is written using Sphinx documentation system. To
+install it in Debian/Ubuntu, please do:
+
+  #: apt-get install python-sphinx
+
+Once this has been complete, you can run a 'make' and check the
+possible targets for building.
