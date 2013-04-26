@@ -3,9 +3,8 @@ Linux Kernel
 
 Fsl-community-bsp supports to sources for Linux Kernel:
 
-
-* linux-imx: provided by Freescale
-* linux-fslc: provided by kernel.org (mainline)
+* linux-imx: Linux Kernel supported by Freescale
+* linux-fslc: Linux Kernel mainline with backported fixes (kernel.org)
 
 ---------
 linux-imx
@@ -19,7 +18,9 @@ Freescale for each supported machine.
 -----------
 linux-fslc
 -----------
-linux-fslc provides the Linux Kernel 3.8.8 from mainline (kernel.org).
+
+linux-fslc provides the Linux Kernel 3.8.8 from mainline (kernel.org)
+with some backported fixes.
 
 For the mainline kernel some boards has a very good support, although
 other ones has only a basic support.
