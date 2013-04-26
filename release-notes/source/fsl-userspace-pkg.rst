@@ -10,7 +10,7 @@ imx28evk
 --------
 Freescale userspace packages for imx28evk.
 
-.. include:: hw-acc-imx28evk.inc
+.. include:: fsl-pkg-imx28evk.inc
 
 --------
 imx53qsb
