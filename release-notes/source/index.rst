@@ -15,6 +15,6 @@ Freescale Community BSP Release Notes
    bsp-scope
    kernel-linux
    u-boot
-   hw-acceleration
+   fsl-userspace-pkg
    known-issues
 
