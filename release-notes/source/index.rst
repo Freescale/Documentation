@@ -13,6 +13,7 @@ Contents:
 
    introduction
    bsp-scope
+   kernel-linux
    hw-acceleration
    known-issues
 
