@@ -15,6 +15,7 @@ Freescale Community BSP Release Notes
    bsp-scope
    kernel-linux
    u-boot
+   userspace-pkg
    fsl-userspace-pkg
    known-issues
 
