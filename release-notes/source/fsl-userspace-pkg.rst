@@ -5,6 +5,20 @@ This section shows the version package for each board.
 Those packages provides hardware acceleration for GPU or VPU,
 provides hardware optimization or some hardware test tools.
 
+Hardware acceleration is achieved using a different core
+for processing some specific task. In this case, GPU or VPU.
+
+Hardware optimization is achieved with some changes in source
+code in order to get a better performance for a specific task 
+in a specific hardware. For example, audio decode made by software,
+but with optimizations for ARM.
+
+Hardware relate is applicable when the package was designed to
+be executed in a specific hardware, and it does not make sense
+in other hardware. For example, imx-test is a test package for
+imx boards. It can be cross-compiled for any other core, although
+it will only act as expect if executed on imx boards.
+
 --------
 MX28
 --------
