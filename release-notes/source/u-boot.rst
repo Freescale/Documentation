@@ -21,7 +21,7 @@ for each supported machine.
 u-boot-fslc
 -----------
 
-u-boot-fslc provides the U-Boot 2013.04 version with backported fixes
+u-boot-fslc provides the **U-Boot 2013.04** version with backported fixes
 and configuration patches related with meta-oe/yocto.
 
 The following table shows the supported boards.
