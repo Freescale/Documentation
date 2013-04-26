@@ -14,6 +14,7 @@ Contents:
    introduction
    bsp-scope
    kernel-linux
+   u-boot
    hw-acceleration
    known-issues
 
