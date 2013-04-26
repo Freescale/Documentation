@@ -17,5 +17,5 @@ imx53qsb
 --------
 Freescale userspace packages for imx53qsb
 
-.. include:: hw-acc-imx53qsb.inc 
+.. include:: fsl-pkg-imx53qsb.inc 
              
