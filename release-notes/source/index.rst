@@ -6,7 +6,7 @@
 Freescale Community BSP Release Notes
 =====================================
 
-Contents:
+.. Contents:
 
 .. toctree::
    :maxdepth: 2
@@ -17,11 +17,4 @@ Contents:
    u-boot
    hw-acceleration
    known-issues
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
 
