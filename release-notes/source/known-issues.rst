@@ -8,6 +8,3 @@ Known Issues
 
 **MX6SL** Freescale userspace packages for MX6Q SOC family will be installed
  (if required) although they are not compatible.
-
-**MX23** U-Boot DDR instability
-
