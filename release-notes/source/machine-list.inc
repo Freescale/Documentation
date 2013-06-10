@@ -4,6 +4,7 @@
 imx6qsabrelite             Boundary Devices i.MX6Q SABRE Lite                  i.MX6Q      meta-fsl-arm-extra
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q      meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q      meta-fsl-arm-extra
+m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28      meta-fsl-arm-extra
 imx23evk                   Freescale i.MX23 Evaluation Kit                     i.MX23      meta-fsl-arm
 imx28evk                   Freescale i.MX28 Evaluation Kit                     i.MX28      meta-fsl-arm
 imx31pdk                   Freescale i.MX31 Platform Development Kit           i.MX31      meta-fsl-arm
