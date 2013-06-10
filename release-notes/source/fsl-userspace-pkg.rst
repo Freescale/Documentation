@@ -29,7 +29,7 @@ It includes:
 * imx28evk
 
 
-.. include:: fsl-pkg-imx28evk.inc
+.. include:: fsl-pkg-imx28.inc
 
 --------
 MX5
@@ -42,7 +42,7 @@ It includes:
 * imx53ard
 * imx53qsb
 
-.. include:: fsl-pkg-imx53qsb.inc 
+.. include:: fsl-pkg-imx5.inc
              
 
 ------------
@@ -63,5 +63,5 @@ It includes:
 * imx6qsabrelite
 * wandboard-dual
 
-.. include:: fsl-pkg-imx6qsabresd.inc
+.. include:: fsl-pkg-imx6.inc
 
