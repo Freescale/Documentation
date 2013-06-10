@@ -19,7 +19,7 @@ Freescale for each supported machine.
 linux-fslc
 -----------
 
-linux-fslc provides the Linux Kernel 3.8.8 from mainline (kernel.org)
+linux-fslc provides the Linux Kernel 3.9 from mainline (kernel.org)
 with some backported fixes.
 
 For the mainline kernel some boards has a very good support, although
