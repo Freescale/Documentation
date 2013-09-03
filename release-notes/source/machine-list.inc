@@ -4,7 +4,9 @@
 imx6qsabrelite             Boundary Devices i.MX6Q SABRE Lite                  i.MX6Q      meta-fsl-arm-extra
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q      meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q      meta-fsl-arm-extra
+cfa10036                   Crystalfontz CFA-10036                              i.MX28      meta-fsl-arm-extra
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28      meta-fsl-arm-extra
+m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53      meta-fsl-arm-extra
 imx23evk                   Freescale i.MX23 Evaluation Kit                     i.MX23      meta-fsl-arm
 imx28evk                   Freescale i.MX28 Evaluation Kit                     i.MX28      meta-fsl-arm
 imx31pdk                   Freescale i.MX31 Platform Development Kit           i.MX31      meta-fsl-arm
@@ -12,13 +14,19 @@ imx35pdk                   Freescale i.MX35 Platform Development Kit           i
 imx51evk                   Freescale i.MX51 Evaluation Kit                     i.MX51      meta-fsl-arm
 imx53qsb                   Freescale i.MX53 Quick Start Board                  i.MX53      meta-fsl-arm
 imx53ard                   Freescale i.MX53 SABRE Automotive Board             i.MX53      meta-fsl-arm
+imx6dlsabreauto            Freescale i.MX6DL SABRE Automotive                  i.MX6DL     meta-fsl-arm
 imx6dlsabresd              Freescale i.MX6DL SABRE Smart Device                i.MX6DL     meta-fsl-arm
 imx6qsabreauto             Freescale i.MX6Q SABRE Automotive                   i.MX6Q      meta-fsl-arm
 imx6qsabresd               Freescale i.MX6Q SABRE Smart Device                 i.MX6Q      meta-fsl-arm
 imx6slevk                  Freescale i.MX6SL Evaluation Kit                    i.MX6SL     meta-fsl-arm
+imx6solosabreauto          Freescale i.MX6Solo SABRE Automotive                i.MX6S      meta-fsl-arm
+imx6solosabresd            Freescale i.MX6Solo SABRE Smart Device              i.MX6S      meta-fsl-arm
+twr-vf65gs10               Freescale Vybrid TWR-VF65GS10                       vf60        meta-fsl-arm
 imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i.MX23      meta-fsl-arm-extra
 imx233-olinuxino-micro     OLIMEX iMX233-OLinuXino-Micro                       i.MX23      meta-fsl-arm-extra
 imx233-olinuxino-mini      OLIMEX iMX233-OLinuXino-Mini                        i.MX23      meta-fsl-arm-extra
 wandboard-dual             Wandboard i.MX6 Wandboard Duallite                  i.MX6DL     meta-fsl-arm-extra
+wandboard-quad             Wandboard i.MX6 Wandboard Quad                      i.MX6Q      meta-fsl-arm-extra
 wandboard-solo             Wandboard i.MX6 Wandboard Solo                      i.MX6S      meta-fsl-arm-extra
+gk802                      Zealz GK802                                         i.MX6Q      meta-fsl-arm-extra
 =========================  ==================================================  ==========  ==========
