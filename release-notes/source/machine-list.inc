@@ -5,6 +5,12 @@ imx6qsabrelite             Boundary Devices i.MX6Q SABRE Lite                  i
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q      meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q      meta-fsl-arm-extra
 cfa10036                   Crystalfontz CFA-10036                              i.MX28      meta-fsl-arm-extra
+cfa10037                   Crystalfontz CFA-10037                              i.MX28      meta-fsl-arm-extra
+cfa10049                   Crystalfontz CFA-10049                              i.MX28      meta-fsl-arm-extra
+cfa10055                   Crystalfontz CFA-10055                              i.MX28      meta-fsl-arm-extra
+cfa10056                   Crystalfontz CFA-10056                              i.MX28      meta-fsl-arm-extra
+cfa10057                   Crystalfontz CFA-10057                              i.MX28      meta-fsl-arm-extra
+cfa10058                   Crystalfontz CFA-10058                              i.MX28      meta-fsl-arm-extra
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28      meta-fsl-arm-extra
 m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53      meta-fsl-arm-extra
 imx23evk                   Freescale i.MX23 Evaluation Kit                     i.MX23      meta-fsl-arm
