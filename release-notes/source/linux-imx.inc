@@ -3,7 +3,7 @@ Board                   Kernel Provider          Kernel Version
 ======================  ======================   ====================
 imx6qsabrelite          linux-boundary           3.0.35_4.1.0
 nitrogen6x              linux-boundary           3.0.35_4.1.0
-cgtqmx6                 linux-imx                
+cgtqmx6                 linux-imx                3.0.35_4.0.0
 cfa10036                linux-cfa                3.10
 cfa10037                linux-cfa                3.10
 cfa10049                linux-cfa                3.10
@@ -22,11 +22,11 @@ imx53qsb                linux-imx                2.6.35_maintain
 imx53ard                linux-imx                2.6.35_maintain
 imx6dlsabreauto         linux-imx                3.0.35_4.1.0
 imx6dlsabresd           linux-imx                3.0.35_4.1.0
-imx6qsabreauto          linux-imx                3.0.35_4.1.1
-imx6qsabresd            linux-imx                3.0.35_4.1.2
-imx6slevk               linux-imx                3.0.35_4.1.3
-imx6solosabreauto       linux-imx                3.0.35_4.1.4
-imx6solosabresd         linux-imx                3.0.35_4.1.5
+imx6qsabreauto          linux-imx                3.0.35_4.1.0
+imx6qsabresd            linux-imx                3.0.35_4.1.0
+imx6slevk               linux-imx                3.0.35_4.1.0
+imx6solosabreauto       linux-imx                3.0.35_4.1.0
+imx6solosabresd         linux-imx                3.0.35_4.1.0
 twr-vf65gs10            linux-timesys            3.0.15_vybrid
 imx233-olinuxino-maxi   linux-imx                2.6.35_maintain
 imx233-olinuxino-micro  linux-imx                2.6.35_maintain
@@ -36,6 +36,4 @@ wandboard-quad          linux-wandboard          4.0.0-wandboard
 wandboard-solo          linux-wandboard          4.0.0-wandboard
 gk802                   linux-imx6dongle         1.1.0-hdmidongle
 ======================  ======================   ====================
-
-
 
