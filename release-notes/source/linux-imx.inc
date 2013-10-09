@@ -31,9 +31,9 @@ twr-vf65gs10            linux-timesys            3.0.15_vybrid
 imx233-olinuxino-maxi   linux-imx                2.6.35_maintain
 imx233-olinuxino-micro  linux-imx                2.6.35_maintain
 imx233-olinuxino-mini   linux-imx                2.6.35_maintain
-wandboard-dual          linux-wandboard          4.0.0-wandboard
-wandboard-quad          linux-wandboard          4.0.0-wandboard
-wandboard-solo          linux-wandboard          4.0.0-wandboard
+wandboard-dual          linux-wandboard          3.0.35_4.0.0
+wandboard-quad          linux-wandboard          3.0.35_4.0.0
+wandboard-solo          linux-wandboard          3.0.35_4.0.0
 gk802                   linux-imx6dongle         1.1.0-hdmidongle
 ======================  ======================   ====================
 
