@@ -1,16 +1,16 @@
-==================      ===============   =================================
-Board                   u-boot Version    FSL BSP
-==================      ===============   =================================
-imx28evk                2009.08           imx_2.6.35_10.12.01
-imx51evk                2009.08           imx_2.6.35_11.09.01
-imx53qsb                2009.08           imx_2.6.35_11.09.01
-imx53ard                2009.08           imx_2.6.35_11.09.01
-imx6slevk               2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6solosabreauto       2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6solosabresd         2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6dlsabreauto         2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6dlsabresd           2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6qsabreauto          2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-imx6qsabresd            2013.04           imx_v2013.04_3.5.7_1.0.0_alpha
-==================      ===============   =================================
+==================      ========================      =================================
+Board                   u-boot Version                FSL BSP
+==================      ========================      =================================
+imx28evk                |u_boot_imx_version_mxs|      |u_boot_imx_tag_mxs|
+imx51evk                |u_boot_imx_version_mx5|      |u_boot_imx_tag_mx5|
+imx53qsb                |u_boot_imx_version_mx5|      |u_boot_imx_tag_mx5|
+imx53ard                |u_boot_imx_version_mx5|      |u_boot_imx_tag_mx5|
+imx6slevk               |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6solosabreauto       |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6solosabresd         |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6dlsabreauto         |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6dlsabresd           |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6qsabreauto          |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+imx6qsabresd            |u_boot_imx_version_mx6|      |u_boot_imx_tag_mx6|
+==================      ========================      =================================
 
