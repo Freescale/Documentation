@@ -1,10 +1,23 @@
 Linux Kernel
 ============
+.. |linux_imx_version_mx6| replace:: 3.0.35_4.1.0
+.. |linux_imx_version_mxs5| replace:: 2.6.35_maintain
+.. |linux_fslc_version| replace:: 3.11
+.. |linux_boundary_version| replace:: 3.0.35_4.1.0
+.. |linux_cfa_version| replace:: 3.10
+.. |linux_wandboard_version| replace:: 3.0.35_4.0.0
+
 
 Fsl-community-bsp supports to sources for Linux Kernel:
 
-* linux-imx: Linux Kernel supported by Freescale
-* linux-fslc: Linux Kernel mainline with backported fixes (kernel.org)
+* **linux-imx**: Linux Kernel supported by Freescale
+* **linux-fslc**: Linux Kernel mainline with backported fixes (kernel.org)
+* **linux-boundary**:
+* **linux-cfa**:
+* **linux-denx**:
+* **linux-timesys**:
+* **linux-wandboard**:
+* **linux-imx6dongle**:
 
 ---------
 linux-imx
