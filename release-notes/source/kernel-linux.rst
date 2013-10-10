@@ -33,7 +33,7 @@ FSL Community BSP for each supported machine.
 linux-fslc
 -----------
 
-linux-fslc provides the Linux Kernel 3.9 from mainline (kernel.org)
+linux-fslc provides the Linux Kernel |linux_fslc_version| from mainline (kernel.org)
 with some backported fixes.
 
 For the mainline kernel some boards has a very good support, although
