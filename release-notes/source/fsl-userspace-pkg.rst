@@ -29,8 +29,15 @@ Freescale userspace packages for mx28 SOC family.
 
 It includes:
 
+* cfa10036
+* cfa10037
+* cfa10049
+* cfa10055
+* cfa10056
+* cfa10057
+* cfa10058
 * imx28evk
-
+* m28evk
 
 .. include:: fsl-pkg-imx28.inc
 
@@ -44,6 +51,7 @@ It includes:
 * imx51evk
 * imx53ard
 * imx53qsb
+* m53evk
 
 .. include:: fsl-pkg-imx5.inc
              
@@ -55,16 +63,20 @@ Freescale userspace packages for mx6 SOC family
 
 It includes:
 
+* imx6qsabrelite
+* nitrogen6x
+* cgtqmx6
+* imx6dlsabreauto
+* imx6dlsabresd
 * imx6qsabreauto
 * imx6qsabresd
 * imx6slevk
-* imx6dlsabresd
-* imx6slevk
-* nitrogen6x
-* cgtqmx6
-* wandboard-solo
-* imx6qsabrelite
+* imx6solosabreauto
+* imx6solosabresd
 * wandboard-dual
+* wandboard-quad
+* wandboard-solo
+* gk802
 
 .. include:: fsl-pkg-imx6.inc
 
