@@ -1,5 +1,8 @@
 Freescale Userspace Packages
 ============================
+.. |mm_version| replace:: 3.0.8
+.. |libfslvpuwrap_version| replace:: 1.0.38
+.. |latest_bsp_version_mx6| replace:: 3.5.7-1.0.0
 
 This section shows the version package for each board.
 Those packages provides hardware acceleration for GPU or VPU,
