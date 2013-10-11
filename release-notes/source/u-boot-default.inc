@@ -1,9 +1,6 @@
 ======================  ======================   ====================
 Board                   u-boot Provider          u-boot Version
 ======================  ======================   ====================
-imx6qsabrelite          u-boot-boundary          |u_boot_boundary_version|
-nitrogen6x              u-boot-boundary          |u_boot_boundary_version|
-cgtqmx6                 u-boot-imx               |u_boot_imx_version_mxs|
 cfa10036                u-boot-fslc              |u_boot_fslc_version|
 cfa10037                u-boot-fslc              |u_boot_fslc_version|
 cfa10049                u-boot-fslc              |u_boot_fslc_version|
@@ -11,29 +8,32 @@ cfa10055                u-boot-fslc              |u_boot_fslc_version|
 cfa10056                u-boot-fslc              |u_boot_fslc_version|
 cfa10057                u-boot-fslc              |u_boot_fslc_version|
 cfa10058                u-boot-fslc              |u_boot_fslc_version|
-m28evk                  u-boot-fslc              |u_boot_fslc_version|
-m53evk                  u-boot-fslc              |u_boot_fslc_version|
+cgtqmx6                 u-boot-imx               |u_boot_imx_version_mxs|
+gk802                   u-boot-imx6dongle
+imx233-olinuxino-maxi   u-boot-fslc              |u_boot_fslc_version|
+imx233-olinuxino-micro  u-boot-fslc              |u_boot_fslc_version|
+imx233-olinuxino-mini   u-boot-fslc              |u_boot_fslc_version|
 imx23evk                u-boot-fslc              |u_boot_fslc_version|
 imx28evk                u-boot-fslc              |u_boot_fslc_version|
 imx31pdk                u-boot-fslc              |u_boot_fslc_version|
 imx35pdk                u-boot-fslc              |u_boot_fslc_version|
 imx51evk                u-boot-fslc              |u_boot_fslc_version|
-imx53qsb                u-boot-fslc              |u_boot_fslc_version|
 imx53ard                u-boot-fslc              |u_boot_fslc_version|
+imx53qsb                u-boot-fslc              |u_boot_fslc_version|
 imx6dlsabreauto         u-boot-imx               |u_boot_imx_version_mx6|
 imx6dlsabresd           u-boot-fslc              |u_boot_fslc_version|
 imx6qsabreauto          u-boot-imx               |u_boot_imx_version_mx6|
+imx6qsabrelite          u-boot-boundary          |u_boot_boundary_version|
 imx6qsabresd            u-boot-fslc              |u_boot_fslc_version|
 imx6slevk               u-boot-fslc              |u_boot_fslc_version|
 imx6solosabreauto       u-boot-imx               |u_boot_imx_version_mx6|
 imx6solosabresd         u-boot-fslc              |u_boot_fslc_version|
+m28evk                  u-boot-fslc              |u_boot_fslc_version|
+m53evk                  u-boot-fslc              |u_boot_fslc_version|
+nitrogen6x              u-boot-boundary          |u_boot_boundary_version|
 twr-vf65gs10            u-boot-fslc              |u_boot_fslc_version|
-imx233-olinuxino-maxi   u-boot-fslc              |u_boot_fslc_version|
-imx233-olinuxino-micro  u-boot-fslc              |u_boot_fslc_version|
-imx233-olinuxino-mini   u-boot-fslc              |u_boot_fslc_version|
 wandboard-dual          u-boot-fslc              |u_boot_fslc_version|
 wandboard-quad          u-boot-fslc              |u_boot_fslc_version|
 wandboard-solo          u-boot-fslc              |u_boot_fslc_version|
-gk802                   u-boot-imx6dongle
 ======================  ======================   ====================
 

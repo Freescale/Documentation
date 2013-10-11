@@ -63,20 +63,20 @@ Freescale userspace packages for mx6 SOC family
 
 It includes:
 
-* imx6qsabrelite
-* nitrogen6x
 * cgtqmx6
+* gk802
 * imx6dlsabreauto
 * imx6dlsabresd
 * imx6qsabreauto
+* imx6qsabrelite
 * imx6qsabresd
 * imx6slevk
 * imx6solosabreauto
 * imx6solosabresd
+* nitrogen6x
 * wandboard-dual
 * wandboard-quad
 * wandboard-solo
-* gk802
 
 .. include:: fsl-pkg-imx6.inc
 
