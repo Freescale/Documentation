@@ -3,6 +3,7 @@
 =========================  ==================================================  ==========  ==========
 imx6qsabrelite             Boundary Devices i.MX6Q SABRE Lite                  i.MX6Q      meta-fsl-arm-extra
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q      meta-fsl-arm-extra
+nitrogen6x-lite            Boundary Devices Nitrogen6X Lite                    i.MX6 Solo  meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q      meta-fsl-arm-extra
 cfa10036                   Crystalfontz CFA-10036                              i.MX28      meta-fsl-arm-extra
 cfa10037                   Crystalfontz CFA-10037                              i.MX28      meta-fsl-arm-extra

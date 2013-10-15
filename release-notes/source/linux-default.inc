@@ -31,6 +31,7 @@ imx6solosabresd         linux-imx                |linux_imx_version_mx6|
 m28evk                  linux-fslc               |linux_fslc_version|
 m53evk                  linux-denx               denx
 nitrogen6x              linux-boundary           |linux_boundary_version|
+nitrogen6x-lite         linux-boundary           |linux_boundary_version|
 twr-vf65gs10            linux-timesys            3.0.15_vybrid
 wandboard-dual          linux-wandboard          |linux_wandboard_version|
 wandboard-quad          linux-wandboard          |linux_wandboard_version|

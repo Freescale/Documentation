@@ -31,6 +31,7 @@ imx6solosabresd         u-boot-fslc              |u_boot_fslc_version|
 m28evk                  u-boot-fslc              |u_boot_fslc_version|
 m53evk                  u-boot-fslc              |u_boot_fslc_version|
 nitrogen6x              u-boot-boundary          |u_boot_boundary_version|
+nitrogen6x-lite         u-boot-boundary          |u_boot_boundary_version|
 twr-vf65gs10            u-boot-fslc              |u_boot_fslc_version|
 wandboard-dual          u-boot-fslc              |u_boot_fslc_version|
 wandboard-quad          u-boot-fslc              |u_boot_fslc_version|
