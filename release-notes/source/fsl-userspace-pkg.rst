@@ -16,7 +16,7 @@ code in order to get a better performance for a specific task
 on a specific hardware. For example, audio decode made by software,
 but with optimizations for ARM.
 
-Hardware relate is applicable when the package was designed to
+Hardware-specific is applicable when the package was designed to
 be executed in a specific hardware, and it does not make sense
 in other hardware. For example, imx-test is a test package for
 imx boards. It can be cross-compiled for any other core, although
