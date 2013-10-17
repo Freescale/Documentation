@@ -5,15 +5,15 @@ Freescale Userspace Packages
 .. |latest_bsp_version_mx6| replace:: 3.5.7-1.0.0
 
 This section shows the version package for each board.
-Those packages provides hardware acceleration for GPU or VPU,
-provides hardware optimization or some hardware test tools.
+Those packages provide hardware acceleration for GPU or VPU,
+hardware optimization or some hardware test tools.
 
 Hardware acceleration is achieved using a different core
 for processing some specific task. In this case, GPU or VPU.
 
 Hardware optimization is achieved with some changes in source
 code in order to get a better performance for a specific task 
-in a specific hardware. For example, audio decode made by software,
+on a specific hardware. For example, audio decode made by software,
 but with optimizations for ARM.
 
 Hardware relate is applicable when the package was designed to
