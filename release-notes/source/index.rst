@@ -17,5 +17,6 @@ Freescale Community BSP Release Notes
    u-boot
    userspace-pkg
    fsl-userspace-pkg
+   test-results
    known-issues
 
