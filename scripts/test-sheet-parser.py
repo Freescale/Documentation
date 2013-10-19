@@ -69,9 +69,13 @@ def get_supported_boards(repos_dir):
     boards = {}
     for current, dirs, files in os.walk(repos_dir):
         if os.path.basename(current) == 'machine':
+            if current.find('sources/meta-fsl') == -1:
+                continue
+
             for file in files:
                 if file.endswith('.conf'):
-                    boards[file.strip('.conf')] = parse_board_file(os.path.join(current, file))
+                    boards[file.replace('.conf', '')] = parse_board_file(os.path.join(current, file))
+
     return boards
         
 
@@ -135,7 +139,7 @@ def process_test_sheet(test_sheet, repos_dir):
         responses_by_board[board].append(response)
 
     for board, responses in responses_by_board.items():
-        print(rst_header(1, '%s (%s)' % (supported_boards[board]['name'],
+        print(rst_header(2, '%s (%s)' % (supported_boards[board]['name'],
                                          supported_boards[board]['soc'],)))
 
         testers_data = get_testers_by_board(board, responses)
@@ -172,9 +176,12 @@ def process_test_sheet(test_sheet, repos_dir):
         #             if resp:
         #                 print('      - ' + resp)
         #         print('')
+
         print('\n')
 
     not_tested = set(supported_boards.keys()) - set(responses_by_board.keys())
+
+    print(rst_header(1, "Not tested boards"))
 
     if len(not_tested) > 0:
         print('The following boards have not been tested:\n')
