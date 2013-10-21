@@ -38,6 +38,9 @@ def rst_header(level, text):
     else:
         raise
 
+def rst_item(text, level=0, bullet='*'):
+    return '%s%s %s\n' % (' ' * (level * 2), bullet, text)
+
 ### end rst utils
 
 def read_test_sheet(csv_file):
@@ -170,11 +173,11 @@ def process_test_sheet(test_sheet, repos_dir):
         # Omit the first 4 questions (personal + board) and empty questions
         # for qno, question in enumerate(header):
         #     if qno > 3 and question != '':
-        #         print('    * ' + question)
+        #         print(rst_item(question))
         #         for responses in responses_by_board[board]:
         #             resp = responses[qno]
         #             if resp:
-        #                 print('      - ' + resp)
+        #                 print(rst_item(resp, level=1))
         #         print('')
 
         print('\n')
@@ -186,8 +189,8 @@ def process_test_sheet(test_sheet, repos_dir):
     if len(not_tested) > 0:
         print('The following boards have not been tested:\n')
         for board in not_tested:
-            print('  * ' + supported_boards[board]['name'] +
-                  ' (' + supported_boards[board]['soc'] + ')')
+            print(rst_item('%s (%s)' % (supported_boards[board]['name'],
+                                        supported_boards[board]['soc'] + ')')))
 
 
 def main():
