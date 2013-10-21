@@ -78,9 +78,8 @@ def get_supported_boards(repos_dir):
             for file in files:
                 if file.endswith('.conf'):
                     boards[file.replace('.conf', '')] = parse_board_file(os.path.join(current, file))
-
     return boards
-        
+
 
 fields = ['timestamp',
           'tester',
@@ -114,7 +113,7 @@ fields = ['timestamp',
 
 def column(key, row):
     i = fields.index(key)
-    return row[i]    
+    return row[i]
 
 def get_testers_by_board_image(board, image, test_sheet):
     return [ (column('tester', row), board, image) \
@@ -131,6 +130,7 @@ def process_test_sheet(test_sheet, repos_dir):
     responses_by_board = {}
     board_index = fields.index('board')
     supported_boards = get_supported_boards(repos_dir)
+
 
     # for row in test_sheet:
     #     print row
@@ -152,7 +152,7 @@ def process_test_sheet(test_sheet, repos_dir):
             tester_str = 'persons'
         else:
             tester_str = 'person'
-        
+
         images = list(set([ t[2] for t in testers_data ]))
         image_str = None
         was = None
@@ -163,13 +163,13 @@ def process_test_sheet(test_sheet, repos_dir):
             image_str = 'image'
             was = 'was'
 
-        
+
 
         print('This board was tested by %d %s.\n' % (len(testers), tester_str))
         print('%d %s %s used:\n' % (len(images), image_str, was))
         for image in images:
             print '  * ' + image
-        
+
         # Omit the first 4 questions (personal + board) and empty questions
         # for qno, question in enumerate(header):
         #     if qno > 3 and question != '':
