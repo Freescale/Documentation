@@ -21,7 +21,6 @@ Fsl-community-bsp supports two sources for u-boot:
   but used it as a staging area due to responsive to customer needs. The primary deltas
   at this point are additional boards (nit6xlite is not yet in main-line), support
   for additional displays, and support for custom boards.
-* **u-boot-imx6dongle**:
 
 --------------
 Default u-boot

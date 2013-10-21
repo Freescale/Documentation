@@ -64,7 +64,6 @@ Freescale userspace packages for mx6 SOC family
 It includes:
 
 * cgtqmx6
-* gk802
 * imx6dlsabreauto
 * imx6dlsabresd
 * imx6qsabreauto

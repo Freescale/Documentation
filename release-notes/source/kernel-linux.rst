@@ -17,7 +17,6 @@ Fsl-community-bsp supports tohe following sources for Linux Kernel:
 * **linux-denx**:
 * **linux-timesys**:
 * **linux-wandboard**:
-* **linux-imx6dongle**:
 
 -----------------------
 Default Linux Providers

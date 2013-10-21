@@ -9,7 +9,6 @@ cfa10056                u-boot-fslc              |u_boot_fslc_version|
 cfa10057                u-boot-fslc              |u_boot_fslc_version|
 cfa10058                u-boot-fslc              |u_boot_fslc_version|
 cgtqmx6                 u-boot-imx               |u_boot_imx_version_mxs|
-gk802                   u-boot-imx6dongle
 imx233-olinuxino-maxi   u-boot-fslc              |u_boot_fslc_version|
 imx233-olinuxino-micro  u-boot-fslc              |u_boot_fslc_version|
 imx233-olinuxino-mini   u-boot-fslc              |u_boot_fslc_version|

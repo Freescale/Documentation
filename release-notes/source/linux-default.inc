@@ -9,7 +9,6 @@ cfa10056                linux-cfa                |linux_cfa_version|
 cfa10057                linux-cfa                |linux_cfa_version|
 cfa10058                linux-cfa                |linux_cfa_version|
 cgtqmx6                 linux-imx                3.0.35_4.0.0
-gk802                   linux-imx6dongle         1.1.0-hdmidongle
 imx233-olinuxino-maxi   linux-imx                |linux_imx_version_mxs5|
 imx233-olinuxino-micro  linux-imx                |linux_imx_version_mxs5|
 imx233-olinuxino-mini   linux-imx                |linux_imx_version_mxs5|
