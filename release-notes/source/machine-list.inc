@@ -35,5 +35,4 @@ imx233-olinuxino-mini      OLIMEX iMX233-OLinuXino-Mini                        i
 wandboard-dual             Wandboard i.MX6 Wandboard Duallite                  i.MX6DL     meta-fsl-arm-extra
 wandboard-quad             Wandboard i.MX6 Wandboard Quad                      i.MX6Q      meta-fsl-arm-extra
 wandboard-solo             Wandboard i.MX6 Wandboard Solo                      i.MX6S      meta-fsl-arm-extra
-gk802                      Zealz GK802                                         i.MX6Q      meta-fsl-arm-extra
 =========================  ==================================================  ==========  ==========
