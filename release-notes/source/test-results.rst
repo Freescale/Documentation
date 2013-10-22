@@ -1,3 +1,7 @@
+.. |check_mark| unicode:: U+2713
+.. |x_mark| unicode:: U+2717
+.. |na_mark| unicode:: N.A.
+
 Test results
 ============
 
