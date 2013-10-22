@@ -3,3 +3,11 @@
 th {
 	background-color: #f2f2f2;
 }
+
+table.docutils tr.row-odd {
+    background-color: #eee;
+}
+
+table.docutils tr:hover {
+    background-color: lightyellow;
+}
