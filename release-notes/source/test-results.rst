@@ -1,5 +1,6 @@
 .. |check_mark| unicode:: U+2713
 .. |x_mark| unicode:: U+2717
+.. |exclamation_mark| unicode:: U+2762
 .. |na_mark| unicode:: N.A.
 
 Test results
@@ -41,11 +42,11 @@ Definition
 
 For following tables, please, consider this definition:
 
- * **N**     : error on every test
- * **Y**     : success on every test
- * **N/Y**   : at least one error
- * **-**     : not applicable
- * **empty** : no test reported
+ * |x_mark|           : error on every test
+ * |check_mark|       : success on every test
+ * |exclamation_mark| : at least one error
+ * |na_mark|          : not applicable
+ * **empty**          : no test reported
 
 MUST HAVE
 ---------
