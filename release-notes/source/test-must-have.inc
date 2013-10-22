@@ -5,17 +5,17 @@ imx6qsabrelite          Y                         Y                     Y
 nitrogen6x
 nitrogen6x-lite
 cgtqmx6
-cfa10036                Y                         Y                     -
-cfa10037                Y                         Y                     -
+cfa10036                Y                         Y                     `-`
+cfa10037                Y                         Y                     `-`
 cfa10049                Y                         Y                     Y
-cfa10055                Y                         Y                     -
+cfa10055                Y                         Y                     `-`
 cfa10056                Y                         Y                     Y
 cfa10057                Y                         Y                     Y
 cfa10058                Y                         Y                     Y
 m28evk
 m53evk
 imx23evk
-imx28evk                Y                         Y                     -
+imx28evk                Y                         Y                     `-`
 imx31pdk
 imx35pdk
 imx51evk
@@ -35,4 +35,4 @@ imx233-olinuxino-mini
 wandboard-dual          Y                         Y                     Y
 wandboard-quad
 wandboard-solo
-====================== 
+======================  =======================   ====================  =======================

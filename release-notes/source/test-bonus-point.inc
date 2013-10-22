@@ -1,7 +1,7 @@
 ======================  =====   ===================
 Board                   SFP     memtester overnight
 ======================  =====   ===================
-imx6qsabrelite          -       Y
+imx6qsabrelite          `-`       Y
 nitrogen6x
 nitrogen6x-lite
 cgtqmx6
@@ -15,7 +15,7 @@ cfa10058
 m28evk
 m53evk
 imx23evk
-imx28evk                -       Y
+imx28evk                `-`       Y
 imx31pdk
 imx35pdk
 imx51evk
@@ -35,4 +35,4 @@ imx233-olinuxino-mini
 wandboard-dual
 wandboard-quad
 wandboard-solo
-====================== 
+======================  =====   ===================
