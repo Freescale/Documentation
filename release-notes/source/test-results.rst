@@ -106,4 +106,3 @@ Please, find the test results in the following table:
 
 .. include:: test-bonus-point.inc
 
-.. include:: test-data.inc
