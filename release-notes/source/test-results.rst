@@ -1,7 +1,7 @@
 .. |check_mark| unicode:: U+2713
 .. |x_mark| unicode:: U+2717
 .. |exclamation_mark| unicode:: U+2762
-.. |na_mark| unicode:: N.A.
+.. |na_mark| unicode:: U+2014
 
 Test results
 ============
