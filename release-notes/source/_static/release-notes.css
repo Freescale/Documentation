@@ -30,3 +30,16 @@ table.docutils td:first-child {
 table.docutils td:last-child {
     border-right-style: none;
 }
+
+#test-results span.test_result.success {
+    color: green;
+}
+
+#test-results span.test_result.error {
+    color: red;
+}
+
+#test-results span.test_result.warning {
+    color: orange;
+    font-weight: bold;
+}

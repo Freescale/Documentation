@@ -1,6 +1,15 @@
-.. |check_mark| unicode:: U+2713
-.. |x_mark| unicode:: U+2717
-.. |exclamation_mark| unicode:: U+2762
+.. |check_mark| raw:: html
+
+   <span class="test_result success">&#x2713;</span>
+
+.. |x_mark| raw:: html
+
+   <span class="test_result error">&#x2717;</span>
+
+.. |exclamation_mark| raw:: html
+
+   <span class="test_result warning">?</span>
+
 .. |na_mark| unicode:: U+2014
 
 Test results
