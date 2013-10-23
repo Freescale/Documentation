@@ -10,7 +10,7 @@ Dora Source Code
 
 The following people helped to construct the source code for the release:
 
-.. include:: ack-sourcers.inc
+.. literalinclude:: ack-sourcers.inc
 
 Test Cycle
 ----------
