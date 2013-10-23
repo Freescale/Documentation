@@ -18,5 +18,6 @@ Freescale Community BSP Release Notes
    userspace-pkg
    fsl-userspace-pkg
    test-results
+   Acknowledgement
    known-issues
 
