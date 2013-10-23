@@ -1,6 +1,6 @@
 U-Boot
 ============
-.. |u_boot_fslc_version| replace:: 2013.10-rc4
+.. |u_boot_fslc_version| replace:: 2013.10
 .. |u_boot_boundary_version| replace:: 2013.07
 .. |u_boot_imx_version_mx6| replace:: 2013.04
 .. |u_boot_imx_version_mx5| replace:: 2009.08
