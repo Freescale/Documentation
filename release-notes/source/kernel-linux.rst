@@ -8,7 +8,7 @@ Linux Kernel
 .. |linux_wandboard_version| replace:: 3.0.35_4.0.0
 
 
-Fsl-community-bsp supports tohe following sources for Linux Kernel:
+Fsl-community-bsp supports the following sources for Linux Kernel:
 
 * **linux-imx**: Linux Kernel provided and supported by Freescale
 * **linux-fslc**: Linux Kernel mainline with backported fixes (kernel.org)
