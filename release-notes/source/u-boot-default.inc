@@ -1,13 +1,6 @@
 ======================  ======================   ====================
 Board                   u-boot Provider          u-boot Version
 ======================  ======================   ====================
-cfa10036                u-boot-fslc              |u_boot_fslc_version|
-cfa10037                u-boot-fslc              |u_boot_fslc_version|
-cfa10049                u-boot-fslc              |u_boot_fslc_version|
-cfa10055                u-boot-fslc              |u_boot_fslc_version|
-cfa10056                u-boot-fslc              |u_boot_fslc_version|
-cfa10057                u-boot-fslc              |u_boot_fslc_version|
-cfa10058                u-boot-fslc              |u_boot_fslc_version|
 cgtqmx6                 u-boot-imx               |u_boot_imx_version_mxs|
 imx233-olinuxino-maxi   u-boot-fslc              |u_boot_fslc_version|
 imx233-olinuxino-micro  u-boot-fslc              |u_boot_fslc_version|

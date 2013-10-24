@@ -15,6 +15,7 @@ Freescale Community BSP Release Notes
    bsp-scope
    kernel-linux
    u-boot
+   barebox
    userspace-pkg
    fsl-userspace-pkg
    test-results
