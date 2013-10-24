@@ -13,7 +13,7 @@ Fsl-community-bsp supports the following sources for Linux Kernel:
 * **linux-imx**: Linux Kernel provided and supported by Freescale
 * **linux-fslc**: Linux Kernel mainline with backported fixes (kernel.org)
 * **linux-boundary**:
-* **linux-cfa**:
+* **linux-cfa**: Linux Kernel mainline 3.10 with added drivers
 * **linux-denx**:
 * **linux-timesys**:
 * **linux-wandboard**:
