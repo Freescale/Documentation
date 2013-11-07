@@ -8,7 +8,7 @@ cgtqmx6
 cfa10036                |check_mark|              |check_mark|          |na_mark|
 cfa10037                |check_mark|              |check_mark|          |na_mark|
 cfa10049                |check_mark|              |check_mark|          |check_mark|
-cfa10055                |check_mark|              |check_mark|          |na_mark|
+cfa10055                |check_mark|              |check_mark|          |check_mark|
 cfa10056                |check_mark|              |check_mark|          |check_mark|
 cfa10057                |check_mark|              |check_mark|          |check_mark|
 cfa10058                |check_mark|              |check_mark|          |check_mark|
