@@ -1,5 +1,6 @@
 * Alexandre Belloni
 * Daiane Angolini
-* Leonardo Sandoval
 * Gustavo Arambula
+* John Weber
+* Leonardo Sandoval
 * Stephan Bauroth
