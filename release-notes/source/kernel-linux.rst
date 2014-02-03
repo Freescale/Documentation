@@ -17,6 +17,8 @@ Fsl-community-bsp supports the following sources for Linux Kernel:
 * **linux-denx**:
 * **linux-timesys**:
 * **linux-wandboard**:
+* **linux-cubox-i**: Boundary Devices Kernel 3.0.35 supported by SolidRun
+  with additional machine specific patches
 
 -----------------------
 Default Linux Providers

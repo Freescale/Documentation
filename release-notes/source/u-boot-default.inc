@@ -2,6 +2,7 @@
 Board                   u-boot Provider          u-boot Version
 ======================  ======================   ====================
 cgtqmx6                 u-boot-imx               |u_boot_imx_version_mxs|
+cubox-i                 u-boot-cubox-i           2013.10
 imx233-olinuxino-maxi   u-boot-fslc              |u_boot_fslc_version|
 imx233-olinuxino-micro  u-boot-fslc              |u_boot_fslc_version|
 imx233-olinuxino-mini   u-boot-fslc              |u_boot_fslc_version|

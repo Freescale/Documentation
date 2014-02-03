@@ -21,6 +21,8 @@ Fsl-community-bsp supports two sources for u-boot:
   but used it as a staging area due to responsive to customer needs. The primary deltas
   at this point are additional boards (nit6xlite is not yet in main-line), support
   for additional displays, and support for custom boards.
+* **u-boot-cubox-i**: provides the U-Boot 2013.10 version supported by SolidRun
+  with additional patches for SPL and CuBox-i support.
 
 --------------
 Default u-boot

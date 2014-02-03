@@ -9,6 +9,7 @@ cfa10056                linux-cfa                |linux_cfa_version|
 cfa10057                linux-cfa                |linux_cfa_version|
 cfa10058                linux-cfa                |linux_cfa_version|
 cgtqmx6                 linux-imx                3.0.35_4.0.0
+cubox-i                 linux-cubox-i            3.0.35_4.1.0
 imx233-olinuxino-maxi   linux-imx                |linux_imx_version_mxs5|
 imx233-olinuxino-micro  linux-imx                |linux_imx_version_mxs5|
 imx233-olinuxino-mini   linux-imx                |linux_imx_version_mxs5|

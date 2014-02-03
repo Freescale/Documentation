@@ -33,6 +33,7 @@ imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i
 imx233-olinuxino-micro     OLIMEX iMX233-OLinuXino-Micro                       i.MX23      meta-fsl-arm-extra
 imx233-olinuxino-mini      OLIMEX iMX233-OLinuXino-Mini                        i.MX23      meta-fsl-arm-extra
 imx233-olinuxino-nano      OLIMEX iMX233-OLinuXino-Nano                        i.MX23      meta-fsl-arm-extra
+cubox-i                    SolidRun CuBox-i and HummingBoard                   i.MX6Q/DL/S meta-fsl-arm-extra
 wandboard-dual             Wandboard i.MX6 Wandboard Duallite                  i.MX6DL     meta-fsl-arm-extra
 wandboard-quad             Wandboard i.MX6 Wandboard Quad                      i.MX6Q      meta-fsl-arm-extra
 wandboard-solo             Wandboard i.MX6 Wandboard Solo                      i.MX6S      meta-fsl-arm-extra
