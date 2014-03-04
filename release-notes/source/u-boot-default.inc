@@ -26,6 +26,7 @@ m53evk                  u-boot-fslc              |u_boot_fslc_version|
 nitrogen6x              u-boot-boundary          |u_boot_boundary_version|
 nitrogen6x-lite         u-boot-boundary          |u_boot_boundary_version|
 pcl052                  u-boot-timesys           |u_boot_timesys_version|
+pcm052                  u-boot-timesys           |u_boot_timesys_version|
 twr-vf65gs10            u-boot-fslc              |u_boot_fslc_version|
 wandboard-dual          u-boot-fslc              |u_boot_fslc_version|
 wandboard-quad          u-boot-fslc              |u_boot_fslc_version|

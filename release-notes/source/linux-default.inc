@@ -33,6 +33,7 @@ m53evk                  linux-denx               denx
 nitrogen6x              linux-boundary           |linux_boundary_version|
 nitrogen6x-lite         linux-boundary           |linux_boundary_version|
 pcl052                  linux-timesys            |linux_timesys_version_pcl052|
+pcm052                  linux-timesys            |linux_timesys_version_pcm052|
 twr-vf65gs10            linux-timesys            3.0.15_vybrid
 wandboard-dual          linux-wandboard          |linux_wandboard_version|
 wandboard-quad          linux-wandboard          |linux_wandboard_version|
