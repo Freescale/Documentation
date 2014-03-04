@@ -5,6 +5,7 @@ Linux Kernel
 .. |linux_fslc_version| replace:: 3.11
 .. |linux_boundary_version| replace:: 3.0.35_4.1.0
 .. |linux_cfa_version| replace:: 3.10
+.. |linux_timesys_version_pcl052| replace:: 3.0.15
 .. |linux_wandboard_version| replace:: 3.0.35_4.0.0
 
 
@@ -15,7 +16,8 @@ Fsl-community-bsp supports the following sources for Linux Kernel:
 * **linux-boundary**:
 * **linux-cfa**: Linux Kernel mainline 3.10 with added drivers
 * **linux-denx**:
-* **linux-timesys**:
+* **linux-timesys**: Linux Kernel version 3.0.15 with added drivers and board
+  support for Vybrid-based platforms.
 * **linux-wandboard**:
 * **linux-cubox-i**: Boundary Devices Kernel 3.0.35 supported by SolidRun
   with additional machine specific patches

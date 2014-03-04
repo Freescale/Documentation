@@ -5,6 +5,7 @@ U-Boot
 .. |u_boot_imx_version_mx6| replace:: 2013.04
 .. |u_boot_imx_version_mx5| replace:: 2009.08
 .. |u_boot_imx_version_mxs| replace:: 2009.08
+.. |u_boot_timesys_version| replace:: 2011.12
 .. |u_boot_imx_tag_mx6| replace:: imx_v2013.04_3.5.7_1.0.0_alpha
 .. |u_boot_imx_tag_mx5| replace:: imx_2.6.35_11.09.01
 .. |u_boot_imx_tag_mxs| replace:: imx_2.6.35_10.12.01 branch
@@ -23,6 +24,8 @@ Fsl-community-bsp supports two sources for u-boot:
   for additional displays, and support for custom boards.
 * **u-boot-cubox-i**: provides the U-Boot 2013.10 version supported by SolidRun
   with additional patches for SPL and CuBox-i support.
+* **u-boot-timesys**: provides the U-Boot 2011.12 version with additional
+  patches for pcl052 and pcm052 support.
 
 --------------
 Default u-boot
