@@ -7,6 +7,7 @@ Linux Kernel
 .. |linux_cfa_version| replace:: 3.10
 .. |linux_timesys_version_pcl052| replace:: 3.0.15
 .. |linux_timesys_version_pcm052| replace:: 3.0.15
+.. |linux_timesys_version_quartz| replace:: 3.0.15
 .. |linux_wandboard_version| replace:: 3.0.35_4.0.0
 
 

@@ -39,4 +39,5 @@ wandboard-quad             Wandboard i.MX6 Wandboard Quad                      i
 wandboard-solo             Wandboard i.MX6 Wandboard Solo                      i.MX6S      meta-fsl-arm-extra
 pcl052                     Phytec Cosmic Vybrid                                vf60        meta-fsl-arm-extra
 pcm052                     Phytec phyCORE Vybrid                               vf60        meta-fsl-arm-extra
+quartz                     Device Solutions Quartz Vybrid                      vf60        meta-fsl-arm-extra
 =========================  ==================================================  ==========  ==========
