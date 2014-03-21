@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Freescale Community BSP Release Notes documentation build configuration file, created by
+# FSL Community BSP Release Notes documentation build configuration file, created by
 # sphinx-quickstart on Mon Apr 15 11:52:33 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Freescale Community BSP Release Notes'
-copyright = u'2013, Freescale Community BSP Team'
+project = u'FSL Community BSP Release Notes'
+copyright = u'2013, FSL Community BSP Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -168,7 +168,7 @@ html_copy_source = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'FreescaleCommunityBSPReleaseNotesdoc'
+htmlhelp_basename = 'FSLCommunityBSPReleaseNotesdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -187,8 +187,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'FreescaleCommunityBSPReleaseNotes.tex', u'Freescale Community BSP Release Notes Documentation',
-   u'Freescale Community BSP Team', 'manual'),
+  ('index', 'FSLCommunityBSPReleaseNotes.tex', u'FSL Community BSP Release Notes Documentation',
+   u'FSL Community BSP Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -217,8 +217,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'freescalecommunitybspreleasenotes', u'Freescale Community BSP Release Notes Documentation',
-     [u'Freescale Community BSP Team'], 1)
+    ('index', 'freescalecommunitybspreleasenotes', u'FSL Community BSP Release Notes Documentation',
+     [u'FSL Community BSP Team'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -231,8 +231,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'FreescaleCommunityBSPReleaseNotes', u'Freescale Community BSP Release Notes Documentation',
-   u'Freescale Community BSP Team', 'FreescaleCommunityBSPReleaseNotes', 'One line description of project.',
+  ('index', 'FSLCommunityBSPReleaseNotes', u'FSL Community BSP Release Notes Documentation',
+   u'FSL Community BSP Team', 'FSLCommunityBSPReleaseNotes', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -249,10 +249,10 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Freescale Community BSP Release Notes'
-epub_author = u'Freescale Community BSP Team'
-epub_publisher = u'Freescale Community BSP Team'
-epub_copyright = u'2013, Freescale Community BSP Team'
+epub_title = u'FSL Community BSP Release Notes'
+epub_author = u'FSL Community BSP Team'
+epub_publisher = u'FSL Community BSP Team'
+epub_copyright = u'2013, FSL Community BSP Team'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
