@@ -15,6 +15,7 @@ Contents:
    folders
    metadata
    devtasks
+   weston
    machines
    images
 
