@@ -14,6 +14,7 @@ FSL Community BSP Release Notes
    introduction
    bsp-scope
    machines-maintainers
+   soc-family
    kernel-linux
    u-boot
    barebox
