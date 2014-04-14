@@ -36,6 +36,15 @@ The following table shows the version of each package depending on the :ref:`soc
 
 .. include:: soc-pkg.inc
 
+
+---------------------------------------
+Hardware relation by :ref:`soc-family`
+---------------------------------------
+
+The following table shows how packages interact with hardware depending on the :ref:`soc-family`
+
+.. include:: soc-pkg-optimization.inc
+
 --------
 MX28
 --------
