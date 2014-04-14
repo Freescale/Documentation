@@ -8,24 +8,30 @@ This section shows the version package for each board.
 Those packages provide hardware acceleration for GPU or VPU,
 hardware optimization or some hardware test tools.
 
-Hardware acceleration is achieved using a different core
-for processing some specific task. In this case, GPU or VPU.
+ * **Hardware acceleration** is achieved using a different core
+   for processing some specific task. In this case, GPU or VPU.
 
-Hardware optimization is achieved with some changes in source
-code in order to get a better performance for a specific task 
-on a specific hardware. For example, audio decode made by software,
-but with optimizations for ARM.
+ * **Hardware optimization** is achieved with some changes in source
+   code in order to get a better performance for a specific task
+   on a specific hardware. For example, audio decode made by software,
+   but with optimizations for ARM.
 
-Hardware-specific is applicable when the package was designed to
-be executed in a specific hardware, and it does not make sense
-in other hardware. For example, imx-test is a test package for
-imx boards. It can be cross-compiled for any other core, although
-it will only act as expect if executed on imx boards.
+ * **Hardware-specific** is applicable when the package was designed to
+   be executed in a specific hardware, and it does not make sense
+   in other hardware. For example, imx-test is a test package for
+   imx boards. It can be cross-compiled for any other core, although
+   it will only act as expect if executed on imx boards.
+
+The package version and variety varies on :ref:`soc-family`.
+For example, machines with i.MX28 SOC does not have VPU, the recipe imx-vpu is not needed.
+There are differences, as well, in GPU support recipes.
+
+.. include:: soc-pkg.inc
 
 --------
 MX28
 --------
-Freescale userspace packages for mx28 SOC family.
+Freescale userspace packages for mx28 :ref:`soc-family`.
 
 It includes:
 
@@ -44,7 +50,7 @@ It includes:
 --------
 MX5
 --------
-Freescale userspace packages for mx5 SOC family.
+Freescale userspace packages for mx5 :ref:`soc-family`.
 
 It includes:
 
@@ -59,7 +65,7 @@ It includes:
 ------------
 MX6
 ------------
-Freescale userspace packages for mx6 SOC family
+Freescale userspace packages for mx6 :ref:`soc-family`.
 
 It includes:
 
