@@ -27,4 +27,4 @@ Machines with maintainers
 
 Machines without a maintainer
 -----------------------------
-.. include:: machines-maintainers.inc
+.. include:: machines-without-maintainers.inc

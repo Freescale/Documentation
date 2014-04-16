@@ -1,28 +1,27 @@
-========================   =============   ========================    ==========================  ======
-Package Name                mx28           mx5                         mx6                         vf60
-========================   =============   ========================    ==========================  ======
-imx-test                   3.10.17-1.0.0   |latest_bsp_version_mx6|    |latest_bsp_version_mx6|    -
-gst-fsl-plugin             |mm_version|    |mm_version|                |mm_version|                -
-libfslcodec                |mm_version|    |mm_version|                |mm_version|                -
-libfslparser               |mm_version|    |mm_version|                |mm_version|                -
-imx-vpu                    -               11.09.02                    |latest_bsp_version_mx6|    -
-imx-lib                    -               11.09.02                    |latest_bsp_version_mx6|    -
-firmware-imx               -               |latest_bsp_version_mx6|    |latest_bsp_version_mx6|    -
-mxsldr                     git             -                           -                           -
-gpu-viv-g2d                -               -                           |latest_bsp_version_mx6|    -
-xf86-video-imxfb-vivante   -               -                           |latest_bsp_version_mx6|    -
-gpu-viv-bin-mx6q           -               -                           |latest_bsp_version_mx6|    -
-directfb                   -               -                           1.6.3                       -
-directfb-examples          -               -                           1.6.0                       -
-xf86-video-imxfb           -               |latest_bsp_version_mx5|    -                           -
-amd-gpu-bin-mx51           -               |latest_bsp_version_mx5|    -                           -
-libz160                    -               |latest_bsp_version_mx5|    -                           -
-amd-gpu-x11-bin-mx51       -               |latest_bsp_version_mx5|    -                           -
-libfslvpuwrap              -               -                           |libfslvpuwrap_version|[1]  -
-fsl-alsa-plugins           -               -                           1.0.25                      -
-gstreamer1.0-plugins-imx   -               -                           0.9.5                       -
-imx-uuc                                                                                            -
-libmcc                     -               -                           -
-mqxboot                    -               -                           -                           1.0
-========================   =============   ========================    ==========================  ======
-
+========================  =========  =============  =================  =================  =========
+Package name              mx28       mx5            mx6q / mx6dl       mx6sl              vf60     
+========================  =========  =============  =================  =================  =========
+amd-gpu-bin-mx51          --         11.09.01       --                 --                 --       
+amd-gpu-x11-bin-mx51      --         11.09.01       --                 --                 --       
+directfb                  1.7.1      1.7.1          1.6.3              1.6.3              1.7.1    
+directfb-examples         1.7.0      1.7.0          1.6.0              1.6.0              1.7.0    
+firmware-imx              --         3.0.35-4.0.0   3.5.7-1.0.0        3.5.7-1.0.0        --       
+fsl-alsa-plugins          --         --             1.0.25             1.0.25             --       
+gpu-viv-bin-mx6q          --         --             3.10.17-1.0.0-hfp  3.10.17-1.0.0-hfp  --       
+gpu-viv-g2d               --         --             3.10.17-1.0.0      3.10.17-1.0.0      --       
+gst-fsl-plugin            3.0.10     3.0.10         3.0.10             3.0.10             --       
+gstreamer1.0-plugins-imx  --         --             0.9.5              --                 --       
+imx-lib                   --         11.09.02       3.10.17-1.0.0      3.10.17-1.0.0      --       
+imx-test                  00.00.00   3.10.17-1.0.0  3.10.17-1.0.0      3.10.17-1.0.0      00.00.00 
+imx-uuc                   0.4        0.4            0.4                0.4                0.4      
+imx-vpu                   --         11.09.02       3.10.17-1.0.0      3.10.17-1.0.0      --       
+libfslcodec               3.0.10     3.0.10         3.0.10             3.0.10             --       
+libfslparser              3.0.10     3.0.10         3.0.10             3.0.10             --       
+libfslvpuwrap             --         --             1.0.45             --                 --       
+libmcc                    --         --             --                 --                 1.04     
+libz160                   11.09.01   11.09.01       11.09.01           11.09.01           11.09.01 
+mqxboot                   --         --             --                 --                 1.0      
+mxsldr                    0.0.0+git  0.0.0+git      0.0.0+git          0.0.0+git          0.0.0+git
+xf86-video-imxfb          --         11.09.01       --                 --                 --       
+xf86-video-imxfb-vivante  --         --             3.10.17-1.0.0      3.10.17-1.0.0      --       
+========================  =========  =============  =================  =================  =========
