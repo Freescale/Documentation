@@ -41,11 +41,11 @@ linux-fslc
 linux-fslc provides the Linux Kernel |linux_fslc_version| from mainline (kernel.org)
 with some backported fixes.
 
-For the mainline kernel some boards has a very good support, although
-other ones has only a basic support.
+For the mainline kernel some boards have a very good support, although
+other ones have only a basic support.
 
-Please, see in the following table which are the main features supported
-by mainline kernel for each supporte board.
+Please, see the following table for the main features supported
+by mainline kernel for each supported board.
 
 
 .. include:: linux-fslc.inc
