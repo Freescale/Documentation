@@ -1,6 +1,6 @@
 .. code-block:: none
 
-  SOC_FAMILY
+  SoCs
   ├── mx3
   │    ├── mx31
   │    └── mx35

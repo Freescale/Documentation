@@ -24,24 +24,24 @@ hardware optimization or some hardware test tools.
    imx boards. It can be cross-compiled for any other core, although
    it will only act as expect if executed on imx boards.
 
-The package version and variety varies on :ref:`soc-family`.
+The package version and variety varies on :ref:`soc-hierarchy`.
 For example, machines with i.MX28 SOC does not have VPU, the recipe imx-vpu is not needed.
 There are differences, as well, in GPU support recipes.
 
-------------------------------
-Version by :ref:`soc-family`
-------------------------------
+--------------------------------
+Version by :ref:`soc-hierarchy`
+--------------------------------
 
-The following table shows the version of each package depending on the :ref:`soc-family`.
+The following table shows the version of each package depending on the :ref:`soc-hierarchy`.
 
 .. include:: soc-pkg.inc
 
 
----------------------------------------
-Hardware relation by :ref:`soc-family`
----------------------------------------
+-----------------------------------------
+Hardware relation by :ref:`soc-hierarchy`
+-----------------------------------------
 
-The following table shows how packages interact with hardware depending on the :ref:`soc-family`
+The following table shows how packages interact with hardware depending on the :ref:`soc-hierarchy`
 
 .. include:: soc-pkg-optimization.inc
 
