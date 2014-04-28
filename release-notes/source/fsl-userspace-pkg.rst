@@ -25,7 +25,7 @@ hardware optimization or some hardware test tools.
    it will only act as expect if executed on imx boards.
 
 The package version and variety varies on :ref:`soc-hierarchy`.
-For example, machines with i.MX28 SOC does not have VPU, the recipe imx-vpu is not needed.
+For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is not needed.
 There are differences, as well, in GPU support recipes.
 
 --------------------------------
