@@ -1,3 +1,5 @@
+.. include:: variables.inc
+
 ===============
 Acknowledgement
 ===============
@@ -5,8 +7,8 @@ Acknowledgement
 The FSL BSP Community is a community effort of keeping and mantaining
 a Freescale boards/chips layer for the Yocto Project.
 
-Dora Source Code
-----------------
+|release_name| Source Code
+--------------------------
 
 The following people helped to construct the source code for the release:
 
