@@ -92,7 +92,7 @@ audio codec, sdma firmware and integration, spi transfer.
 
 .. include:: test-should-have.inc
 
-The following boards has been tested by one (or more) people, and
+The following boards have been tested by one (or more) people, and
 submitted the results for accounting.
 
 
