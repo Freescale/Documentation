@@ -2,8 +2,8 @@
 Acknowledgement
 ===============
 
-The FSL BSP Community is a community effort of keeping and mantaining an Yocto
-BSP meta layer for Freescale boards/chips.
+The FSL BSP Community is a community effort of keeping and mantaining
+a Freescale boards/chips layer for the Yocto Project.
 
 Dora Source Code
 ----------------
