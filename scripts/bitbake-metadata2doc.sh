@@ -27,7 +27,10 @@ usage() {
     else
         output=1
     fi
+
     echo "Usage: `basename $0` <yocto directory> <gitdm directory> <start commit> <end commit>" >&$output
+    echo >&$output
+    echo "For detail on how to use it, see ../release-notes/README" >&$output
     [ -n "$exit_code" ] && exit $exit_code
 }
 
