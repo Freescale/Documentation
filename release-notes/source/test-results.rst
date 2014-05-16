@@ -9,5 +9,5 @@ The results and known issues, from Linux Kernel, GPU and VPU
 packages can be found in the Freescale Release Notes 
 (Download tab of freescale.com/imx)
 
-For boards from meta-fsl-arm-extra, the test cycle is performade by
+For boards from meta-fsl-arm-extra, the test cycle is performed by
 each mantainer.
