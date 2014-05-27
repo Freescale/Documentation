@@ -14,8 +14,3 @@ The following people helped to construct the source code for the release:
 
 .. literalinclude:: ack-sourcers.inc
 
-Test Cycle
-----------
-The following people helped on test cycle:
-
-.. include:: ack-testers.inc
