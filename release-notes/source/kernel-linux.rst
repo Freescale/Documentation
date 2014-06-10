@@ -1,3 +1,5 @@
+.. _linux-providers:
+
 Linux Kernel
 ============
 
