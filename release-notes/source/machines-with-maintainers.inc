@@ -8,7 +8,7 @@ cfa10055         Crystalfontz CFA-10055
 cfa10056         Crystalfontz CFA-10056                        
 cfa10057         Crystalfontz CFA-10057                        
 cfa10058         Crystalfontz CFA-10058                        
-cubox-i          SolidRun CuBox-i                              
+cubox-i          SolidRun CuBox-i and HummingBoard             
 imx23evk         Freescale i.MX23 Evaluation Kit               
 imx28evk         Freescale i.MX28 Evaluation Kit               
 imx51evk         Freescale i.MX51 Evaluation Kit               

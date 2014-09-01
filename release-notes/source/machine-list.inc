@@ -9,7 +9,7 @@ cfa10056                   Crystalfontz CFA-10056                              i
 cfa10057                   Crystalfontz CFA-10057                              i.MX28                meta-fsl-arm-extra
 cfa10058                   Crystalfontz CFA-10058                              i.MX28                meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q                meta-fsl-arm-extra
-cubox-i                    SolidRun CuBox-i                                    i.MX6 Q/DL            meta-fsl-arm-extra
+cubox-i                    SolidRun CuBox-i and HummingBoard                   i.MX6 Q/DL            meta-fsl-arm-extra
 imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i.MX23                meta-fsl-arm-extra
 imx233-olinuxino-micro     OLIMEX iMX233-OLinuXino-Micro                       i.MX23                meta-fsl-arm-extra
 imx233-olinuxino-mini      OLIMEX iMX233-OLinuXino-Mini                        i.MX23                meta-fsl-arm-extra
