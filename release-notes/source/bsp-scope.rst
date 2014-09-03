@@ -13,7 +13,7 @@ The scope of this Release Notes includes the FSL Community BSP meta layers:
    provides images recipes, demo recipes, and packagegroups used to easy the development with Yocto Project.
  * `Documentation <https://github.com/Freescale/Documentation>`_
    provides the source code for FSL Community BSP Release Notes (RN), User Guide (UG) and
-   Frequentely Asked Question (FAQ)
+   Frequently Asked Questions (FAQ)
 
 Kernel Release Notes
 --------------------
