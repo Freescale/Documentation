@@ -35,10 +35,10 @@ Build and boot in *N*-steps
     # Type '$ dmesg | tail' to see the device node being used, e.g /dev/sdb
     # In case the SD to be flashed has already some partitions, the host system may have 
     # mounted these, so unmount them, e.g. '$ sudo umount /dev/sdb?'.
-    build $ ls -la 'tmp/deploy/images/*.sdcard'
+    build $ ls -la 'tmp/deploy/images/<selected machine>/*.sdcard'
 
     # Flash the soft link one
-    build $ sudo dd if=tmp/deploy/images/<selected image>-<select machine>.sdcard \
+    build $ sudo dd if=tmp/deploy/images/<selected machine>/<selected image>-<selected machine>.sdcard \
                     of=/dev/sdX \
                     bs=1M \
                     conf=fsync
