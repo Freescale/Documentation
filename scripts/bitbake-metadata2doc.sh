@@ -46,6 +46,7 @@ gitdm_dir="$2"
 start_commit="$3"
 end_commit="$4"
 anchor="`pwd`"
+fsl_layers="meta-fsl-arm meta-fsl-arm-extra meta-fsl-demos"
 
 machines=
 if [ -n "$MACHINES" ]; then
@@ -53,6 +54,22 @@ if [ -n "$MACHINES" ]; then
 else
     machines=`./output-machine-list $yocto_dir`
 fi
+
+images=
+for fsl_layer in $fsl_layers; do
+    images="$images \
+            `find $yocto_dir/sources/$fsl_layer \
+                  -name '*image*.bb' \
+                  -exec basename '{}' .bb \;`"
+done
+
+packagegroups=
+for fsl_layer in $fsl_layers; do
+    packagegroups="$packagegroups \
+                   `find $yocto_dir/sources/$fsl_layer \
+                         -name '*packagegroup*.bb' \
+                         -exec basename '{}' .bb \;`"
+done
 
 marshalled_data_file=doc-data.pckl
 
@@ -96,7 +113,10 @@ for machine in $machines; do
         xserver-xorg \
         xf86-dri-vivante \
         xf86-video-imxfb \
-        xf86-video-imxfb-vivante
+        xf86-video-imxfb-vivante \
+        $images \
+        $packagegroups
+
     ret=$?
     if [ "$ret" != "0" ]; then
         echo "ERROR: error extracting bitbake metadata for board $MACHINE"

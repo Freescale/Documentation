@@ -438,6 +438,26 @@ def write_soc_tree(data, out_dir):
     print_tree(socs2dict(socs), fd)
     fd.close()
 
+def write_recipe_descriptions(recipe_pattern, data, out_file):
+    wanted = {}
+    for board, board_data in data.items():
+        recipes = board_data['recipes']
+        for recipe, recipe_data in recipes.items():
+            if recipe_pattern in recipe:
+                # nevermind clobbering previous findings
+                wanted[recipe] = recipe_data['description']
+    fd = open(out_file, 'w')
+    info('Writing %s' % out_file)
+    for recipe in sorted(wanted.keys()):
+        fd.write('* **%s**: %s\n' % (recipe, wanted[recipe]))
+    fd.close()
+
+def write_image_descriptions(data, out_dir):
+    write_recipe_descriptions('image', data, os.path.join(out_dir, 'images.inc'))
+
+def write_packagegroup_descriptions(data, out_dir):
+    write_recipe_descriptions('packagegroup', data, os.path.join(out_dir, 'packagegroups.inc'))
+
 def write_acknowledgements(out_dir, bsp_dir, gitdm_dir, start_commit, end_commit):
     meta_freescale_dir = os.path.join(gitdm_dir, 'meta-freescale')
     gen_statistics_script = os.path.join(meta_freescale_dir, 'gen-statistics')
@@ -501,4 +521,6 @@ write_soc_pkg(data, out_dir)
 write_maintainers_tables(data, out_dir, bsp_dir)
 write_machines_list(data, out_dir, bsp_dir)
 write_soc_tree(data, out_dir)
+write_image_descriptions(data, out_dir)
+write_packagegroup_descriptions(data, out_dir)
 write_acknowledgements(out_dir, bsp_dir, gitdm_dir, start_commit, end_commit)
