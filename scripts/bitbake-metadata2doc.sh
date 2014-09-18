@@ -75,9 +75,12 @@ marshalled_data_file=doc-data.pckl
 
 rm -f $anchor/$marshalled_data_file
 
+build_dir=`mktemp -d --tmpdir=$yocto_dir`
+
 for machine in $machines; do
     cd $yocto_dir
-    MACHINE=$machine . ./setup-environment build
+    echo "Using $build_dir as build directory"
+    MACHINE=$machine . ./setup-environment `basename $build_dir`
 
     MACHINE=$machine python $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
@@ -123,6 +126,8 @@ for machine in $machines; do
         exit 1
     fi
 done
+
+rm -rf $build_dir
 
 cd $anchor
 python ./bitbake-metadata2doc.py $marshalled_data_file "../release-notes/source" "$yocto_dir" "$gitdm_dir" "$start_commit" "$end_commit"
