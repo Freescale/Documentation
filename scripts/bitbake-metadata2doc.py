@@ -166,6 +166,7 @@ def write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir):
 
 def write_userspace_pkg(data, out_dir):
     pkgs = {'gstreamer': [],
+            'gstreamer1.0': [],
             'libdrm': [],
             'udev': []}
     for board, board_data in data.items():

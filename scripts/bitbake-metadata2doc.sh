@@ -96,6 +96,7 @@ for machine in $machines; do
         gpu-viv-g2d \
         gst-fsl-plugin \
         gstreamer \
+        gstreamer1.0 \
         gstreamer1.0-plugins-imx \
         imx-kobs \
         imx-lib \
