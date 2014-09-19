@@ -1,4 +1,15 @@
-@import url("default.css");
+@import url("agogo.css");
+
+div.document {
+    float: none;
+    width: auto;
+}
+
+div.sidebar {
+    float: right;
+    background-color: white;
+    padding-left: 25px;
+}
 
 th {
 	background-color: #f2f2f2;
