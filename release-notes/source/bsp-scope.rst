@@ -2,7 +2,7 @@ Scope
 =========
 
 FSL Community BSP Scope
----------
+-----------------------
 The scope of this Release Notes includes the FSL Community BSP meta layers:
 
  * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=daisy>`_:
