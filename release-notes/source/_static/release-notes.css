@@ -11,6 +11,10 @@ div.sidebar {
     padding-left: 25px;
 }
 
+#introduction {
+    margin-top: 0;
+}
+
 th {
 	background-color: #f2f2f2;
 }
