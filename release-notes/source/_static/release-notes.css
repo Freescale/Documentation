@@ -15,6 +15,16 @@ div.sidebar {
     margin-top: 0;
 }
 
+h1 > a.headerlink:hover,
+h2 > a.headerlink:hover,
+h3 > a.headerlink:hover,
+h4 > a.headerlink:hover,
+h5 > a.headerlink:hover,
+h6 > a.headerlink:hover,
+dt > a.headerlink:hover {
+    color: #000;
+}
+
 th {
 	background-color: #f2f2f2;
 }
