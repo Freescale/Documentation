@@ -6,11 +6,15 @@
 Welcome to the Freescale Community's BSP User Guide!
 ====================================================
 
-Contents:
+With this user guide you will be able to build and customize a board image using
+the Freescale Community BSP and Yocto.
+
+The user guide is divided in several steps:
 
 .. toctree::
    :maxdepth: 2
 
+   download
    nsteps
    folders
    metadata
