@@ -28,6 +28,10 @@ div.sidebar {
     padding-left: 25px;
 }
 
+div.sidebar form.search input[name='q'] {
+    width: 86%;
+}
+
 #introduction {
     margin-top: 0;
 }
