@@ -43,6 +43,11 @@ dt > a.headerlink:hover {
     text-decoration: none;
 }
 
+table.docutils {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 th {
 	background-color: #f2f2f2;
 }
