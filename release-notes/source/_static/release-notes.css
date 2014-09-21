@@ -1,5 +1,22 @@
 @import url("agogo.css");
 
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: slategray;
+}
+
+div.bodywrapper a, div.footer a {
+    text-decoration: none;
+}
+
+div.bodywrapper a:hover, div.footer a:hover {
+    text-decoration: underline;
+}
+
 div.document {
     float: none;
     width: auto;
@@ -23,6 +40,7 @@ h5 > a.headerlink:hover,
 h6 > a.headerlink:hover,
 dt > a.headerlink:hover {
     color: #000;
+    text-decoration: none;
 }
 
 th {
