@@ -16,6 +16,7 @@
    bootloaders
    userspace-pkg
    fsl-userspace-pkg
+   pkggrp-img
    test-results
    Acknowledgement
    known-issues
