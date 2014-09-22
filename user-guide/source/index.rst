@@ -16,6 +16,7 @@ The user guide is divided in several steps:
 
    download
    first-build
+   build-result
    nsteps
    folders
    metadata
@@ -31,4 +32,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

@@ -1,0 +1,1 @@
+$ bitbake core-image-base

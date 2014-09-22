@@ -64,7 +64,7 @@ release = '1.6'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['rst_prolog.rst']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -240,3 +240,8 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+# rst_prolog is a string that will be included in all files
+f = open('rst_prolog.rst', 'r')
+rst_prolog = f.read()
+f.close()
