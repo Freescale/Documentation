@@ -15,6 +15,7 @@ The user guide is divided in several steps:
    :maxdepth: 2
 
    download
+   first-build
    nsteps
    folders
    metadata
