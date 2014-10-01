@@ -95,3 +95,10 @@ table.docutils td:last-child {
     color: orange;
     font-weight: bold;
 }
+
+#creative-commons-licence {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 800px;
+}
