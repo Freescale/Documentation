@@ -1,4 +1,4 @@
-* **packagegroup-fsl-gstreamer**: Freescale's package group which provides audio, video, and debuggstreamer's plugins with the required hardware acceleration (if supported by the SoC).
+* **packagegroup-fsl-gstreamer**: Freescale's package group which provides audio, video, and debug gstreamer's plugins with the required hardware acceleration (if supported by the SoC).
 * **packagegroup-fsl-gstreamer-full**: Freescale's package group which provides audio, video, and debug gstreamer's plugins (including good and bad ones) with the required hardware acceleration (if supported by the SoC).
 * **packagegroup-fsl-mfgtool**: Freescale Manufacturing Tool requirements.
 * **packagegroup-fsl-tools-benchmark**: Freescale's package group which provides a set of benchmark applications.
