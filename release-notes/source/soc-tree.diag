@@ -1,4 +1,6 @@
 blockdiag SoCs {
+   default_fontsize = 18;
+
    i.MX -> mx3 -> mx31;
    i.MX -> mx3 -> mx35;
    i.MX -> mx5 -> mx51;

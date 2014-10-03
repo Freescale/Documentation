@@ -415,6 +415,12 @@ def write_soc_tree(data, out_dir):
             tree = dict_merge(tree, tmp)
         return tree
 
+    def include_preample(preample_file, fd):
+        with open(preample_file, 'r') as preamble:
+            for line in preamble:
+                fd.write(PADDING + line)
+        fd.write("\n")
+
     soc_families = []
     for board, board_data in data.items():
         soc_family = board_data['soc-family']
@@ -438,6 +444,7 @@ def write_soc_tree(data, out_dir):
     info('Writing %s' % out_file)
     fd = open(out_file, 'w')
     fd.write("blockdiag SoCs {\n")
+    include_preample('./blockdiag.preample', fd)
     print_tree(socs_dict, fd)
     fd.write("}\n")
     fd.close()
