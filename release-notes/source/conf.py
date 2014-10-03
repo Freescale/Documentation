@@ -28,6 +28,7 @@ import sys, os
 extensions = ['sphinxcontrib.blockdiag']
 blockdiag_fontpath = '/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf'
 blockdiag_antialias = True
+blockdiag_latex_image_format = "PDF"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
