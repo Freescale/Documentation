@@ -180,6 +180,10 @@ latex_elements = {
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
+'fontpkg': '',
+'utf8extra': '',
+'inputenc': '\\usepackage[utf8x]{inputenc}',
+
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 }
