@@ -1,9 +1,12 @@
-blockdiag {
-
-   mx3 -> mx31, mx35;
-   mx5 -> mx51, mx53;
-   mx6 -> mx6dl, mx6q, mx6sl;
-   mxs -> mx23, mx28;
-   vf60;
+blockdiag SoCs {
+   i.MX -> mx3 -> mx31;
+   i.MX -> mx3 -> mx35;
+   i.MX -> mx5 -> mx51;
+   i.MX -> mx5 -> mx53;
+   i.MX -> mx6 -> mx6dl;
+   i.MX -> mx6 -> mx6q;
+   i.MX -> mx6 -> mx6sl;
+   i.MX -> mxs -> mx23;
+   i.MX -> mxs -> mx28;
+   Vybrid -> vf60;
 }
-

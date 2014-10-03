@@ -381,36 +381,20 @@ def write_machines_list(data, out_dir, bsp_dir):
 
 
 def write_soc_tree(data, out_dir):
-    soc_families = []
-    for board, board_data in data.items():
-        soc_family = board_data['soc-family']
-        if soc_family not in soc_families:
-            soc_families.append(soc_family)
+    SOCS_FAMILIES = {
+        re.compile("mx(\d|s)"): 'i.MX',
+        re.compile("vf(\d+)"): 'Vybrid'
+    }
 
-    max_depth = 2
-    socs = map(lambda i: i[0][0:max_depth],
-               zip(map(lambda soc_family: soc_family.split(':'),
-                       soc_families)))
+    PADDING="   "
 
-    def indent(label, level, fd, last=False):
-        if level == 0:
-            padding = '  '
-        else:
-            padding = '  │'
-        if last:
-            corner = '└'
-        else:
-            corner = '├'
-        fd.write(padding + (' ' * 4 * level) + corner + '── ' + label + '\n')
-
-    def print_tree(tree, fd, level=0):
-        parents = sorted(tree.keys())
-        len_parents = len(parents)
-        for i, parent in enumerate(parents):
-            indent(parent, level, fd, i == len_parents -1)
-            children = tree[parent]
-            if children:
-                print_tree(children, fd, level + 1)
+    def print_tree(tree, fd, padding=PADDING):
+        for key in sorted(tree.keys(), key=lambda s: s.lower()):
+            value = tree[key]
+            if any(value):
+                print_tree(value, fd, padding + key + " -> ")
+            else:
+                fd.write(padding + key + ";\n")
 
     def dict_merge(a, b):
         if not isinstance(b, dict):
@@ -431,12 +415,31 @@ def write_soc_tree(data, out_dir):
             tree = dict_merge(tree, tmp)
         return tree
 
-    out_file = os.path.join(out_dir, 'soc-tree.inc')
+    soc_families = []
+    for board, board_data in data.items():
+        soc_family = board_data['soc-family']
+        if soc_family not in soc_families:
+            soc_families.append(soc_family)
+
+    max_depth = 2
+    socs = map(lambda i: i[0][0:max_depth],
+               zip(map(lambda soc_family: soc_family.split(':'),
+                       soc_families)))
+
+    socs_dict = {}
+    for key, value in socs2dict(socs).iteritems():
+        for pattern, family in SOCS_FAMILIES.iteritems():
+            if pattern.match(key):
+                if not family in socs_dict.keys():
+                    socs_dict[family] = {}
+                socs_dict[family][key] = value
+
+    out_file = os.path.join(out_dir, 'soc-tree.diag')
     info('Writing %s' % out_file)
     fd = open(out_file, 'w')
-    fd.write('.. code-block:: none\n\n')
-    fd.write('  SoCs\n')
-    print_tree(socs2dict(socs), fd)
+    fd.write("blockdiag SoCs {\n")
+    print_tree(socs_dict, fd)
+    fd.write("}\n")
     fd.close()
 
 def write_recipe_descriptions(recipe_pattern, data, out_file):
