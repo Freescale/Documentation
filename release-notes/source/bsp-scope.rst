@@ -7,13 +7,13 @@ Scope
 -----------------------
 The scope of the |project_name| includes the meta layers:
 
- * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=daisy>`_:
+ * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=dizzy>`_:
    provides the base support and Freescale ARM reference boards;
- * `meta-fsl-arm-extra <https://github.com/Freescale/meta-fsl-arm-extra/tree/daisy>`_:
+ * `meta-fsl-arm-extra <https://github.com/Freescale/meta-fsl-arm-extra/tree/dizzy>`_:
    provides support for 3rd party and partner boards;
- * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/daisy>`_:
+ * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/dizzy>`_:
    provides images recipes, demo recipes, and packagegroups used to easy the development with Yocto Project.
- * `Documentation <https://github.com/Freescale/Documentation>`_
+ * `Documentation <https://github.com/Freescale/Documentation/tree/dizzy>`_
    provides the source code for |project_name| Release Notes (RN), User Guide (UG) and
    Frequently Asked Questions (FAQ)
 
