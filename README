@@ -4,7 +4,7 @@ Freescale Community BSP Documentation
 The documentation is written using Sphinx documentation system. To
 install it in Debian/Ubuntu, please do:
 
-  #: apt-get install python-sphinx python-pip
+  #: apt-get install python-sphinx python-pip texlive-latex-extra texlive-fonts-recommended
   #: pip install sphinxcontrib-blockdiag
 
 Once this has been complete, you can run a 'make' and check the
