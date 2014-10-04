@@ -209,7 +209,8 @@ def write_soc_pkg(data, out_dir):
             'mx5': [],
             'mx6sl': [],
             'mx6dl': [],
-            'vf60': []}
+            'vf60': [],
+            'ls102xa': []}
     pkgs = ['imx-test',
             'gst-fsl-plugin',
             'libfslcodec',
@@ -383,7 +384,8 @@ def write_machines_list(data, out_dir, bsp_dir):
 def write_soc_tree(data, out_dir):
     SOCS_FAMILIES = {
         re.compile("mx(\d|s)"): 'i.MX',
-        re.compile("vf(\d+)"): 'Vybrid'
+        re.compile("vf(\d+)"): 'Vybrid',
+        re.compile("ls102xa"): 'Layerscape'
     }
 
     PADDING="   "
