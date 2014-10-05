@@ -7,7 +7,18 @@ This document has the release notes of the |project_name| |release|
 which is a community effort to improve Freescale's SoCs support in the
 OpenEmbedded and Yocto Project projects.
 
-What the |project_name| is
+.. only:: draft
+
+   .. warning::
+
+      This document is still in **draft** stage and *shouldn't be
+      considered finished*.  In case you wish to contribute with
+      suggestions, fixes or comments please get in touch through the
+      `meta-freescale
+      <https://lists.yoctoproject.org/listinfo/meta-freescale>`_
+      mailing list.
+
+What is the |project_name|
 ==========================
 The |project_name| is a community-driven project to provide and
 maintain Board Support Package (BSP) metadata layers for use in the
