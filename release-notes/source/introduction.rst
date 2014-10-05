@@ -18,6 +18,15 @@ OpenEmbedded and Yocto Project projects.
       <https://lists.yoctoproject.org/listinfo/meta-freescale>`_
       mailing list.
 
+.. only:: latex
+
+   This document is released under Creative Commons 4.0 (CC BY-SA 4.0)
+
+   If you want to make part of |project_name| access
+   `http://freescale.github.io <http://freescale.github.io>`_ and find
+   links to this document, how to contribute, and how to download both
+   the source code and several pre-built images.
+
 What is the |project_name|
 ==========================
 The |project_name| is a community-driven project to provide and
