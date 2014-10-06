@@ -198,7 +198,12 @@ latex_elements = {
 'inputenc': '\\usepackage[utf8x]{inputenc}',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': "\
+\\usepackage{tabularx} \
+\\usepackage[table]{xcolor} \
+\\definecolor{lightgray}{gray}{0.94} \
+\\rowcolors{1}{lightgray}{white}\
+\\renewcommand{\\arraystretch}{1.7}"
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
