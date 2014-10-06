@@ -1,1 +1,1 @@
-$ repo init -b |current-branch|
+$ repo init -b daisy
