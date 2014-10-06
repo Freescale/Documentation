@@ -179,9 +179,16 @@ htmlhelp_basename = 'FSLCommunityBSPReleaseNotesdoc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
+if tags.has('a4twoside'):
+    papersize = 'a4paper,twoside'
+elif tags.has('lettertwoside'):
+    papersize = 'letterpaper,twoside'
+else:
+    papersize = 'letterpaper,openany,oneside'
+
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-'papersize': 'letterpaper,openany,oneside',
+'papersize': papersize,
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
