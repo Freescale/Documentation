@@ -68,7 +68,7 @@ Supported Board List
 --------------------
 Please, see the next table for the complete supported board list.
 
-.. tabularcolumns:: |c|p{6cm}|c|c|
+.. tabularcolumns:: c | p{5cm} | c | c
 .. table:: Supported machines in |project_name|
 
    .. include:: machine-list.inc

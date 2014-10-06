@@ -26,6 +26,7 @@ should be worked around anyway.
 Machines with maintainers
 -------------------------
 
+.. tabularcolumns:: l | p{9cm}
 .. table:: Machines with maintainers
 
    .. include:: machines-with-maintainers.inc
@@ -33,6 +34,7 @@ Machines with maintainers
 Machines without a maintainer
 -----------------------------
 
+.. tabularcolumns:: l | p{9cm}
 .. table:: Machines without a maintainer
 
    .. include:: machines-without-maintainers.inc
