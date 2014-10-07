@@ -19,6 +19,7 @@ The user guide is divided in several steps:
    build-result
    deploy-test
    kernel
+   customize-image
    nsteps
    folders
    metadata

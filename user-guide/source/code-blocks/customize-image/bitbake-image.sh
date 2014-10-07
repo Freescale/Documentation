@@ -1,0 +1,1 @@
+$ bitbake <image_name>
