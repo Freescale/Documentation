@@ -29,7 +29,7 @@ Configuration Data
 
 
 Build's local configuration file ``build/conf/local.conf``
---------------------------------------------------------
+----------------------------------------------------------
 
 By default, the ``setup-enviroment`` script creates a ``local.conf`` like this::
 
@@ -67,7 +67,7 @@ Important variables:
   be reused.
 
 Build's layer configuration file ``build/conf/bblayers.conf``
------------------------------------------------------------
+-------------------------------------------------------------
 
 * Also created by the ``setup-environment`` script
 
@@ -91,7 +91,7 @@ Build's layer configuration file ``build/conf/bblayers.conf``
     "
 
 Layer configuration file ``meta-fsl-arm/conf/layer.conf``
--------------------------------------------------------
+---------------------------------------------------------
 
 This is basically a template, what it changes is the layer's name::
 
@@ -122,7 +122,7 @@ Important variables:
 
 
 Machine configuration file: ``meta-fsl-arm/conf/imx6qsabresd.conf``
------------------------------------------------------------------
+-------------------------------------------------------------------
 
 Machine configurations look like this::
 

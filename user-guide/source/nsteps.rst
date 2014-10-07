@@ -1,5 +1,5 @@
 Build and boot in *N*-steps
-=========================
+===========================
 
 1. Check `required host packages`_ packages for your Linux Distribution
 
