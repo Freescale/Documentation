@@ -17,6 +17,7 @@ The user guide is divided in several steps:
    download
    first-build
    build-result
+   deploy-test
    nsteps
    folders
    metadata
