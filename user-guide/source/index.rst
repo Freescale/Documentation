@@ -18,6 +18,7 @@ The user guide is divided in several steps:
    first-build
    build-result
    deploy-test
+   kernel
    nsteps
    folders
    metadata
