@@ -20,6 +20,7 @@ The user guide is divided in several steps:
    deploy-test
    kernel
    customize-image
+   toolchain
    nsteps
    folders
    metadata
