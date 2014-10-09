@@ -22,6 +22,7 @@ The user guide is divided in several steps:
    customize-image
    toolchain
    kernel-with-toolchain
+   bad-ugly-gstreamer-plugins
    nsteps
    folders
    metadata
