@@ -23,6 +23,7 @@ The user guide is divided in several steps:
    toolchain
    kernel-with-toolchain
    bad-ugly-gstreamer-plugins
+   custom-layer
    nsteps
    folders
    metadata
