@@ -10,25 +10,16 @@ To create the package just run BitBake with this image:
 .. literalinclude:: code-blocks/toolchain/bitbake-meta-toolchain.sh
    :language: console
 
-As any other image, it does take some time to build. After the build it will be
-available at *tmp/deploy/sdk*. Copy to the host machine and install it:
+As any other image, it does take some time to build.
 
-.. literalinclude:: code-blocks/toolchain/install-toolchain.sh
-   :language: console
+By using the meta-compiler image the called compiler, linker, and other programs
+are going to be the ones generated with the toolchain. Also, all the compiled
+binaries are going to be generated for the board architecture. This makes
+developing and testing programs for the board much easier than generating a
+complete image everytime you want to change anything.
 
-To start using it you must set up the environment to use it's binaries instead
-of the ones from the host machine. You can do that by using your shell command
-to load a script, similarly on how you did at the start of this user guide:
-
-.. literalinclude:: code-blocks/toolchain/setup-toolchain-environment.sh
-   :language: console
-
-With this the called compiler, linker, and other programs are going to be the
-ones generated with the toolchain. Also, all the compiled binaries are going to
-be generated for the board architecture.
-
-This makes developing and testing programs for the board much easier than
-generating a complete image everytime you want to change anything.
+In the next section you will learn how to use the toolchain to develop for the
+board architecture.
 
 Why do I have to create a toolchain?
 ************************************

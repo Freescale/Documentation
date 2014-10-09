@@ -1,0 +1,1 @@
+$ make uImage LOADADDR=0x10008000

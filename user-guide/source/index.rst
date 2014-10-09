@@ -21,6 +21,7 @@ The user guide is divided in several steps:
    kernel
    customize-image
    toolchain
+   kernel-with-toolchain
    nsteps
    folders
    metadata
