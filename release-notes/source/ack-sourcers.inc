@@ -1,13 +1,13 @@
 Statistics for meta-fsl-arm
 ---------------------------
 
-Processed 288 csets from 35 developers
+Processed 289 csets from 35 developers
 12 employers found
-A total of 13963 lines added, 15214 removed (delta -1251)
+A total of 13964 lines added, 15214 removed (delta -1250)
 
 Developers with the most changesets
-Otavio Salvador            127 (44.1%)
-Lauren Post                 61 (21.2%)
+Otavio Salvador            128 (44.3%)
+Lauren Post                 61 (21.1%)
 Carlos Rafael Giani         12 (4.2%)
 Daiane Angolini             12 (4.2%)
 Jacob Kroon                  9 (3.1%)
@@ -79,7 +79,7 @@ Mats Kärrman                1 (0.0%)
 Lucas Dutra Nunes            1 (0.0%)
 
 Developers with the most lines removed
-Otavio Salvador           6485 (42.6%)
+Otavio Salvador           6484 (42.6%)
 Andy Voltz                  70 (0.5%)
 Tony Felice                 29 (0.2%)
 Thomas Senyk                 3 (0.0%)
@@ -120,8 +120,8 @@ Developers who gave the most report credits (total 9)
 Otavio Salvador              9 (100.0%)
 
 Top changeset contributors by employer
-O.S. Systems               137 (47.6%)
-Freescale                   85 (29.5%)
+O.S. Systems               138 (47.8%)
+Freescale                   85 (29.4%)
 (Unknown)                   39 (13.5%)
 Timesys                     11 (3.8%)
 Digi International           5 (1.7%)
@@ -134,7 +134,7 @@ Linaro                       1 (0.3%)
 Free Electrons               1 (0.3%)
 
 Top lines changed by employer
-O.S. Systems              14769 (53.5%)
+O.S. Systems              14770 (53.5%)
 Freescale                 11086 (40.2%)
 (Unknown)                 1015 (3.7%)
 Mentor Graphics            400 (1.5%)
@@ -173,40 +173,42 @@ Linaro                       1 (2.7%)
 Statistics for meta-fsl-arm-extra
 ---------------------------------
 
-Processed 125 csets from 20 developers
+Processed 136 csets from 21 developers
 8 employers found
-A total of 18791 lines added, 14935 removed (delta 3856)
+A total of 19264 lines added, 34435 removed (delta -15171)
 
 Developers with the most changesets
-Eric Nelson                 28 (22.4%)
-Otavio Salvador             27 (21.6%)
-John Weber                  15 (12.0%)
-Alexandre Belloni           10 (8.0%)
-Anthony Felice               9 (7.2%)
-Carlos Rafael Giani          6 (4.8%)
-Christoph Settgast           6 (4.8%)
-Mario Domenech Goulart       5 (4.0%)
-Philip Balister              4 (3.2%)
-Gary Thomas                  3 (2.4%)
-Rabeeh Khoury                2 (1.6%)
-Pavel Kopylov                2 (1.6%)
-Simon Kuhnle                 1 (0.8%)
-Jacob Kroon                  1 (0.8%)
-Daiane Angolini              1 (0.8%)
-Christopher Larson           1 (0.8%)
-Patrick Keil                 1 (0.8%)
-Andreas Henriksson           1 (0.8%)
-Dan McGregor                 1 (0.8%)
-Lucas Dutra Nunes            1 (0.8%)
+Eric Nelson                 31 (22.8%)
+Otavio Salvador             27 (19.9%)
+John Weber                  16 (11.8%)
+Alexandre Belloni           10 (7.4%)
+Anthony Felice               9 (6.6%)
+Alex de Cabo                 7 (5.1%)
+Carlos Rafael Giani          6 (4.4%)
+Christoph Settgast           6 (4.4%)
+Mario Domenech Goulart       5 (3.7%)
+Philip Balister              4 (2.9%)
+Gary Thomas                  3 (2.2%)
+Rabeeh Khoury                2 (1.5%)
+Pavel Kopylov                2 (1.5%)
+Simon Kuhnle                 1 (0.7%)
+Jacob Kroon                  1 (0.7%)
+Daiane Angolini              1 (0.7%)
+Christopher Larson           1 (0.7%)
+Patrick Keil                 1 (0.7%)
+Andreas Henriksson           1 (0.7%)
+Dan McGregor                 1 (0.7%)
+Lucas Dutra Nunes            1 (0.7%)
 
 Developers with the most changed lines
-Otavio Salvador           12956 (41.6%)
-Carlos Rafael Giani       5813 (18.7%)
-John Weber                2988 (9.6%)
-Eric Nelson                756 (2.4%)
-Anthony Felice             608 (2.0%)
-Rabeeh Khoury              279 (0.9%)
-Alexandre Belloni          222 (0.7%)
+Alex de Cabo              19492 (38.2%)
+Otavio Salvador           12956 (25.4%)
+Carlos Rafael Giani       5813 (11.4%)
+John Weber                2991 (5.9%)
+Eric Nelson                761 (1.5%)
+Anthony Felice             608 (1.2%)
+Rabeeh Khoury              279 (0.5%)
+Alexandre Belloni          222 (0.4%)
 Mario Domenech Goulart      33 (0.1%)
 Christoph Settgast          32 (0.1%)
 Philip Balister              9 (0.0%)
@@ -222,15 +224,16 @@ Jacob Kroon                  1 (0.0%)
 Andreas Henriksson           1 (0.0%)
 
 Developers with the most lines removed
-John Weber                2365 (15.8%)
-Carlos Rafael Giani       2287 (15.3%)
-Rabeeh Khoury              273 (1.8%)
-Mario Domenech Goulart      13 (0.1%)
+Alex de Cabo              19027 (55.3%)
+John Weber                2365 (6.9%)
+Carlos Rafael Giani       2287 (6.6%)
+Rabeeh Khoury              273 (0.8%)
+Mario Domenech Goulart      13 (0.0%)
 Christoph Settgast           7 (0.0%)
 
-Developers with the most signoffs (total 47)
-Otavio Salvador             46 (97.9%)
-John Weber                   1 (2.1%)
+Developers with the most signoffs (total 58)
+Otavio Salvador             57 (98.3%)
+John Weber                   1 (1.7%)
 
 Developers with the most reviews (total 2)
 Eric Nelson                  2 (100.0%)
@@ -253,38 +256,38 @@ Eric Nelson                  2 (66.7%)
 Otavio Salvador              1 (33.3%)
 
 Top changeset contributors by employer
-(Unknown)                   40 (32.0%)
-O.S. Systems                33 (26.4%)
-Boundary Devices            28 (22.4%)
-Free Electrons              10 (8.0%)
-Timesys                      9 (7.2%)
-(Consultant)                 3 (2.4%)
-Freescale                    1 (0.8%)
-Endian Technologies          1 (0.8%)
+(Unknown)                   48 (35.3%)
+O.S. Systems                33 (24.3%)
+Boundary Devices            31 (22.8%)
+Free Electrons              10 (7.4%)
+Timesys                      9 (6.6%)
+(Consultant)                 3 (2.2%)
+Freescale                    1 (0.7%)
+Endian Technologies          1 (0.7%)
 
 Top lines changed by employer
-O.S. Systems              18597 (59.7%)
-(Unknown)                 10913 (35.1%)
-Boundary Devices           761 (2.4%)
-Timesys                    608 (2.0%)
-Free Electrons             237 (0.8%)
+(Unknown)                 30864 (60.4%)
+O.S. Systems              18597 (36.4%)
+Boundary Devices           766 (1.5%)
+Timesys                    608 (1.2%)
+Free Electrons             237 (0.5%)
 (Consultant)                 9 (0.0%)
 Freescale                    9 (0.0%)
 Endian Technologies          1 (0.0%)
 
-Employers with the most signoffs (total 47)
-O.S. Systems                46 (97.9%)
-(Unknown)                    1 (2.1%)
+Employers with the most signoffs (total 58)
+O.S. Systems                57 (98.3%)
+(Unknown)                    1 (1.7%)
 
-Employers with the most hackers (total 20)
-(Unknown)                   11 (55.0%)
-O.S. Systems                 3 (15.0%)
-Boundary Devices             1 (5.0%)
-Timesys                      1 (5.0%)
-Free Electrons               1 (5.0%)
-(Consultant)                 1 (5.0%)
-Freescale                    1 (5.0%)
-Endian Technologies          1 (5.0%)
+Employers with the most hackers (total 21)
+(Unknown)                   12 (57.1%)
+O.S. Systems                 3 (14.3%)
+Boundary Devices             1 (4.8%)
+Timesys                      1 (4.8%)
+Free Electrons               1 (4.8%)
+(Consultant)                 1 (4.8%)
+Freescale                    1 (4.8%)
+Endian Technologies          1 (4.8%)
 
 
 Statistics for meta-fsl-demos
@@ -424,33 +427,35 @@ Free Electrons               1 (16.7%)
 Statistics for Documentation
 ----------------------------
 
-Processed 64 csets from 6 developers
+Processed 77 csets from 7 developers
 4 employers found
-A total of 4521 lines added, 1475 removed (delta 3046)
+A total of 5246 lines added, 1608 removed (delta 3638)
 
 Developers with the most changesets
-Daiane Angolini             31 (48.4%)
-Mario Domenech Goulart      20 (31.2%)
-Leonardo Sandoval            5 (7.8%)
-Otavio Salvador              4 (6.2%)
-Anthony Felice               3 (4.7%)
-Carlos Rafael Giani          1 (1.6%)
+Daiane Angolini             34 (44.2%)
+Mario Domenech Goulart      20 (26.0%)
+Lucas Dutra Nunes           10 (13.0%)
+Leonardo Sandoval            5 (6.5%)
+Otavio Salvador              4 (5.2%)
+Anthony Felice               3 (3.9%)
+Carlos Rafael Giani          1 (1.3%)
 
 Developers with the most changed lines
-Leonardo Sandoval         1872 (37.8%)
-Mario Domenech Goulart    1820 (36.7%)
-Daiane Angolini            842 (17.0%)
-Otavio Salvador             19 (0.4%)
+Leonardo Sandoval         1872 (32.9%)
+Mario Domenech Goulart    1820 (32.0%)
+Daiane Angolini           1336 (23.5%)
+Lucas Dutra Nunes          175 (3.1%)
+Otavio Salvador             19 (0.3%)
 Anthony Felice              17 (0.3%)
 Carlos Rafael Giani          7 (0.1%)
 
 Developers with the most lines removed
-Daiane Angolini             56 (3.8%)
 
-Developers with the most signoffs (total 4)
-Otavio Salvador              2 (50.0%)
-Mario Domenech Goulart       1 (25.0%)
-Leonardo Sandoval            1 (25.0%)
+Developers with the most signoffs (total 6)
+Otavio Salvador              2 (33.3%)
+Lucas Dutra Nunes            2 (33.3%)
+Mario Domenech Goulart       1 (16.7%)
+Leonardo Sandoval            1 (16.7%)
 
 Developers with the most reviews (total 0)
 
@@ -465,25 +470,25 @@ Developers who gave the most report credits (total 1)
 Otavio Salvador              1 (100.0%)
 
 Top changeset contributors by employer
-Freescale                   32 (50.0%)
-O.S. Systems                24 (37.5%)
-(Unknown)                    5 (7.8%)
-Timesys                      3 (4.7%)
+O.S. Systems                34 (44.2%)
+Freescale                   32 (41.6%)
+(Unknown)                    8 (10.4%)
+Timesys                      3 (3.9%)
 
 Top lines changed by employer
-Freescale                 2315 (46.7%)
-O.S. Systems              1840 (37.1%)
-(Unknown)                  783 (15.8%)
+Freescale                 2315 (40.7%)
+O.S. Systems              2019 (35.5%)
+(Unknown)                 1333 (23.5%)
 Timesys                     17 (0.3%)
 
-Employers with the most signoffs (total 4)
-O.S. Systems                 3 (75.0%)
-(Unknown)                    1 (25.0%)
+Employers with the most signoffs (total 6)
+O.S. Systems                 5 (83.3%)
+(Unknown)                    1 (16.7%)
 
-Employers with the most hackers (total 8)
-(Unknown)                    3 (37.5%)
-O.S. Systems                 2 (25.0%)
-Freescale                    2 (25.0%)
-Timesys                      1 (12.5%)
+Employers with the most hackers (total 9)
+O.S. Systems                 3 (33.3%)
+(Unknown)                    3 (33.3%)
+Freescale                    2 (22.2%)
+Timesys                      1 (11.1%)
 
 

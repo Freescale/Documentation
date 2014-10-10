@@ -1,6 +1,6 @@
 * **linux-boundary**: Linux kernel for Boundary Devices boards.
 * **linux-cfa**: Linux kernel for Crystalfontz boards.
-* **linux-congatec**: Linux Kernel based on Freescale Linux kernel to add support for Congatec boards.
+* **linux-congatec**: linux-congatec version 3.10.17-r0.
 * **linux-cubox-i**: Linux kernel that is based on Linaro's 3.14 releases, with full support for the i.MX6 features.
 * **linux-denx**: DENX mainline based Linux kernel.
 * **linux-fslc**: Linux kernel based on mainline kernel used by FSL Community BSP in order to provide support for some backported features and fixes, or because it was applied in linux-next and takes some time to become part of a stable version, or because it is not applicable for upstreaming.

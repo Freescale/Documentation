@@ -8,7 +8,7 @@ cfa10055                linux-cfa        3.12
 cfa10056                linux-cfa        3.12          
 cfa10057                linux-cfa        3.12          
 cfa10058                linux-cfa        3.12          
-cgtqmx6                 linux-congatec   3.0.35        
+cgtqmx6                 linux-congatec   3.10.17       
 cubox-i                 linux-cubox-i    3.14.14       
 imx233-olinuxino-maxi   linux-fslc       3.14+git      
 imx233-olinuxino-micro  linux-fslc       3.14+git      

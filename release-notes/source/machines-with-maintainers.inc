@@ -8,6 +8,7 @@ cfa10055         Crystalfontz CFA-10055
 cfa10056         Crystalfontz CFA-10056                        
 cfa10057         Crystalfontz CFA-10057                        
 cfa10058         Crystalfontz CFA-10058                        
+cgtqmx6          Congatec Qmx6                                 
 cubox-i          SolidRun CuBox-i and HummingBoard             
 imx23evk         Freescale i.MX23 Evaluation Kit               
 imx28evk         Freescale i.MX28 Evaluation Kit               
@@ -27,7 +28,4 @@ pcl052           Phytec Cosmic Vybrid Development Kit
 pcm052           Phytec phyCORE Vybrid Development Kit         
 quartz           Device Solutions Quartz Vybrid Development Kit
 twr-vf65gs10     Freescale Vybrid TWR-VF65GS10                 
-wandboard-dual   Wandboard i.MX6 Wandboard Duallite            
-wandboard-quad   Wandboard i.MX6 Wandboard Quad                
-wandboard-solo   Wandboard i.MX6 Wandboard Solo                
 ===============  ==============================================

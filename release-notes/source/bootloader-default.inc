@@ -8,7 +8,7 @@ cfa10055                barebox          2013.08.0
 cfa10056                barebox          2013.08.0         
 cfa10057                barebox          2013.08.0         
 cfa10058                barebox          2013.08.0         
-cgtqmx6                 u-boot-imx       2009.08           
+cgtqmx6                 u-boot-congatec  2013.04           
 cubox-i                 u-boot-cubox-i   v2013.10+git      
 imx233-olinuxino-maxi   u-boot-fslc      v2014.01          
 imx233-olinuxino-micro  u-boot-fslc      v2014.01          
@@ -24,15 +24,15 @@ imx53qsb                u-boot-fslc      v2014.01
 imx6dlsabreauto         u-boot-imx       2013.04           
 imx6dlsabresd           u-boot-fslc      v2014.01          
 imx6qsabreauto          u-boot-fslc      v2014.01          
-imx6qsabrelite          u-boot-boundary  v2014.04+git      
+imx6qsabrelite          u-boot-boundary  v2014.07+git      
 imx6qsabresd            u-boot-fslc      v2014.01          
 imx6slevk               u-boot-fslc      v2014.01          
 imx6solosabreauto       u-boot-imx       2013.04           
 imx6solosabresd         u-boot-imx       2013.04           
 m28evk                  u-boot-fslc      v2014.01          
 m53evk                  u-boot-fslc      v2014.01          
-nitrogen6x              u-boot-boundary  v2014.04+git      
-nitrogen6x-lite         u-boot-boundary  v2014.04+git      
+nitrogen6x              u-boot-boundary  v2014.07+git      
+nitrogen6x-lite         u-boot-boundary  v2014.07+git      
 pcl052                  u-boot-timesys   v2011.12          
 pcm052                  u-boot-timesys   v2011.12          
 quartz                  u-boot-timesys   v2011.12          
