@@ -1,33 +1,44 @@
+.. include:: variables.inc
+
 Known Issues
 ============
 
-**ALL** Fail to build imx-lib/imx-vpu/imx-test/gst-fsl-plugin when building against linux-fslc
+.. only:: html
 
-Weston/Wayland/Directb for SOC_FAMILY: imx5 or mxs or imx3 is not hardware accelerated and
-has not been tested.
+   **ALL** Fail to build imx-lib/imx-vpu/imx-test/gst-fsl-plugin when building against linux-fslc
 
-**IMX6** perf and oprofile are not supposed to work due to hardware issue (YOCTO5148 and YOCTO4511)
+   Weston/Wayland/Directb for SOC_FAMILY: imx5 or mxs or imx3 is not hardware accelerated and
+   has not been tested.
 
-The list of open bugs on Bugzilla Yocto Project on time of the writing of this document
-is on next table.
+   **IMX6** perf and oprofile are not supposed to work due to hardware issue (YOCTO5148 and YOCTO4511)
 
-Open
-----
-In order to see the current bug list, please use following URL:
+   The list of open bugs on Bugzilla Yocto Project on time of the writing of this document
+   is on next table.
 
-https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
+   Open
+   ----
+   In order to see the current bug list, please use following URL:
 
-.. tabularcolumns:: |C|C|C|p{9.3cm}|
-.. table:: List of open bugs
+   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
 
-   .. include:: open_bugs.inc
+   .. table:: List of open bugs
 
-Closed
-------
-See the list of issues closed in latest development release in the following table
+      .. include:: open_bugs.inc
 
-.. tabularcolumns:: |C|C|C|p{9.3cm}|
-.. table:: List of closed bugs
+   Closed
+   ------
+   See the list of issues closed in latest development release in the following table
 
-   .. include:: closed_bugs.inc
+   .. table:: List of closed bugs
 
+      .. include:: closed_bugs.inc
+
+.. only:: not html
+
+   The list of known issues for the |project_name| can be seen using the following URL:
+
+   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
+
+   It has not been included here as it changes every time bugfixes are
+   included during the maintenance cycle of the release and it would
+   be outdated most of time.
