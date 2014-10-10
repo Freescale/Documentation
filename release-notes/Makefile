@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = -t draft
+SPHINXOPTS    = -t draft -t a4twoside
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
