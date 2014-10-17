@@ -1,10 +1,11 @@
 .. include:: variables.inc
 
-Machine Mantainers
+Machine Maintainers
 ==================
 
-Since |project_name| Release 1.6 (Daisy), the maintainer field in machine configuration file of
-meta-fsl-arm and meta-fsl-arm-extra machines is mandatory for any new board to be added.
+Since |project_name| Release 1.6 (Daisy), the maintainer field in machine configuration
+files of **meta-fsl-arm** and **meta-fsl-arm-extra** is mandatory for any new board
+to be added.
 
 So now on, every new board must have someone assigned as maintainer.
 This ensures, in long term, all boards with a maintainer assigned.
@@ -19,8 +20,8 @@ The maintainer duties:
  * Keep test cycle updated
  * Keep the most usual images building and booting
 
-When a build error is faced, the maintainer will "fix" it. For those maintainers with kernel control (meta-fsl-arm-extra),
-it is expected that they properly fix the kernel issue (when it's a kernel issue). However anything out of community control
+When a build error is detected, the maintainer will "fix" it. For those maintainers with kernel control (meta-fsl-arm-extra),
+it is expected that they properly fix the kernel issue (when it's a kernel issue). However, anything out of community control
 should be worked around anyway.
 
 Machines with maintainers

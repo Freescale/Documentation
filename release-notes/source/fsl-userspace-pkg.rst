@@ -1,5 +1,5 @@
-Freescale Userspace Packages
-============================
+Freescale User Space Packages
+=============================
 This section shows the version package for each board.
 Those packages provide hardware acceleration for GPU or VPU,
 hardware optimization or some hardware test tools.
@@ -13,10 +13,10 @@ hardware optimization or some hardware test tools.
    but with optimizations for ARM.
 
  * **Hardware-specific** is applicable when the package was designed to
-   be executed in a specific hardware, and it does not make sense
-   in other hardware. For example, imx-test is a test package for
+   be executed on a specific hardware, and it does not make sense
+   on other hardware. For example, imx-test is a test package for
    imx boards. It can be cross-compiled for any other core, although
-   it will only act as expect if executed on imx boards.
+   it will only behave as expect if executed on imx boards.
 
 The package version and variety varies on :ref:`soc-hierarchy`.
 For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is not needed.
@@ -29,7 +29,7 @@ Version by :ref:`soc-hierarchy`
 The following table shows the version of each package depending on the :ref:`soc-hierarchy`.
 
 .. tabularcolumns:: L | C | C | C | C | C | C
-.. table:: Userspace package version by SoC hierarchy
+.. table:: User space package version by SoC hierarchy
 
    .. include:: soc-pkg.inc
 
