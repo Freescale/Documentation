@@ -13,14 +13,21 @@ is on next table.
 
 Open
 ----
-In order to see the current bug list, please
+In order to see the current bug list, please use following URL:
+
 https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
 
-.. include:: open_bugs.inc
+.. tabularcolumns:: |C|C|C|p{9.3cm}|
+.. table:: List of open bugs
+
+   .. include:: open_bugs.inc
 
 Closed
 ------
 See the list of issues closed in latest development release in the following table
 
-.. include:: closed_bugs.inc
+.. tabularcolumns:: |C|C|C|p{9.3cm}|
+.. table:: List of closed bugs
+
+   .. include:: closed_bugs.inc
 

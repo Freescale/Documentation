@@ -34,7 +34,9 @@ Version by :ref:`soc-hierarchy`
 
 The following table shows the version of each package depending on the :ref:`soc-hierarchy`.
 
-.. include:: soc-pkg.inc
+.. table:: Userspace package version by SoC hierarchy
+
+   .. include:: soc-pkg.inc
 
 
 -----------------------------------------
@@ -43,5 +45,7 @@ Hardware relation by :ref:`soc-hierarchy`
 
 The following table shows how packages interact with hardware depending on the :ref:`soc-hierarchy`
 
-.. include:: soc-pkg-optimization.inc
+.. table:: Hardware dependant packages
+
+   .. include:: soc-pkg-optimization.inc
 
