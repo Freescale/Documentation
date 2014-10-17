@@ -8,6 +8,7 @@ Linux Kernel
 
 .. include:: fsl-community-bsp-supported-kernels.inc
 
+
 -----------------------
 Default Linux Providers
 -----------------------
@@ -15,4 +16,6 @@ Default Linux Providers
 The following table shows the default version of Linux Kernel provided by
 |project_name| for each supported machine.
 
-.. include:: linux-default.inc
+.. table:: Default Linux kernel version for each supported machine
+
+   .. include:: linux-default.inc

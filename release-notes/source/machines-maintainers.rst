@@ -25,8 +25,14 @@ should be worked around anyway.
 
 Machines with maintainers
 -------------------------
-.. include:: machines-with-maintainers.inc
+
+.. table:: Machines with maintainers
+
+   .. include:: machines-with-maintainers.inc
 
 Machines without a maintainer
 -----------------------------
-.. include:: machines-without-maintainers.inc
+
+.. table:: Machines without a maintainer
+
+   .. include:: machines-without-maintainers.inc

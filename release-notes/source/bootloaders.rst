@@ -11,4 +11,6 @@ Bootloaders
 The following table shows the default bootloaders (and their
 versions) for the supported boards.
 
-.. include:: bootloader-default.inc
+.. table:: Default bootloader version for each supported machine
+
+   .. include:: bootloader-default.inc

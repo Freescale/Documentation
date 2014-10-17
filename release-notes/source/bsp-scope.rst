@@ -68,4 +68,6 @@ Supported Board List
 --------------------
 Please, see the next table for the complete supported board list.
 
-.. include:: machine-list.inc
+.. table:: Supported machines in |project_name|
+
+   .. include:: machine-list.inc
