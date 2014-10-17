@@ -9,7 +9,7 @@ imx-vpu                    --                HW acceleration   HW acceleration  
 imx-lib                    --                HW acceleration   HW acceleration   --
 firmware-imx               --                HW-specific       HW-specific       --
 mxsldr                     HW-specific       --                --                --
-gpu-viv-g2d                --                --                                  --
+gpu-viv-g2d                --                --                HW acceleration   --
 xf86-video-imxfb-vivante   --                --                HW acceleration   --
 gpu-viv-bin-mx6q           --                --                HW acceleration   --
 directfb                   --                --                HW acceleration   --
