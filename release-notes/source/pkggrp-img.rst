@@ -3,7 +3,7 @@
 PackageGroups and Images
 ========================
 
-The |project_name| provides a list of PACKAGEGROUPS and images intended to easy
+The |project_name| provides a list of PACKAGEGROUPS and images intended to ease
 the initial development of custom applications.
 
 The main goal is not to provide a production solution, on the contrary, it should
@@ -17,7 +17,7 @@ PACKAGEGROUPS
 The following list shows the current PACKAGEGROUPs available in |release_name|
 when using |project_name|.
 
-You can understand what is a PACKAGEGROUPS and learn how to use it in `Yocto Project Development Manual <http://www.yoctoproject.org/docs/1.6.1/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
+You can understand what a PACKAGEGROUPS is and learn how to use it in `Yocto Project Development Manual <http://www.yoctoproject.org/docs/1.6.1/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
 
 .. include:: packagegroups.inc
 

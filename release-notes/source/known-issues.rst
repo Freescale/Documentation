@@ -35,10 +35,10 @@ Known Issues
 
 .. only:: not html
 
-   The list of known issues for the |project_name| can be seen using the following URL:
+   The list of known issues for the |project_name| can be seen at the following URL:
 
    https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
 
-   It has not been included here as it changes every time bugfixes are
+   It has not been included here as it changes every time bug fixes are
    included during the maintenance cycle of the release and it would
    be outdated most of time.
