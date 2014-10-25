@@ -157,3 +157,8 @@ It supports a wide range of boards which goes from Freescale evaluation boards
 The release is a "*moving target*”, so there are updates on top of the released
 source code, such as addition of new features and of bug fixes.
 
+.. tabularcolumns:: |p{5cm}|p{5cm}|p{5cm}|
+.. table:: Comparative between |freescale_release_name| and |project_name|
+
+  .. include:: fslxcmt.inc
+
