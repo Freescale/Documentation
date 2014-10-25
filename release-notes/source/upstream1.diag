@@ -1,0 +1,8 @@
+blockdiag upstream1 {
+   default_fontsize = 18;
+   orientation = portrait;
+   node_width = 300;
+
+   "Yocto Project" <- "FSL Community BSP" <- "Freescale Official Release";
+}
+
