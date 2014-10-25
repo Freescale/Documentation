@@ -29,6 +29,8 @@ linux-imx kernel scope for each Freescale Reference Board.
 
 See the respective Linux Kernel provider for your machine in section :ref:`linux-providers`
 
+.. _supported-boards:
+
 Supported Board List
 --------------------
 Please, see in next table the complete supported board list.
