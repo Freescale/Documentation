@@ -1,9 +1,11 @@
+.. include:: variables.inc
+
 Scope
 =========
 
-FSL Community BSP Scope
+|project_name| Scope
 -----------------------
-The scope of this Release Notes includes the FSL Community BSP meta layers:
+The scope of this Release Notes includes the |project_name| meta layers:
 
  * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=daisy>`_:
    provides the base support and Freescale ARM reference boards;
@@ -12,13 +14,13 @@ The scope of this Release Notes includes the FSL Community BSP meta layers:
  * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/daisy>`_:
    provides images recipes, demo recipes, and packagegroups used to easy the development with Yocto Project.
  * `Documentation <https://github.com/Freescale/Documentation>`_
-   provides the source code for FSL Community BSP Release Notes (RN), User Guide (UG) and
+   provides the source code for |project_name| Release Notes (RN), User Guide (UG) and
    Frequently Asked Questions (FAQ)
 
 Kernel Release Notes
 --------------------
 
-The FSL Community BSP include support for several kernel providers, each machine
+The |project_name| include support for several kernel providers, each machine
 may have a different Linux Kernel provider.
 
 For the provider **linux-imx**, Freescale has a Release Notes for each version released,

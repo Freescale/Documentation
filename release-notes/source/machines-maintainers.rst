@@ -1,7 +1,9 @@
+.. include:: variables.inc
+
 Machine Mantainers
 ==================
 
-Since FSL Community BSP Release 1.6 (Daisy), the maintainer field in machine configuration file of
+Since |project_name| Release 1.6 (Daisy), the maintainer field in machine configuration file of
 meta-fsl-arm and meta-fsl-arm-extra machines is mandatory for any new board to be added.
 
 So now on, every new board must have someone assigned as maintainer.
