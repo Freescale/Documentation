@@ -10,5 +10,6 @@ blockdiag SoCs {
    i.MX -> mx6 -> mx6sl;
    i.MX -> mxs -> mx23;
    i.MX -> mxs -> mx28;
+   Layerscape -> ls102xa;
    Vybrid -> vf60;
 }

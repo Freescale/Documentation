@@ -21,6 +21,7 @@ imx35pdk                   Freescale i.MX35 Platform Development Kit           i
 imx51evk                   Freescale i.MX51 Evaluation Kit                     i.MX51                meta-fsl-arm
 imx53ard                   Freescale i.MX53 SABRE Automotive Board             i.MX53                meta-fsl-arm
 imx53qsb                   Freescale i.MX53 Quick Start Board                  i.MX53                meta-fsl-arm
+imx6dl-riotboard           RIoTboard                                           i.MX6S                meta-fsl-arm-extra
 imx6dlsabreauto            Freescale i.MX6DL SABRE Automotive                  i.MX6DL               meta-fsl-arm
 imx6dlsabresd              Freescale i.MX6DL SABRE Smart Device                i.MX6DL               meta-fsl-arm
 imx6qsabreauto             Freescale i.MX6Q SABRE Automotive                   i.MX6Q                meta-fsl-arm
@@ -29,6 +30,8 @@ imx6qsabresd               Freescale i.MX6Q SABRE Smart Device                 i
 imx6slevk                  Freescale i.MX6SL Evaluation Kit                    i.MX6SL               meta-fsl-arm
 imx6solosabreauto          Freescale i.MX6Solo SABRE Automotive                i.MX6S                meta-fsl-arm
 imx6solosabresd            Freescale i.MX6Solo SABRE Smart Device              i.MX6S                meta-fsl-arm
+ls1021aqds                 Freescale LS1021AQDS board                          ls102xa               meta-fsl-arm
+ls1021atwr                 Freescale LS1021ATWR board                          ls102xa               meta-fsl-arm
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28                meta-fsl-arm-extra
 m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53                meta-fsl-arm-extra
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q                meta-fsl-arm-extra
