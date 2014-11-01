@@ -35,7 +35,7 @@ ls1021atwr                 Freescale LS1021ATWR board                          l
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28                meta-fsl-arm-extra
 m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53                meta-fsl-arm-extra
 nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q                meta-fsl-arm-extra
-nitrogen6x-lite            Boundary Devices Nitrogen6X Lite                    i.MX6 Solo            meta-fsl-arm-extra
+nitrogen6x-lite            Boundary Devices Nitrogen6X Lite                    i.MX6S                meta-fsl-arm-extra
 pcl052                     Phytec Cosmic Vybrid Development Kit                vf60                  meta-fsl-arm-extra
 pcm052                     Phytec phyCORE Vybrid Development Kit               vf60                  meta-fsl-arm-extra
 quartz                     Device Solutions Quartz Vybrid Development Kit      vf60                  meta-fsl-arm-extra
