@@ -10,6 +10,9 @@ Known Issues
    Weston/Wayland/Directb for SOC_FAMILY: imx5 or mxs or imx3 is not hardware accelerated and
    has not been tested.
 
+   Hob is known to not work with with |project_name|. Some of known issues are
+   problems generating the SD Card images and handling the GPU drivers.
+
    **IMX6** perf and oprofile are not supposed to work due to hardware issue (YOCTO5148 and YOCTO4511)
 
    The list of open bugs on Bugzilla Yocto Project on time of the writing of this document
