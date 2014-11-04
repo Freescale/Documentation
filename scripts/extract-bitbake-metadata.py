@@ -304,9 +304,13 @@ def extract_bitbake_metadata(recipes):
         except:
             continue
 
+        pv = metadata.getVar('PV', True)
+        localversion = metadata.getVar('LOCALVERSION', True)
+        version = pv + (localversion or '')
+
         data['recipes'][recipe] = {}
         data['recipes'][recipe]['recipe'] = metadata.getVar('PN', True)
-        data['recipes'][recipe]['version'] = metadata.getVar('PV', True)
+        data['recipes'][recipe]['version'] = version
         data['recipes'][recipe]['file'] = tinfoil.build_target_to_fn(recipe)
         data['recipes'][recipe]['srcbranch'] = metadata.getVar('SRCBRANCH', True)
         data['recipes'][recipe]['compatible-machine'] = metadata.getVar('COMPATIBLE_MACHINE', True)
