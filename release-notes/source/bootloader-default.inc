@@ -28,10 +28,10 @@ imx6qsabreauto          u-boot-fslc      v2014.10+git
 imx6qsabrelite          u-boot-boundary  v2014.07+git      
 imx6qsabresd            u-boot-fslc      v2014.10+git      
 imx6slevk               u-boot-fslc      v2014.10+git      
-imx6solosabreauto       u-boot-imx       2013.04           
-imx6solosabresd         u-boot-imx       2013.04           
-ls1021aqds              u-boot-ls1       2013.10           
-ls1021atwr              u-boot-ls1       2013.10           
+imx6solosabreauto       u-boot-imx       2013.04+imx       
+imx6solosabresd         u-boot-imx       2013.04+imx       
+ls1021aqds              u-boot-ls1       2013.10+ls1       
+ls1021atwr              u-boot-ls1       2013.10+ls1       
 m28evk                  u-boot-fslc      v2014.10+git      
 m53evk                  u-boot-fslc      v2014.10+git      
 nitrogen6x              u-boot-boundary  v2014.07+git      
