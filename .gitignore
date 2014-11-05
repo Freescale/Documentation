@@ -1,3 +1,4 @@
 *~
+*.pyc
 build/
 scripts/doc-data.pckl
