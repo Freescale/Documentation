@@ -132,3 +132,7 @@ rm -rf $build_dir
 
 cd $anchor
 python ./bitbake-metadata2doc.py $marshalled_data_file "../release-notes/source" "$yocto_dir" "$gitdm_dir" "$start_commit" "$end_commit"
+
+# Update open_bugs.inc and closed_bugs.inc:
+./generate-bugs-table.py --open-bugs
+./generate-bugs-table.py --closed-bugs --start-date 2014-05-20
