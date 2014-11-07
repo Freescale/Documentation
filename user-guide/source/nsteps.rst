@@ -41,7 +41,7 @@ Build and boot in *N*-steps
     build $ sudo dd if=tmp/deploy/images/<selected machine>/<selected image>-<selected machine>.sdcard \
                     of=/dev/sdX \
                     bs=1M \
-                    conf=fsync
+                    conv=fsync
 
 7. Place your SD Card in the correct board's slot and boot!
 
