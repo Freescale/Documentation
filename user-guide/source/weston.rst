@@ -1,7 +1,7 @@
 Weston
 ======
 
-In order to test Weston the reference implementation of a Wayland compositor use the image *core-image-weston*
+In order to test Weston, the reference implementation of a Wayland compositor, use the image *core-image-weston*
 
 Add the following to conf/local.conf::
 
@@ -17,7 +17,7 @@ Remember to use a clean build-dir when changing `DISTRO_FEATURES`
 Simple tests
 ------------
 
-In order to access Weston examples via console::
+In order to access Weston examples via a console::
 
     $ export XDG_RUNTIME_DIR=/var/run/user/root
     $ weston-simple-shm => basic wayland example

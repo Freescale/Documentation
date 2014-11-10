@@ -1,11 +1,10 @@
 Metadata
 ========
 
-BitBake handles the parsing and execution of the data files. The data itself is of 
-various types:
+BitBake handles the parsing and execution of the data files, which consist of various types:
 
-* **Recipes**: Provides details about particular pieces of software.
-* **Class Data**: Abstracts common build information (e.g. how to build a Linux kernel).
+* **Recipes**: Provides details and build information about particular pieces of software
+* **Classes**: Abstracts common build subroutines and information (e.g. how to build a Linux kernel)
 * **Configuration Data**: Defines machine-specific settings, policy decisions, and so forth. 
   Configuration data acts as the glue to bind everything together.
 
@@ -15,14 +14,14 @@ Layers
 * Metadata is organized into multiple ``layers``.
 * Layers allow you to isolate different types of customizations from each other.
 * DO NOT do your modifications in existing layers, instead create a layer and 
-  create recipes (``.bb`` files) or modified existing ones (``.bbappend`` files)
+  create recipes (``.bb`` files) or modify existing ones (``.bbappend`` files)
 
 
 Configuration Data
 ------------------
 
-* ``build/conf/local.conf``: Local User Configuration for your build environment
-* ``build/conf/bblayers.conf``: Define layers, which are directory trees, 
+* ``build/conf/local.conf``: Local user configuration for your build environment
+* ``build/conf/bblayers.conf``: Defines layers, which are directory trees,
   traversed by BitBake.
 * ``sources/meta-*/conf/layer.conf``: Layer configuration file
 * ``sources/meta-*/conf/machine/*.conf``: Machine configuration files
@@ -60,8 +59,8 @@ By default, the ``setup-enviroment`` script creates a ``local.conf`` like this::
 
 Important variables:
 
-* ``MACHINE``: Indicates the machine, ``imx6qsabresd`` is the default
-* ``BB_NUMBER_THREADS`` and ``PARALLEL_MAKE``: Indicate the max number of threads when 
+* ``MACHINE``: Specifies the machine, ``imx6qsabresd`` is the default
+* ``BB_NUMBER_THREADS`` and ``PARALLEL_MAKE``: Specifies the max number of threads when
   baking and compiling
 * ``DL_DIR``: Tarball repository. Several users can share the same folder, so data can 
   be reused.
@@ -71,7 +70,7 @@ Build's layer configuration file ``build/conf/bblayers.conf``
 
 * Also created by the ``setup-environment`` script
 
-* In case you need to add a layer, append it to ``BBLAYERS``::
+* In case you need to add a layer, add it to ``BBLAYERS``::
 
     LCONF_VERSION = "6"
 
@@ -93,7 +92,7 @@ Build's layer configuration file ``build/conf/bblayers.conf``
 Layer configuration file ``meta-fsl-arm/conf/layer.conf``
 ---------------------------------------------------------
 
-This is basically a template, what it changes is the layer's name::
+This is basically a template that specifies the layer's name and structure::
 
     # We have a conf and classes directory, add to BBPATH
     BBPATH .= ":${LAYERDIR}"
@@ -116,9 +115,9 @@ This is basically a template, what it changes is the layer's name::
 
 Important variables:
 
-* ``BBFILES``: Indicates where to look for ``.bb*`` files
-* ``BBFILE_PRIORITY_fsl-arm``: Indicates layer's priority
-* ``MIRRORS``: Indicates where to get the source code
+* ``BBFILES``: Specifies where BitBake looks for ``.bb*`` files
+* ``BBFILE_PRIORITY_fsl-arm``: Specifies priority for recipes in the meta-fsl-arm layer
+* ``MIRRORS``: Specifies additional paths where the build system can find source code
 
 
 Machine configuration file: ``meta-fsl-arm/conf/imx6qsabresd.conf``
@@ -145,10 +144,10 @@ Machine configurations look like this::
 
 Important variables:
 
-* ``IMAGE_FSTYPES``: Located on `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
-  Defines the type of outputs for the Root Filesystem. Default is: ``"tar.bz2 ext3 sdcard"``
-* ``UBOOT_ENTRYPOINT_*``: Located on `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
+* ``IMAGE_FSTYPES``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
+  Defines the type of outputs for the root filesystem. Default is: ``"tar.bz2 ext3 sdcard"``
+* ``UBOOT_ENTRYPOINT_*``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
   Defines where the Kernel is loaded by U-boot
-* ``SOC_FAMILY``: Defines machine's family. Only recipes with the same ``SOC_FAMILY`` (defined with the recipe's variable ``COMPATIBLE_MACHINE``) 
+* ``SOC_FAMILY``: Defines the machine's family. Only recipes with the same ``SOC_FAMILY`` (defined with the recipe's variable ``COMPATIBLE_MACHINE``)
   are taken into account when baking for a particular machine.
-* ``UBOOT_MACHINE``: Define the u-boot configuration file
+* ``UBOOT_MACHINE``: Defines the u-boot configuration file
