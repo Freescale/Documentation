@@ -1,7 +1,7 @@
 Build and boot in *N*-steps
 ===========================
 
-1. Check `required host packages`_ packages for your Linux Distribution
+1. Check `required host packages`_ for your Linux Distribution
 
 2. Download the `repo`_ tool::
 
@@ -16,7 +16,7 @@ Build and boot in *N*-steps
     $ cd fsl-community-bsp
     fsl-community-bsp $ repo init \
                             -u https://github.com/Freescale/fsl-community-bsp-platform \
-                            -b dora
+                            -b dizzy
     fsl-community-bsp $ repo sync 
 
 4. Select your machine (:ref:`machines`) and prepare the environment for bitbake::
@@ -45,7 +45,7 @@ Build and boot in *N*-steps
 
 7. Place your SD Card in the correct board's slot and boot!
 
-Found Errors? Subscribe and report it to `meta-freescale list`_
+Found errors? Subscribe and report it to `meta-freescale list`_
 
 .. links
 .. _required host packages: https://www.yoctoproject.org/docs/current/yocto-project-qs/yocto-project-qs.html#packages

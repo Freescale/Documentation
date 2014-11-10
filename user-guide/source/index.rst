@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Freescale Community BSP User Guide's documentation!
-==============================================================
+Welcome to the Freescale Community's BSP User Guide!
+====================================================
 
 Contents:
 
