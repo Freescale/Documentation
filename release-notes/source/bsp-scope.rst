@@ -1,10 +1,7 @@
 .. include:: variables.inc
 
-Scope
-=========
-
 |project_name| Scope
------------------------
+***********************
 The scope of the |project_name| includes the meta layers:
 
  * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=dizzy>`_:
@@ -18,7 +15,7 @@ The scope of the |project_name| includes the meta layers:
    Frequently Asked Questions (FAQ)
 
 Kernel Release Notes
---------------------
+====================
 The |project_name| includes support for several kernel providers. Each machine
 may have a different Linux Kernel provider.
 
@@ -30,7 +27,7 @@ Board. This document is present into the Document Bundle provided by Freescale.
 See the respective Linux Kernel provider for your machine in section :ref:`linux-providers`
 
 Different Product SoC Families
-------------------------------
+==============================
 Currently, the |project_name| includes the following Product SoC Families:
 
  * **i.MX Application Processors (imx)**: Regarding the `i.MX Freescale Page
@@ -65,10 +62,50 @@ across different markets.
 .. _supported-boards:
 
 Supported Board List
---------------------
+====================
 Please, see the next table for the complete supported board list.
 
 .. tabularcolumns:: c | p{5cm} | c | c
 .. table:: Supported machines in |project_name|
 
    .. include:: machine-list.inc
+
+Machine Maintainers
+-------------------
+
+Since |project_name| Release 1.6 (Daisy), the maintainer field in machine configuration
+files of **meta-fsl-arm** and **meta-fsl-arm-extra** is mandatory for any new board
+to be added.
+
+So now on, every new board must have someone assigned as maintainer.
+This ensures, in long term, all boards with a maintainer assigned.
+Current orphan boards are not going to be removed unless it causes maintenance
+problem and the fix is not straightforward.
+
+The maintainer duties:
+ * The one with casting vote when a deadlock is faced.
+ * Responsible to keep that machine working (that means, booting and with some stability)
+ * Keep kernel, u-boot updated/tested/working.
+ * Keep release notes updated
+ * Keep test cycle updated
+ * Keep the most usual images building and booting
+
+When a build error is detected, the maintainer will "fix" it. For those maintainers with kernel control (meta-fsl-arm-extra),
+it is expected that they properly fix the kernel issue (when it's a kernel issue). However, anything out of community control
+should be worked around anyway.
+
+Machines with maintainers
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. tabularcolumns:: l | p{9cm}
+.. table:: Machines with maintainers
+
+   .. include:: machines-with-maintainers.inc
+
+Machines without a maintainer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. tabularcolumns:: l | p{9cm}
+.. table:: Machines without a maintainer
+
+   .. include:: machines-without-maintainers.inc

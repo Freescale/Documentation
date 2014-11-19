@@ -10,13 +10,7 @@
 
    introduction
    bsp-scope
-   machines-maintainers
-   soc-hierarchy
-   kernel-linux
-   bootloaders
-   userspace-pkg
-   fsl-userspace-pkg
-   pkggrp-img
+   source-code
    test-results
    Acknowledgement
    known-issues
