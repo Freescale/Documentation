@@ -24,6 +24,17 @@ Linux Kernel
 .. tabularcolumns:: l | l | l
 .. include:: fsl-community-bsp-supported-kernels.inc
 
+As stated in :ref:`kernel_release_notes`, |project_name| is not responsible for
+the Linux Kernel content in any kernel provider. If you are looking for the
+feature list, supported devices, official way to get a support channel or how to
+report bug, please, see above where to get help, for each kernel provider.
+
+ * **linux-imx**: provider, Freescale has a release notes document for each
+   version released. This document has a list of known issues, new features,
+   list of kernel arguments, and the linux-imx kernel scope for each Freescale
+   Reference Board. This document is present into the Document Bundle provided
+   by Freescale.
+
 Default Linux Providers
 -----------------------
 
@@ -84,13 +95,14 @@ hardware optimization or some hardware test tools.
    it will only behave as expect if executed on imx boards.
 
 The package version and variety varies on :ref:`soc-hierarchy`.
-For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is not needed.
-There are differences, as well, in GPU support recipes.
+For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is
+not needed. There are differences, as well, in GPU support recipes.
 
 Version by :ref:`soc-hierarchy`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following table shows the version of each package depending on the :ref:`soc-hierarchy`.
+The following table shows the version of each package depending on the
+:ref:`soc-hierarchy`.
 
 .. tabularcolumns:: L | C | C | C | C | C | C
 .. table:: User space package version by SoC hierarchy
@@ -101,7 +113,8 @@ The following table shows the version of each package depending on the :ref:`soc
 Hardware relation by :ref:`soc-hierarchy`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following table shows how packages interact with hardware depending on the :ref:`soc-hierarchy`
+The following table shows how packages interact with hardware depending on the
+:ref:`soc-hierarchy`
 
 .. tabularcolumns:: L | C | C  | C  | C
 .. table:: Hardware dependant packages
@@ -114,9 +127,9 @@ PackageGroups and Images
 The |project_name| provides a list of PACKAGEGROUPS and images intended to ease
 the initial development of custom applications.
 
-The main goal is not to provide a production solution, on the contrary, it should
-be seen as an example of package set for a specific IP development, and an example
-of initial generic development and test images.
+The main goal is not to provide a production solution, on the contrary, it
+should be seen as an example of package set for a specific IP development, and
+an example of initial generic development and test images.
 
 PACKAGEGROUPS
 -------------
@@ -124,14 +137,17 @@ PACKAGEGROUPS
 The following list shows the current PACKAGEGROUPs available in |release_name|
 when using |project_name|.
 
-You can understand what a PACKAGEGROUPS is and learn how to use it in `Yocto Project Development Manual <http://www.yoctoproject.org/docs/1.6.1/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
+You can understand what a PACKAGEGROUPS is and learn how to use it in `Yocto
+Project Development Manual
+<http://www.yoctoproject.org/docs/1.6.1/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
 
 .. include:: packagegroups.inc
 
 Images
 ------
 
-The following images are provided by |project_name| only. See the
-list of Yocto Project's reference images in `Yocto Project Reference Manual <http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#ref-images>`_
+The following images are provided by |project_name| only. See the list of Yocto
+Project's reference images in `Yocto Project Reference Manual
+<http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#ref-images>`_
 
 .. include:: images.inc
