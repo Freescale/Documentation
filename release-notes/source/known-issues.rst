@@ -1,27 +1,35 @@
 .. include:: variables.inc
 
+************
 Known Issues
-============
+************
 
 .. only:: html
 
-   **ALL** Fail to build imx-lib/imx-vpu/imx-test/gst-fsl-plugin when building against linux-fslc
+   ALL
+   ===
+   1. Fail to build imx-lib/imx-vpu/imx-test/gst-fsl-plugin when building
+      against linux-fslc
 
-   Weston/Wayland/Directb for SOC_FAMILY: imx5 or mxs or imx3 is not hardware accelerated and
-   has not been tested.
+   2. Weston/Wayland/Directb for SOC_FAMILY: imx5 or mxs or imx3 is not
+      hardware accelerated and has not been tested.
 
-   Hob is known to not work with with |project_name|. Some of known issues are
-   problems generating the SD Card images and handling the GPU drivers.
+   3. Hob is known to not work with with |project_name|. Some of known issues
+      are problems generating the SD Card images and handling the GPU drivers.
 
-   **IMX6** perf and oprofile are not supposed to work due to hardware issue (YOCTO5148 and YOCTO4511)
+   IMX6
+   ====
+   1. **perf** and **oprofile** are not supposed to work due to hardware issue
+      (YOCTO5148 and YOCTO4511)
 
-   The list of open bugs on Bugzilla Yocto Project on time of the writing of this document
-   is on next table.
+   Bugzilla
+   ========
+   The list of open bugs on Bugzilla Yocto Project on time of the writing of
+   this document is on next table.
 
    Open
    ----
    In order to see the current bug list, please use following URL:
-
    https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
 
    .. table:: List of open bugs
@@ -30,7 +38,8 @@ Known Issues
 
    Closed
    ------
-   See the list of issues closed in latest development release in the following table
+   See the list of issues closed in latest development release in the following
+   table:
 
    .. table:: List of closed bugs
 
@@ -38,7 +47,8 @@ Known Issues
 
 .. only:: not html
 
-   The list of known issues for the |project_name| can be seen at the following URL:
+   The list of known issues for the |project_name| can be seen at the following
+   URL:
 
    https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
 
