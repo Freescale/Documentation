@@ -17,6 +17,16 @@ Known Issues
    3. Hob is known to not work with with |project_name|. Some of known issues
       are problems generating the SD Card images and handling the GPU drivers.
 
+   IMX28
+   =====
+   1. Touch screen (with x11 at least) is not completely calibrated
+
+   2. **mfgtools** supported n |project_name| does not include support for
+      i.mx28 (but it´s easy to be included and your patch is appreciated)
+
+   3. Pendrive is not automatically mounted, but once you mount it
+      everything works fine
+
    IMX6
    ====
    1. **perf** and **oprofile** are not supposed to work due to hardware issue
