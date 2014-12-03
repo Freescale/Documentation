@@ -1,6 +1,6 @@
-======================  ===============  ==================
+======================  ===============  =====================================
 Board                   Bootloader       Bootloader version
-======================  ===============  ==================
+======================  ===============  =====================================
 cfa10036                barebox          2013.08.0
 cfa10037                barebox          2013.08.0
 cfa10049                barebox          2013.08.0
@@ -28,10 +28,10 @@ imx6qsabreauto          u-boot-fslc      v2014.10+git
 imx6qsabrelite          u-boot-boundary  v2014.07+git
 imx6qsabresd            u-boot-fslc      v2014.10+git
 imx6slevk               u-boot-fslc      v2014.10+git
-imx6solosabreauto       u-boot-imx       2013.04+imx
-imx6solosabresd         u-boot-imx       2013.04+imx
-ls1021aqds              u-boot-ls1       2013.10+ls1
-ls1021atwr              u-boot-ls1       2013.10+ls1
+imx6solosabreauto       u-boot-imx       2013.04-imx_v2013.04_3.10.17_1.0.0_ga
+imx6solosabresd         u-boot-imx       2013.04-imx_v2013.04_3.10.17_1.0.0_ga
+ls1021aqds              u-boot-ls1       2013.10-LS1-dev
+ls1021atwr              u-boot-ls1       2013.10-LS1-dev
 m28evk                  u-boot-fslc      v2014.10+git
 m53evk                  u-boot-fslc      v2014.10+git
 nitrogen6x              u-boot-boundary  v2014.07+git
@@ -43,4 +43,4 @@ twr-vf65gs10            u-boot-fslc      v2014.10+git
 wandboard-dual          u-boot-fslc      v2014.10+git
 wandboard-quad          u-boot-fslc      v2014.10+git
 wandboard-solo          u-boot-fslc      v2014.10+git
-======================  ===============  ==================
+======================  ===============  =====================================
