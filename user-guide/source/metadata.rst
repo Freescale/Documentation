@@ -5,7 +5,7 @@ BitBake handles the parsing and execution of the data files, which consist of va
 
 * **Recipes**: Provides details and build information about particular pieces of software
 * **Classes**: Abstracts common build subroutines and information (e.g. how to build a Linux kernel)
-* **Configuration Data**: Defines machine-specific settings, policy decisions, and so forth. 
+* **Configuration Data**: Defines machine-specific settings, policy decisions, and so forth.
   Configuration data acts as the glue to bind everything together.
 
 Layers
@@ -13,7 +13,7 @@ Layers
 
 * Metadata is organized into multiple ``layers``.
 * Layers allow you to isolate different types of customizations from each other.
-* DO NOT do your modifications in existing layers, instead create a layer and 
+* DO NOT do your modifications in existing layers, instead create a layer and
   create recipes (``.bb`` files) or modify existing ones (``.bbappend`` files)
 
 
@@ -44,7 +44,7 @@ By default, the ``setup-enviroment`` script creates a ``local.conf`` like this::
         STOPTASKS,${SSTATE_DIR},1G,100K \
         ABORT,${TMPDIR},100M,1K \
         ABORT,${DL_DIR},100M,1K \
-        ABORT,${SSTATE_DIR},100M,1K" 
+        ABORT,${SSTATE_DIR},100M,1K"
     CONF_VERSION = "1"
 
     BB_NUMBER_THREADS = '4'
@@ -62,7 +62,7 @@ Important variables:
 * ``MACHINE``: Specifies the machine, ``imx6qsabresd`` is the default
 * ``BB_NUMBER_THREADS`` and ``PARALLEL_MAKE``: Specifies the max number of threads when
   baking and compiling
-* ``DL_DIR``: Tarball repository. Several users can share the same folder, so data can 
+* ``DL_DIR``: Tarball repository. Several users can share the same folder, so data can
   be reused.
 
 Build's layer configuration file ``build/conf/bblayers.conf``

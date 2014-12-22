@@ -1,13 +1,9 @@
-.. Freescale Community BSP User Guide documentation master file, created by
-   sphinx-quickstart on Thu Feb  6 15:35:02 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Freescale Community BSP User Guide documentation master file, created by    sphinx-quickstart on Thu Feb  6 15:35:02 2014. You can adapt this file completely to your liking, but it should at least contain the root `toctree` directive.
 
 Welcome to the Freescale Community's BSP User Guide!
 ====================================================
 
-With this user guide you will be able to build and customize a board image using
-the Freescale Community BSP and Yocto.
+With this user guide you will be able to build and customize a board image using the Freescale Community BSP and Yocto.
 
 The user guide is divided in several steps:
 

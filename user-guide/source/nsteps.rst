@@ -11,7 +11,7 @@ Build and boot in *N*-steps
 
     $ mkdir -p ~/bin
     $ PATH=~/bin:${PATH}
-    $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo 
+    $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
     $ chmod a+x ~/bin/repo
 
 3. Download the Yocto's Metadata::
@@ -21,7 +21,7 @@ Build and boot in *N*-steps
     fsl-community-bsp $ repo init \
                             -u https://github.com/Freescale/fsl-community-bsp-platform \
                             -b dizzy
-    fsl-community-bsp $ repo sync 
+    fsl-community-bsp $ repo sync
 
 4. Select your machine (:ref:`machines`) and prepare the environment for bitbake::
 
@@ -37,7 +37,7 @@ Build and boot in *N*-steps
 
     # Insert your SD Card
     # Type '$ dmesg | tail' to see the device node being used, e.g /dev/sdb
-    # In case the SD to be flashed has already some partitions, the host system may have 
+    # In case the SD to be flashed has already some partitions, the host system may have
     # mounted these, so unmount them, e.g. '$ sudo umount /dev/sdb?'.
     build $ ls -la 'tmp/deploy/images/<selected machine>/*.sdcard'
 

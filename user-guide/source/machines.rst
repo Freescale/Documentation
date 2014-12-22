@@ -8,4 +8,3 @@ Please refer to the table below for the complete list of supported boards.
 
 
 .. include:: machine-list.inc
-
