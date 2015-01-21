@@ -30,8 +30,8 @@ imx6qsabresd            linux-imx        3.10.17-1.0.2_ga
 imx6slevk               linux-imx        3.10.17-1.0.2_ga
 imx6solosabreauto       linux-imx        3.10.17-1.0.2_ga
 imx6solosabresd         linux-imx        3.10.17-1.0.2_ga
-ls1021aqds              linux-ls1        3.12-ls1-dev
-ls1021atwr              linux-ls1        3.12-ls1-dev
+ls1021aqds              linux-ls1        3.12+ls1
+ls1021atwr              linux-ls1        3.12+ls1
 m28evk                  linux-fslc       3.17+git
 m53evk                  linux-denx       3.9-master
 nitrogen6x              linux-boundary   3.10.17-1.0.2_ga+yocto
@@ -40,7 +40,7 @@ pcl052                  linux-timesys    3.0.15
 pcm052                  linux-timesys    3.0.15
 quartz                  linux-timesys    3.0.15
 twr-vf65gs10            linux-timesys    3.0.15
-wandboard-dual          linux-wandboard  3.10.17-1.0.1-wandboard
-wandboard-quad          linux-wandboard  3.10.17-1.0.1-wandboard
-wandboard-solo          linux-wandboard  3.10.17-1.0.1-wandboard
+wandboard-dual          linux-wandboard  3.10.17-1.0.2-wandboard
+wandboard-quad          linux-wandboard  3.10.17-1.0.2-wandboard
+wandboard-solo          linux-wandboard  3.10.17-1.0.2-wandboard
 ======================  ===============  =======================
