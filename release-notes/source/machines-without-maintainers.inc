@@ -10,7 +10,4 @@ imx35pdk                Freescale i.MX35 Platform Development Kit
 imx6solosabreauto       Freescale i.MX6Solo SABRE Automotive
 m28evk                  DENX M28 SoM Evaluation Kit
 m53evk                  DENX M53 SoM Evaluation Kit
-wandboard-dual          Wandboard i.MX6 Wandboard Duallite
-wandboard-quad          Wandboard i.MX6 Wandboard Quad
-wandboard-solo          Wandboard i.MX6 Wandboard Solo
 ======================  =========================================
