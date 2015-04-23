@@ -254,8 +254,18 @@ def write_soc_pkg(data, out_dir):
                         versions_histogram[version] = 1
                 versions_freq = versions_histogram.values()
                 most_freq = max(versions_freq)
+                num_most_freq = versions_freq.count(most_freq)
+
+                ## imx-test is a special case: it has a "fake" version
+                ## number (00.00.00) that must be specially handled.
+                if (pkg == 'imx-test' and
+                    num_most_freq == 2 and
+                    '00.00.00' in versions_histogram.keys()):
+                    del versions_histogram['00.00.00']
+                    num_most_freq -= 1
+
                 ## More than one "most frequent" version?
-                if versions_freq.count(most_freq) > 1:
+                if num_most_freq > 1:
                     error('The most frequent versions (%s) for %s are equally distributed among boards of SoC %s.  Cannot determine which one to use.' % \
                               ([ ver for ver, count in versions_histogram.items() if count == most_freq ],
                                pkg,
