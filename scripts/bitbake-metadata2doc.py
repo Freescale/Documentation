@@ -222,7 +222,7 @@ def write_soc_pkg(data, out_dir):
             else:
                 boards_socs[board] = soc
     if board_in_multiple_socs:
-        sys.exit()
+        sys.exit(1)
 
     ## Use the most frequent package versions among boards of the same
     ## SoC, in case of different versions for the same package
