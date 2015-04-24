@@ -51,9 +51,9 @@ copyright = u'2013, FSL Community BSP Team'
 # built documents.
 #
 # The short X.Y version.
-version = 'dizzy'
+version = 'fido'
 # The full version, including alpha/beta/rc tags.
-release = '1.7'
+release = '1.8'
 
 if tags.has('draft'):
     release = release + " (Draft document)"
