@@ -8,7 +8,7 @@ Bug ID  Status              Summary
 5098    NEW                 gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-sfp.bin and gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-hfp.bin are missing OpenGL headers
 5202    ACCEPTED            distorted images from gstreamer
 5331    NEW                 error play video via gstreamer with "mfw_isink"
-5359    ACCEPTED            [Yocto 1.5] su - USER -c 'COMMAND' env variable issue
+5359    IN PROGRESS DESIGN  [Yocto 1.5] su - USER -c 'COMMAND' env variable issue
 5607    NEW                 MCIMX-LVDS1 trhows unknown mouse event on Qt 4.8
 5799    NEW                 add standardized MAINTAINERS infrastructure
 6703    NEW                 Kernel hangs on boot when HDMI cable is plugged
