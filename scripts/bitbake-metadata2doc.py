@@ -365,7 +365,7 @@ def write_machines_list(data, out_dir, bsp_dir):
 def write_soc_tree(data, out_dir):
     SOCS_FAMILIES = {
         re.compile("mx(\d|s)"): 'i.MX',
-        re.compile("vf(\d+)"): 'Vybrid',
+        re.compile("vf(\d+)?"): 'Vybrid',
         re.compile("ls102xa"): 'Layerscape'
     }
 
