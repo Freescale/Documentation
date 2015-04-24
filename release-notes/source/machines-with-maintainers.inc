@@ -9,6 +9,8 @@ cfa10056          Crystalfontz CFA-10056
 cfa10057          Crystalfontz CFA-10057
 cfa10058          Crystalfontz CFA-10058
 cgtqmx6           Congatec Qmx6
+cm-fx6            CompuLab CM-FX6
+colibri-vf        Toradex Colibri VF50/VF61
 cubox-i           SolidRun CuBox-i and HummingBoard
 imx23evk          Freescale i.MX23 Evaluation Kit
 imx28evk          Freescale i.MX28 Evaluation Kit
@@ -21,8 +23,11 @@ imx6dlsabresd     Freescale i.MX6DL SABRE Smart Device
 imx6qsabreauto    Freescale i.MX6Q SABRE Automotive
 imx6qsabrelite    Boundary Devices i.MX6Q SABRE Lite
 imx6qsabresd      Freescale i.MX6Q SABRE Smart Device
+imx6sl-warp       WaRP
 imx6slevk         Freescale i.MX6SL Evaluation Kit
 imx6solosabresd   Freescale i.MX6Solo SABRE Smart Device
+imx6sxsabreauto   Freescale i.MX6SoloX Sabre Automotive
+imx6sxsabresd     Freescale i.MX6SoloX SabreSD
 ls1021aqds        Freescale LS1021AQDS board
 ls1021atwr        Freescale LS1021ATWR board
 nitrogen6x        Boundary Devices Nitrogen6X

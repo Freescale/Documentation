@@ -9,6 +9,8 @@ cfa10056                   Crystalfontz CFA-10056                              i
 cfa10057                   Crystalfontz CFA-10057                              i.MX28                meta-fsl-arm-extra
 cfa10058                   Crystalfontz CFA-10058                              i.MX28                meta-fsl-arm-extra
 cgtqmx6                    Congatec Qmx6                                       i.MX6Q                meta-fsl-arm-extra
+cm-fx6                     CompuLab CM-FX6                                     i.MX6 Q/DL            meta-fsl-arm-extra
+colibri-vf                 Toradex Colibri VF50/VF61                           VF500/VF610           meta-fsl-arm-extra
 cubox-i                    SolidRun CuBox-i and HummingBoard                   i.MX6 Q/DL            meta-fsl-arm-extra
 imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i.MX23                meta-fsl-arm-extra
 imx233-olinuxino-micro     OLIMEX iMX233-OLinuXino-Micro                       i.MX23                meta-fsl-arm-extra
@@ -28,8 +30,11 @@ imx6qsabreauto             Freescale i.MX6Q SABRE Automotive                   i
 imx6qsabrelite             Boundary Devices i.MX6Q SABRE Lite                  i.MX6Q                meta-fsl-arm-extra
 imx6qsabresd               Freescale i.MX6Q SABRE Smart Device                 i.MX6Q                meta-fsl-arm
 imx6slevk                  Freescale i.MX6SL Evaluation Kit                    i.MX6SL               meta-fsl-arm
+imx6sl-warp                WaRP                                                i.MX6SL               meta-fsl-arm-extra
 imx6solosabreauto          Freescale i.MX6Solo SABRE Automotive                i.MX6S                meta-fsl-arm
 imx6solosabresd            Freescale i.MX6Solo SABRE Smart Device              i.MX6S                meta-fsl-arm
+imx6sxsabreauto            Freescale i.MX6SoloX Sabre Automotive               i.MX6SX               meta-fsl-arm
+imx6sxsabresd              Freescale i.MX6SoloX SabreSD                        i.MX6SX               meta-fsl-arm
 ls1021aqds                 Freescale LS1021AQDS board                          ls102xa               meta-fsl-arm
 ls1021atwr                 Freescale LS1021ATWR board                          ls102xa               meta-fsl-arm
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28                meta-fsl-arm-extra
@@ -39,7 +44,8 @@ nitrogen6x-lite            Boundary Devices Nitrogen6X Lite                    i
 pcl052                     Phytec Cosmic Vybrid Development Kit                vf60                  meta-fsl-arm-extra
 pcm052                     Phytec phyCORE Vybrid Development Kit               vf60                  meta-fsl-arm-extra
 quartz                     Device Solutions Quartz Vybrid Development Kit      vf60                  meta-fsl-arm-extra
-twr-vf65gs10               Freescale Vybrid TWR-VF65GS10                       vf60                  meta-fsl-arm
+twr-vf65gs10               Freescale Vybrid TWR-VF65GS10                       VF610                 meta-fsl-arm
+ventana                    i.MX6Q/DL Ventana Platform                          i.MX6Q/DL             meta-fsl-arm-extra
 wandboard-dual             Wandboard i.MX6 Wandboard Duallite                  i.MX6DL               meta-fsl-arm-extra
 wandboard-quad             Wandboard i.MX6 Wandboard Quad                      i.MX6Q                meta-fsl-arm-extra
 wandboard-solo             Wandboard i.MX6 Wandboard Solo                      i.MX6S                meta-fsl-arm-extra
