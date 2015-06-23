@@ -8,9 +8,9 @@ cfa10055                linux-cfa            3.12
 cfa10056                linux-cfa            3.12
 cfa10057                linux-cfa            3.12
 cfa10058                linux-cfa            3.12
-cgtqmx6                 linux-congatec       3.10.53-1.1.1_qmx6
+cgtqmx6                 linux-congatec       3.14.28-1.0.0_qmx6
 cm-fx6                  linux-compulab       3.14.28-cm-fx6
-colibri-vf              linux-toradex        3.18-v2.3b7
+colibri-vf              linux-toradex        4.0-v2.4b1.1
 cubox-i                 linux-cubox-i        3.14.14
 imx233-olinuxino-maxi   linux-fslc           4.0+git
 imx233-olinuxino-micro  linux-fslc           4.0+git
@@ -46,7 +46,7 @@ pcm052                  linux-timesys        3.0.15
 quartz                  linux-timesys        3.0.15
 twr-vf65gs10            linux-timesys        3.0.15
 ventana                 linux-gateworks-imx  3.10.53-1.1.0_ga+yocto
-wandboard-dual          linux-wandboard      3.10.53_1.1.0_ga-wandboard
-wandboard-quad          linux-wandboard      3.10.53_1.1.0_ga-wandboard
-wandboard-solo          linux-wandboard      3.10.53_1.1.0_ga-wandboard
+wandboard-dual          linux-wandboard      3.14.28_1.0.0_ga-wandboard
+wandboard-quad          linux-wandboard      3.14.28_1.0.0_ga-wandboard
+wandboard-solo          linux-wandboard      3.14.28_1.0.0_ga-wandboard
 ======================  ===================  ==========================

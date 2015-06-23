@@ -36,6 +36,7 @@ pcl052            Phytec Cosmic Vybrid Development Kit
 pcm052            Phytec phyCORE Vybrid Development Kit
 quartz            Device Solutions Quartz Vybrid Development Kit
 twr-vf65gs10      Freescale Vybrid TWR-VF65GS10
+ventana           i.MX6Q/DL Ventana Platform
 wandboard-dual    Wandboard i.MX6 Wandboard Duallite
 wandboard-quad    Wandboard i.MX6 Wandboard Quad
 wandboard-solo    Wandboard i.MX6 Wandboard Solo

@@ -6,6 +6,7 @@ Bug ID  Resolution  Summary
 5148    WONTFIX     perf test fails
 5178    WORKSFORME  sabresd boot failure with preferred provider linux-fslc
 5219    FIXED       meta-fsl-arm kernel crash when using graphics acceleration
+5359    FIXED       [Yocto 1.5] su - USER -c 'COMMAND' env variable issue
 5361    FIXED       resolvconf fail to change dns-nameservers from /etc/network/interfaces
 5826    FIXED       ARM: recipe xserver-xorg-2_1.15.0-r0: task do_compile: Failed
 5864    FIXED       .bbappend files with % in their name and "python __anonymous () { ... }" fails to parse
@@ -15,4 +16,6 @@ Bug ID  Resolution  Summary
 6894    WONTFIX     kernel menuconfig unusable and errors during compileing
 7226    WORKSFORME  bitbake failure - MACHINE=cubox-i PACKAGE_CLASSES=package_deb
 7384    FIXED       u-boot-fslc fails in master
+7799    FIXED       Parse failure due to gstreamer 0.10 removal
+7845    INVALID     bitbake fsl-image-qt5 build error for board VAR-SOM-MX6
 ======  ==========  =======================================================================================

@@ -10,8 +10,8 @@ cfa10057                barebox          2013.08.0
 cfa10058                barebox          2013.08.0
 cgtqmx6                 u-boot-congatec  2013.04
 cm-fx6                  u-boot-compulab  2014.10
-colibri-vf              u-boot-toradex   v2014.10+git
-cubox-i                 u-boot-cubox-i   v2013.10+git
+colibri-vf              u-boot-toradex   v2015.04+git
+cubox-i                 u-boot-fslc      v2015.04+git
 imx233-olinuxino-maxi   u-boot-fslc      v2015.04+git
 imx233-olinuxino-micro  u-boot-fslc      v2015.04+git
 imx233-olinuxino-mini   u-boot-fslc      v2015.04+git
