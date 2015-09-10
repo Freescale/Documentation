@@ -28,7 +28,6 @@ imx6slevk         Freescale i.MX6SL Evaluation Kit
 imx6solosabresd   Freescale i.MX6Solo SABRE Smart Device
 imx6sxsabreauto   Freescale i.MX6SoloX Sabre Automotive
 imx6sxsabresd     Freescale i.MX6SoloX SabreSD
-ls1021aqds        Freescale LS1021AQDS board
 ls1021atwr        Freescale LS1021ATWR board
 nitrogen6x        Boundary Devices Nitrogen6X
 nitrogen6x-lite   Boundary Devices Nitrogen6X Lite

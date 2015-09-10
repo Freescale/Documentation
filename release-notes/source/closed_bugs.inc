@@ -1,6 +1,7 @@
 ======  ==========  =======================================================================================
 Bug ID  Resolution  Summary
 ======  ==========  =======================================================================================
+4510    WONTFIX     GLX load vivante_dri.so failed
 4511    WONTFIX     error for using oprofile.ko to profiling
 5023    FIXED       EXTRA_IMAGE_FEATURES += "tools-sdk" does return ERROR
 5148    WONTFIX     perf test fails
