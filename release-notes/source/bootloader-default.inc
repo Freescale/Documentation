@@ -35,8 +35,7 @@ imx6solosabreauto       u-boot-imx       2014.04-imx_v2014.04_3.14.28_1.0.0_ga
 imx6solosabresd         u-boot-imx       2014.04-imx_v2014.04_3.14.28_1.0.0_ga
 imx6sxsabreauto         u-boot-imx       2014.04-imx_v2014.04_3.14.28_1.0.0_ga
 imx6sxsabresd           u-boot-fslc      v2015.04+git
-ls1021aqds              u-boot-ls1       2014.07-sdk-v1.7.x
-ls1021atwr              u-boot-ls1       2014.07-sdk-v1.7.x
+ls1021atwr              u-boot-ls1       2015.01+ls1
 m28evk                  u-boot-fslc      v2015.04+git
 m53evk                  u-boot-fslc      v2015.04+git
 nitrogen6x              u-boot-boundary  v2014.07+git

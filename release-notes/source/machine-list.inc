@@ -35,7 +35,6 @@ imx6solosabreauto          Freescale i.MX6Solo SABRE Automotive                i
 imx6solosabresd            Freescale i.MX6Solo SABRE Smart Device              i.MX6S                meta-fsl-arm
 imx6sxsabreauto            Freescale i.MX6SoloX Sabre Automotive               i.MX6SX               meta-fsl-arm
 imx6sxsabresd              Freescale i.MX6SoloX SabreSD                        i.MX6SX               meta-fsl-arm
-ls1021aqds                 Freescale LS1021AQDS board                          ls102xa               meta-fsl-arm
 ls1021atwr                 Freescale LS1021ATWR board                          ls102xa               meta-fsl-arm
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28                meta-fsl-arm-extra
 m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53                meta-fsl-arm-extra
