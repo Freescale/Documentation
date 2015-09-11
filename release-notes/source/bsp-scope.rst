@@ -15,6 +15,35 @@ The scope of the |project_name| includes the meta layers:
    provides the source code for |project_name| Release Notes (RN), User Guide
    (UG) and Frequently Asked Questions (FAQ)
 
+License
+=======
+
+The |project_name| is a project with the same licensing of most Yocto Project
+layers. It means the recipe file is under a certain license, and the source code
+used by that recipe is under another certain license (being it equal or not).
+
+Most of |project_name|'s metadata is under MIT license, however the extensive
+and accurate list of package's license provided by the Yocto Project's metadata
+can be generated with few commands, for detailed information on how license is
+handled by Yocto Project see the `Reference Manual
+<http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#licenses>`_.
+
+End User License Agreement (EULA)
+---------------------------------
+
+Freescale releases basically two kind of packages, the open sourced packages use
+regular open source licenses (GPLv2 for example).
+
+The close sourced packages are released under the Freescale License (known as
+EULA). Each package has a copy of EULA inside itself and a copy of the EULA text
+is also included inside **meta-fsl-arm** root dir
+(``sources/meta-fsl-arm/EULA``).
+
+The |project_name| handles the EULA acceptance by prompting user to read and
+accept EULA text at the very first environment setup. It is user's duty to read
+and understand it before accepting it. After it is accepted the first time, it
+is assumed accepted in any other build.
+
 .. _kernel_release_notes:
 
 Kernel Release Notes
