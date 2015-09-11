@@ -4,7 +4,8 @@ Freescale Community BSP Documentation
 The documentation is written using the Sphinx documentation system. To
 install it in Debian/Ubuntu, please do:
 
-  #: apt-get install python-sphinx python-pip texlive-latex-extra texlive-fonts-recommended
+  #: apt-get install python-sphinx python-pip texlive-latex-extra \
+     texlive-fonts-recommended
   #: pip install sphinxcontrib-blockdiag
 
 Once this has been completed, you can run 'make' in each of the Documentation
@@ -23,9 +24,6 @@ In order to generate the HTML all-in-one:
 In order to generate the PDF file:
 
  $ make latexpdf
-
-Make sure you have the packages listed in ../README file to get
-PDF built.
 
 In order to generate the printable PDF file:
 
