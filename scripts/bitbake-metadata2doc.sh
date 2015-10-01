@@ -84,14 +84,19 @@ for machine in $machines; do
 
     MACHINE=$machine python $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
+        apptrk \
         barebox \
+        cst \
+        devregs \
         directfb \
         directfb-examples \
         libdrm \
+        elftosb \
         firmware-imx \
         fsl-alsa-plugins \
         gpu-viv-bin-mx6q \
         gpu-viv-g2d \
+        gst1.0-fsl-plugin \
         gstreamer \
         gstreamer1.0 \
         gstreamer1.0-plugins-imx \
@@ -106,6 +111,9 @@ for machine in $machines; do
         libmcc \
         mqxboot \
         mxsldr \
+        qe-ucode \
+        qemu-fsl \
+        rcw \
         virtual/kernel \
         virtual/bootloader \
         udev \

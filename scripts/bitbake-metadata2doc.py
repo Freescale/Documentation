@@ -198,6 +198,15 @@ def write_soc_pkg(data, out_dir):
             'gstreamer1.0-plugins-imx',
             'imx-uuc',
             'libmcc',
+            'apptrk',
+            'elftosb',
+            'imx-kobs',
+            'qe-ucode',
+            'rcw',
+            'cst',
+            'devregs',
+            'qemu-fsl',
+            'gst1.0-fsl-plugin',
             'mqxboot']
     ## Fill the socs dictionary
     for board, board_data in data.items():
