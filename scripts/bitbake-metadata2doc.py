@@ -136,9 +136,7 @@ def write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir):
     write_inc_file(out_dir, 'fsl-community-bsp-supported-bootloaders-descr.inc', describe(bootloaders))
 
 def write_userspace_pkg(data, out_dir):
-    pkgs = {'gstreamer': [],
-            'gstreamer1.0': [],
-            'libdrm': [],
+    pkgs = {'gstreamer1.0': [],
             'udev': []}
     for board, board_data in data.items():
         for pkg in pkgs.keys():
@@ -183,7 +181,6 @@ def write_soc_pkg(data, out_dir):
             'vf60': [],
             'ls102xa': []}
     pkgs = ['imx-test',
-            'gst-fsl-plugin',
             'libfslcodec',
             'libfslparser',
             'imx-vpu',
@@ -196,9 +193,6 @@ def write_soc_pkg(data, out_dir):
             'directfb',
             'directfb-examples',
             'xf86-video-imxfb',
-            'amd-gpu-bin-mx51',
-            'libz160',
-            'amd-gpu-x11-bin-mx51',
             'libfslvpuwrap',
             'fsl-alsa-plugins',
             'gstreamer1.0-plugins-imx',

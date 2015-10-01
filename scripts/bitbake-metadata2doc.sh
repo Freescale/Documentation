@@ -84,8 +84,6 @@ for machine in $machines; do
 
     MACHINE=$machine python $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
-        amd-gpu-bin-mx51 \
-        amd-gpu-x11-bin-mx51 \
         barebox \
         directfb \
         directfb-examples \
@@ -94,7 +92,6 @@ for machine in $machines; do
         fsl-alsa-plugins \
         gpu-viv-bin-mx6q \
         gpu-viv-g2d \
-        gst-fsl-plugin \
         gstreamer \
         gstreamer1.0 \
         gstreamer1.0-plugins-imx \
@@ -107,7 +104,6 @@ for machine in $machines; do
         libfslparser \
         libfslvpuwrap \
         libmcc \
-        libz160 \
         mqxboot \
         mxsldr \
         virtual/kernel \
