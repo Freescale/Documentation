@@ -1,14 +1,14 @@
 blockdiag SoCs {
    default_fontsize = 18;
 
-   i.MX -> mx3 -> mx31;
-   i.MX -> mx3 -> mx35;
    i.MX -> mx5 -> mx51;
    i.MX -> mx5 -> mx53;
    i.MX -> mx6 -> mx6dl;
    i.MX -> mx6 -> mx6q;
    i.MX -> mx6 -> mx6sl;
    i.MX -> mx6 -> mx6sx;
+   i.MX -> mx6ul;
+   i.MX -> mx7 -> mx7d;
    i.MX -> mxs -> mx23;
    i.MX -> mxs -> mx28;
    Layerscape -> ls102xa;

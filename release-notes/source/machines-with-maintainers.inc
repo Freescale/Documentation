@@ -20,6 +20,7 @@ imx53qsb          Freescale i.MX53 Quick Start Board
 imx6dl-riotboard  RIoTboard
 imx6dlsabreauto   Freescale i.MX6DL SABRE Automotive
 imx6dlsabresd     Freescale i.MX6DL SABRE Smart Device
+imx6qpsabreauto   Freescale i.MX6Q Plus SABRE Automotive
 imx6qsabreauto    Freescale i.MX6Q SABRE Automotive
 imx6qsabrelite    Boundary Devices i.MX6Q SABRE Lite
 imx6qsabresd      Freescale i.MX6Q SABRE Smart Device
@@ -28,7 +29,10 @@ imx6slevk         Freescale i.MX6SL Evaluation Kit
 imx6solosabresd   Freescale i.MX6Solo SABRE Smart Device
 imx6sxsabreauto   Freescale i.MX6SoloX Sabre Automotive
 imx6sxsabresd     Freescale i.MX6SoloX SabreSD
+imx6ulevk         Freescale i.MX6UL Evaluation Kit
+imx7dsabresd      Freescale i.MX7D SABRE Smart Device
 ls1021atwr        Freescale LS1021ATWR board
+nitrogen6sx       Boundary Devices Nitrogen6SX
 nitrogen6x        Boundary Devices Nitrogen6X
 nitrogen6x-lite   Boundary Devices Nitrogen6X Lite
 pcl052            Phytec Cosmic Vybrid Development Kit
@@ -36,7 +40,5 @@ pcm052            Phytec phyCORE Vybrid Development Kit
 quartz            Device Solutions Quartz Vybrid Development Kit
 twr-vf65gs10      Freescale Vybrid TWR-VF65GS10
 ventana           i.MX6Q/DL Ventana Platform
-wandboard-dual    Wandboard i.MX6 Wandboard Duallite
-wandboard-quad    Wandboard i.MX6 Wandboard Quad
-wandboard-solo    Wandboard i.MX6 Wandboard Solo
+wandboard         Wandboard i.MX6 Wandboard Quad/Dual/Solo
 ================  ==============================================
