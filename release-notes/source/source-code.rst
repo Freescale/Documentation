@@ -139,7 +139,7 @@ when using |project_name|.
 
 You can understand what a PACKAGEGROUPS is and learn how to use it in `Yocto
 Project Development Manual
-<http://www.yoctoproject.org/docs/1.6.1/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
+<http://www.yoctoproject.org/docs/current/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
 
 .. include:: packagegroups.inc
 
