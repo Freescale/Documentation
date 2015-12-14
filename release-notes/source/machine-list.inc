@@ -1,6 +1,7 @@
 =========================  ==================================================  ====================  ====================
          Machine             Name                                                      SoC                  Layer
 =========================  ==================================================  ====================  ====================
+apalis-imx6                Toradex Apalis iMX6Q/D                              i.MX6                 meta-fsl-arm-extra
 cfa10036                   Crystalfontz CFA-10036                              i.MX28                meta-fsl-arm-extra
 cfa10037                   Crystalfontz CFA-10037                              i.MX28                meta-fsl-arm-extra
 cfa10049                   Crystalfontz CFA-10049                              i.MX28                meta-fsl-arm-extra
@@ -8,8 +9,9 @@ cfa10055                   Crystalfontz CFA-10055                              i
 cfa10056                   Crystalfontz CFA-10056                              i.MX28                meta-fsl-arm-extra
 cfa10057                   Crystalfontz CFA-10057                              i.MX28                meta-fsl-arm-extra
 cfa10058                   Crystalfontz CFA-10058                              i.MX28                meta-fsl-arm-extra
-cgtqmx6                    Congatec Qmx6                                       i.MX6Q                meta-fsl-arm-extra
+cgtqmx6                    Congatec QMX6 Evaluation board                      i.MX6 Q/DL            meta-fsl-arm-extra
 cm-fx6                     CompuLab CM-FX6                                     i.MX6 Q/DL            meta-fsl-arm-extra
+colibri-imx6               Toradex Colibri iMX6DL/S                            i.MX6 DL/S            meta-fsl-arm-extra
 colibri-vf                 Toradex Colibri VF50/VF61                           VF500/VF610           meta-fsl-arm-extra
 cubox-i                    SolidRun CuBox-i and HummingBoard                   i.MX6 Q/DL            meta-fsl-arm-extra
 imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i.MX23                meta-fsl-arm-extra
@@ -40,11 +42,9 @@ ls1021atwr                 Freescale LS1021ATWR board                          l
 m28evk                     DENX M28 SoM Evaluation Kit                         i.MX28                meta-fsl-arm-extra
 m53evk                     DENX M53 SoM Evaluation Kit                         i.MX53                meta-fsl-arm-extra
 nitrogen6sx                Boundary Devices Nitrogen6SX                        i.MX6SoloX            meta-fsl-arm-extra
-nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6Q                meta-fsl-arm-extra
+nitrogen6x                 Boundary Devices Nitrogen6X                         i.MX6 Q/DL            meta-fsl-arm-extra
 nitrogen6x-lite            Boundary Devices Nitrogen6X Lite                    i.MX6S                meta-fsl-arm-extra
-pcl052                     Phytec Cosmic Vybrid Development Kit                vf60                  meta-fsl-arm-extra
 pcm052                     Phytec phyCORE Vybrid Development Kit               vf60                  meta-fsl-arm-extra
-quartz                     Device Solutions Quartz Vybrid Development Kit      vf60                  meta-fsl-arm-extra
 twr-vf65gs10               Freescale Vybrid TWR-VF65GS10                       VF610                 meta-fsl-arm
 ventana                    i.MX6Q/DL Ventana Platform                          i.MX6Q/DL             meta-fsl-arm-extra
 wandboard                  Wandboard i.MX6 Wandboard Quad/Dual/Solo            i.MX6Q/DL             meta-fsl-arm-extra

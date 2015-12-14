@@ -13,4 +13,6 @@ Bug ID  Status              Summary
 7825    NEW                 Vivante: Spurious frame sent to compositor after hiding Wayland window
 7852    IN PROGRESS DESIGN  bitbake-layers layerindex-fetch doesn't respect branch (-b|--branch) option
 8092    NEW                 Implementation of the function glXChooseFBConfig in the libGL.so does not match OpenGL documentation
+8737    ACCEPTED            xf86-video-imxfb-vivante build fails for imx6qsabresd on autobuilder
+8802    NEW                 meta-fsl-* fails in universe fetch
 ======  ==================  ========================================================================================================================

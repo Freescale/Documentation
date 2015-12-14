@@ -1,6 +1,7 @@
 ======================  ===================  ==========================
 Board                   Kernel Provider      Kernel Version
 ======================  ===================  ==========================
+apalis-imx6             linux-toradex        3.14.28-v2.5b2
 cfa10036                linux-cfa            3.12
 cfa10037                linux-cfa            3.12
 cfa10049                linux-cfa            3.12
@@ -8,9 +9,10 @@ cfa10055                linux-cfa            3.12
 cfa10056                linux-cfa            3.12
 cfa10057                linux-cfa            3.12
 cfa10058                linux-cfa            3.12
-cgtqmx6                 linux-congatec       3.14.28-1.0.0_qmx6
+cgtqmx6                 linux-congatec       3.14-1.0.x-mx6-qmx6
 cm-fx6                  linux-compulab       3.14.28-cm-fx6
-colibri-vf              linux-toradex        4.1-v2.5b1.1
+colibri-imx6            linux-toradex        3.14.28-v2.5b2
+colibri-vf              linux-toradex        4.1-v2.5b2
 cubox-i                 linux-cubox-i        3.14.14
 imx233-olinuxino-maxi   linux-fslc           4.1+git
 imx233-olinuxino-micro  linux-fslc           4.1+git
@@ -42,10 +44,8 @@ m53evk                  linux-denx           3.9-master
 nitrogen6sx             linux-boundary       3.14.28-1.0.0_ga+yocto
 nitrogen6x              linux-boundary       3.14.28-1.0.0_ga+yocto
 nitrogen6x-lite         linux-boundary       3.14.28-1.0.0_ga+yocto
-pcl052                  linux-timesys        3.0.15
-pcm052                  linux-timesys        3.0.15
-quartz                  linux-timesys        3.0.15
-twr-vf65gs10            linux-timesys        3.0.15
-ventana                 linux-gateworks-imx  3.10.53-1.1.0_ga+yocto
+pcm052                  linux-timesys        3.13
+twr-vf65gs10            linux-fslc           4.1+git
+ventana                 linux-gateworks-imx  3.14-1.0.x_ga+yocto
 wandboard               linux-wandboard      3.14.28_1.0.0_ga-wandboard
 ======================  ===================  ==========================

@@ -1,6 +1,7 @@
 ======================  ===============  ===================================
 Board                   Bootloader       Bootloader version
 ======================  ===============  ===================================
+apalis-imx6             u-boot-toradex   v2015.04-v2.5b2+git
 cfa10036                barebox          2013.08.0
 cfa10037                barebox          2013.08.0
 cfa10049                barebox          2013.08.0
@@ -8,9 +9,10 @@ cfa10055                barebox          2013.08.0
 cfa10056                barebox          2013.08.0
 cfa10057                barebox          2013.08.0
 cfa10058                barebox          2013.08.0
-cgtqmx6                 u-boot-congatec  2013.04
+cgtqmx6                 u-boot-fslc      v2015.10+git
 cm-fx6                  u-boot-compulab  2014.10
-colibri-vf              u-boot-toradex   v2015.04+git
+colibri-imx6            u-boot-toradex   v2015.04-v2.5b2+git
+colibri-vf              u-boot-toradex   v2015.04-v2.5b2+git
 cubox-i                 u-boot-fslc      v2015.10+git
 imx233-olinuxino-maxi   u-boot-fslc      v2015.10+git
 imx233-olinuxino-micro  u-boot-fslc      v2015.10+git
@@ -24,7 +26,7 @@ imx53qsb                u-boot-fslc      v2015.10+git
 imx6dl-riotboard        u-boot-fslc      v2015.10+git
 imx6dlsabreauto         u-boot-fslc      v2015.10+git
 imx6dlsabresd           u-boot-fslc      v2015.10+git
-imx6qpsabreauto         u-boot-fslc      v2015.10+git
+imx6qpsabreauto         u-boot-imx       2015.04-imx_v2015.04_3.14.38_6qp_ga
 imx6qsabreauto          u-boot-fslc      v2015.10+git
 imx6qsabrelite          u-boot-boundary  v2015.07+git
 imx6qsabresd            u-boot-fslc      v2015.10+git
@@ -42,9 +44,7 @@ m53evk                  u-boot-fslc      v2015.10+git
 nitrogen6sx             u-boot-boundary  v2015.07+git
 nitrogen6x              u-boot-boundary  v2015.07+git
 nitrogen6x-lite         u-boot-boundary  v2015.07+git
-pcl052                  u-boot-timesys   v2011.12
-pcm052                  u-boot-timesys   v2011.12
-quartz                  u-boot-timesys   v2011.12
+pcm052                  u-boot-fslc      v2015.10+git
 twr-vf65gs10            u-boot-fslc      v2015.10+git
 ventana                 u-boot           v2015.07+git
 wandboard               u-boot-fslc      v2015.10+git

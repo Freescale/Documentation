@@ -4,7 +4,7 @@ Package name              ls102xa                   mx28                      mx
 apptrk                    git                       git                       git                       git                       git                       git
 cst                       git                       git                       git                       git                       git                       git
 devregs                   1.0+AUTOINC+34ed402b92    1.0+AUTOINC+34ed402b92    1.0+AUTOINC+34ed402b92    1.0+AUTOINC+34ed402b92    1.0+AUTOINC+34ed402b92    1.0+AUTOINC+34ed402b92
-directfb                  1.7.7                     1.7.7                     1.7.7                     1.7.4                     1.7.4                     1.7.7
+directfb                  1.7.7                     1.7.7                     1.7.7                     1.7.7                     1.7.7                     1.7.7
 directfb-examples         1.7.0                     1.7.0                     1.7.0                     1.7.0                     1.7.0                     1.7.0
 elftosb                   10.12.01                  10.12.01                  10.12.01                  10.12.01                  10.12.01                  10.12.01
 firmware-imx              --                        --                        5.2                       5.2                       5.2                       --
@@ -21,8 +21,8 @@ imx-vpu                   --                        --                        --
 libfslcodec               --                        --                        --                        4.0.7                     4.0.7                     --
 libfslparser              --                        --                        --                        4.0.7                     4.0.7                     --
 libfslvpuwrap             --                        --                        --                        1.0.61                    --                        --
-libmcc                    --                        --                        --                        --                        --                        1.05
-mqxboot                   --                        --                        --                        --                        --                        1.0
+libmcc                    --                        --                        --                        --                        --                        1.05.1
+mqxboot                   --                        --                        --                        --                        --                        2.0.1
 mxsldr                    0.0.0+git                 0.0.0+git                 0.0.0+git                 0.0.0+git                 0.0.0+git                 0.0.0+git
 qe-ucode                  git                       --                        --                        --                        --                        --
 qemu-fsl                  2.2.0+AUTOINC+00ac004143  2.2.0+AUTOINC+00ac004143  2.2.0+AUTOINC+00ac004143  2.2.0+AUTOINC+00ac004143  2.2.0+AUTOINC+00ac004143  2.2.0+AUTOINC+00ac004143

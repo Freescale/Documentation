@@ -1,6 +1,7 @@
-================  ==============================================
+================  ========================================
 Machine           Name
-================  ==============================================
+================  ========================================
+apalis-imx6       Toradex Apalis iMX6Q/D
 cfa10036          Crystalfontz CFA-10036
 cfa10037          Crystalfontz CFA-10037
 cfa10049          Crystalfontz CFA-10049
@@ -8,8 +9,9 @@ cfa10055          Crystalfontz CFA-10055
 cfa10056          Crystalfontz CFA-10056
 cfa10057          Crystalfontz CFA-10057
 cfa10058          Crystalfontz CFA-10058
-cgtqmx6           Congatec Qmx6
+cgtqmx6           Congatec QMX6 Evaluation board
 cm-fx6            CompuLab CM-FX6
+colibri-imx6      Toradex Colibri iMX6DL/S
 colibri-vf        Toradex Colibri VF50/VF61
 cubox-i           SolidRun CuBox-i and HummingBoard
 imx23evk          Freescale i.MX23 Evaluation Kit
@@ -35,10 +37,8 @@ ls1021atwr        Freescale LS1021ATWR board
 nitrogen6sx       Boundary Devices Nitrogen6SX
 nitrogen6x        Boundary Devices Nitrogen6X
 nitrogen6x-lite   Boundary Devices Nitrogen6X Lite
-pcl052            Phytec Cosmic Vybrid Development Kit
 pcm052            Phytec phyCORE Vybrid Development Kit
-quartz            Device Solutions Quartz Vybrid Development Kit
 twr-vf65gs10      Freescale Vybrid TWR-VF65GS10
 ventana           i.MX6Q/DL Ventana Platform
 wandboard         Wandboard i.MX6 Wandboard Quad/Dual/Solo
-================  ==============================================
+================  ========================================
