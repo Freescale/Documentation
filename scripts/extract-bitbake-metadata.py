@@ -292,9 +292,11 @@ def extract_bitbake_metadata(recipes):
     data = {}
 
     metadata = tinfoil.parse_metadata()
-    machine = metadata.getVar('MACHINE')
-    data['image-bootloader'] = metadata.getVar('IMAGE_BOOTLOADER')
-    data['soc-family'] = metadata.getVar('SOC_FAMILY')
+    machine = metadata.getVar('MACHINE', True)
+    data['image-bootloader'] = metadata.getVar('IMAGE_BOOTLOADER', True)
+    data['soc-family'] = metadata.getVar('SOC_FAMILY', True)
+    if data['soc-family'] is None:
+        data['soc-family'] = metadata.getVar('MACHINEOVERRIDES', True)
     data['recipes'] = {}
 
     metadata = None
