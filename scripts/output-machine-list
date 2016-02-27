@@ -51,28 +51,21 @@ list_machines() {
 }
 
 tabularize_machines() {
+    echo "Machine,Name,SoC,Layer" >> $TMP
+
     for l in $MACHINE_LAYERS; do
         MACHINES=`cd $REPO; repo forall $l -c 'find -wholename "*/conf/machine/*.conf" | sed "s,./\(.*\),$REPO_PATH/\1,g"'`
         for m in $MACHINES; do
             machine=`basename $m | sed 's,\.conf$,,g'`
             name=`sed -n 's,#@NAME:\s*\(.*\),\1,p' $REPO/$m`
             soc=`sed -n 's,#@SOC:\s*\(.*\),\1,p' $REPO/$m`
-
-            printf "%-25s  %-50s  %-20s  %-10s\n" "$machine" "$name" "$soc" "$l" >> $TMP
+            l=`basename $l`
+            printf "%s,%s,%s,%s\n" "$machine" "$name" "$soc" "$l" >> $TMP
         done
     done
 
-    cat <<EOF
-=========================  ==================================================  ====================  ====================
-         Machine             Name                                                      SoC                  Layer
-=========================  ==================================================  ====================  ====================
-EOF
+    python format_machine_list.py $TMP
 
-    sort -u -k 1 $TMP
-
-    cat <<EOF
-=========================  ==================================================  ====================  ====================
-EOF
     rm $TMP
 }
 
