@@ -4,7 +4,7 @@ def tabularize(lines, spacing=2):
 
     def format_header(header, widths, spc):
         border = format_border(widths)
-        header = spc.join(map(lambda col, width: col.ljust(width),
+        header = spc.join(map(lambda col, width: col.center(width),
                               header, widths)).rstrip()
         return '\n'.join([border, header, border])
 
