@@ -42,7 +42,7 @@ for details on the Yocto Project.
 Motivation
 ----------
 The |project_name| started with the goal of easing the use of
-OpenEmbeedded and Yocto Project with Freescale's SoCs
+OpenEmbedded and Yocto Project with Freescale's SoCs
 and providing an example of how to assemble an easy-to-use
 platform as the basis for future products.
 
