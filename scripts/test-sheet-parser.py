@@ -168,7 +168,7 @@ def process_test_sheet(test_sheet, repos_dir):
         print('This board was tested by %d %s.\n' % (len(testers), tester_str))
         print('%d %s %s used:\n' % (len(images), image_str, was))
         for image in images:
-            print '  * ' + image
+            print('  * ' + image)
 
         # Omit the first 4 questions (personal + board) and empty questions
         # for qno, question in enumerate(header):

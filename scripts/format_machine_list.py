@@ -38,7 +38,7 @@ def main():
 
     csv_file = sys.argv[1]
     table = process_machines_table(read_csv_file(csv_file))
-    print table.strip()
+    print(table.strip())
 
 
 if __name__ == '__main__':

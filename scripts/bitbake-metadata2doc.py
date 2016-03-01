@@ -478,7 +478,7 @@ def write_acknowledgements(out_dir, bsp_dir, gitdm_dir, start_commit, end_commit
 
 
 def usage(exit_code=None):
-    print 'Usage: %s <data file> <output dir> <bsp dir> <gitdb dir> <start commit> <end commit>' % (os.path.basename(sys.argv[0]),)
+    print('Usage: %s <data file> <output dir> <bsp dir> <gitdb dir> <start commit> <end commit>' % (os.path.basename(sys.argv[0]),))
     if exit_code:
         sys.exit(exit_code)
 

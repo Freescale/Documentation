@@ -44,20 +44,20 @@ def parse_data(csv_bug_list, columns_to_keep):
 
 def write_to_file(file_path, data):
     if(file_path == "-"):
-        print "\n" + data
+        print("\n" + data)
     else:
-        print 'Writing to file "' + file_path + '"...'
+        print('Writing to file "' + file_path + '"...')
         f = open(file_path, 'w')
         f.write(data)
         f.close()
-        print "Done!"
+        print("Done!")
 
 def generate_bugs_file(url, output_file_path, columns_to_keep):
-    print "Requesting bugs list in CSV format from https://bugzilla.yoctoproject.org/..."
+    print("Requesting bugs list in CSV format from https://bugzilla.yoctoproject.org/...")
     csv_bug_list = request_bug_list(url)
-    print "Parsing data..."
+    print("Parsing data...")
     data = parse_data(csv_bug_list, columns_to_keep)
-    print "Building table..."
+    print("Building table...")
     table = tabularize(data)
     write_to_file(output_file_path, table)
 
@@ -120,7 +120,7 @@ def process_arguments():
                   "YYYY-MM-DD")
             exit(1)
 
-    print start_processing_message
+    print(start_processing_message)
     url = re.sub('<<START_DATE>>', start_date, url)
     return [url, output, columns_to_keep]
 
