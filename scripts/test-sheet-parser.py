@@ -131,10 +131,6 @@ def process_test_sheet(test_sheet, repos_dir):
     board_index = fields.index('board')
     supported_boards = get_supported_boards(repos_dir)
 
-
-    # for row in test_sheet:
-    #     print row
-
     for response in responses:
         board = response[board_index]
         if board not in responses_by_board.keys():
@@ -163,22 +159,10 @@ def process_test_sheet(test_sheet, repos_dir):
             image_str = 'image'
             was = 'was'
 
-
-
         print('This board was tested by %d %s.\n' % (len(testers), tester_str))
         print('%d %s %s used:\n' % (len(images), image_str, was))
         for image in images:
             print('  * ' + image)
-
-        # Omit the first 4 questions (personal + board) and empty questions
-        # for qno, question in enumerate(header):
-        #     if qno > 3 and question != '':
-        #         print(rst_item(question))
-        #         for responses in responses_by_board[board]:
-        #             resp = responses[qno]
-        #             if resp:
-        #                 print(rst_item(resp, level=1))
-        #         print('')
 
         print('\n')
 
