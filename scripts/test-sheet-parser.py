@@ -49,7 +49,7 @@ def read_test_sheet(csv_file):
             reader = csv.reader(csv_fd, delimiter=',')
             return list(reader)
     except IOError:
-        print('Could not read %s.  Aborting.') % csv_file
+        sys.stderr.write('Could not read %s.  Aborting.\n') % csv_file
         sys.exit(1)
 
 def parse_board_file(board_file):
@@ -65,7 +65,7 @@ def parse_board_file(board_file):
                     board_spec['soc'] = get_descr(line)
             return board_spec
     except IOError:
-        print('Could not read %s.') % board_file
+        sys.stderr.write('Could not read %s.\n') % board_file
 
 
 def get_supported_boards(repos_dir):

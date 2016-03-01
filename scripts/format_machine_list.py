@@ -14,7 +14,7 @@ def read_csv_file(csv_file):
             reader = csv.reader(csv_fd, delimiter=',')
             return list(reader)
     except IOError:
-        print('Could not read %s.  Aborting.') % csv_file
+        sys.stderr.write('Could not read %s.  Aborting.\n') % csv_file
         sys.exit(1)
 
 

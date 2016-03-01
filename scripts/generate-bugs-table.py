@@ -115,9 +115,10 @@ def process_arguments():
         try:
             time.strptime(start_date, "%Y-%m-%d")
         except ValueError:
-            print(os.path.basename(sys.argv[0]) +
-                  ": error: start_date must be in the following format: " +
-                  "YYYY-MM-DD")
+            msg = (os.path.basename(sys.argv[0]) +
+                   ": error: start_date must be in the following format: " +
+                   "YYYY-MM-DD")
+            sys.stderr.write(msg)
             exit(1)
 
     print(start_processing_message)
