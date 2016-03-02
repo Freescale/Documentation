@@ -117,7 +117,7 @@ The following table shows how packages interact with hardware depending on the
 :ref:`soc-hierarchy`
 
 .. tabularcolumns:: L | C | C  | C  | C
-.. table:: Hardware dependant packages
+.. table:: Hardware dependent packages
 
    .. include:: soc-pkg-optimization.inc
 
