@@ -23,6 +23,7 @@ imx6dl-riotboard  RIoTboard
 imx6dlsabreauto   Freescale i.MX6DL SABRE Automotive
 imx6dlsabresd     Freescale i.MX6DL SABRE Smart Device
 imx6qpsabreauto   Freescale i.MX6Q Plus SABRE Automotive
+imx6qpsabresd     Freescale i.MX6Q Plus SABRE Smart Device
 imx6qsabreauto    Freescale i.MX6Q SABRE Automotive
 imx6qsabrelite    Boundary Devices i.MX6Q SABRE Lite
 imx6qsabresd      Freescale i.MX6Q SABRE Smart Device

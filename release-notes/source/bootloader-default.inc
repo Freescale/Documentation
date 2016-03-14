@@ -1,7 +1,7 @@
-======================  ===============  ===================================
+======================  ===============  =====================================
 Board                   Bootloader       Bootloader version
-======================  ===============  ===================================
-apalis-imx6             u-boot-toradex   v2015.04-v2.5b2+git
+======================  ===============  =====================================
+apalis-imx6             u-boot-toradex   v2015.04-v2.5b3+git
 cfa10036                barebox          2013.08.0
 cfa10037                barebox          2013.08.0
 cfa10049                barebox          2013.08.0
@@ -11,8 +11,8 @@ cfa10057                barebox          2013.08.0
 cfa10058                barebox          2013.08.0
 cgtqmx6                 u-boot-fslc      v2015.10+git
 cm-fx6                  u-boot-compulab  2014.10
-colibri-imx6            u-boot-toradex   v2015.04-v2.5b2+git
-colibri-vf              u-boot-toradex   v2015.04-v2.5b2+git
+colibri-imx6            u-boot-toradex   v2015.04-v2.5b3+git
+colibri-vf              u-boot-toradex   v2015.04-v2.5b3+git
 cubox-i                 u-boot-fslc      v2015.10+git
 imx233-olinuxino-maxi   u-boot-fslc      v2015.10+git
 imx233-olinuxino-micro  u-boot-fslc      v2015.10+git
@@ -26,15 +26,16 @@ imx53qsb                u-boot-fslc      v2015.10+git
 imx6dl-riotboard        u-boot-fslc      v2015.10+git
 imx6dlsabreauto         u-boot-fslc      v2015.10+git
 imx6dlsabresd           u-boot-fslc      v2015.10+git
-imx6qpsabreauto         u-boot-imx       2015.04-imx_v2015.04_3.14.38_6qp_ga
+imx6qpsabreauto         u-boot-imx       2015.04-imx_v2015.04_3.14.52_1.1.0_ga
+imx6qpsabresd           u-boot-fslc      v2015.10+git
 imx6qsabreauto          u-boot-fslc      v2015.10+git
 imx6qsabrelite          u-boot-boundary  v2015.07+git
 imx6qsabresd            u-boot-fslc      v2015.10+git
 imx6sl-warp             u-boot-fslc      v2015.10+git
 imx6slevk               u-boot-fslc      v2015.10+git
-imx6solosabreauto       u-boot-imx       2015.04-imx_v2015.04_3.14.38_6qp_ga
-imx6solosabresd         u-boot-imx       2015.04-imx_v2015.04_3.14.38_6qp_ga
-imx6sxsabreauto         u-boot-imx       2015.04-imx_v2015.04_3.14.38_6qp_ga
+imx6solosabreauto       u-boot-imx       2015.04-imx_v2015.04_3.14.52_1.1.0_ga
+imx6solosabresd         u-boot-imx       2015.04-imx_v2015.04_3.14.52_1.1.0_ga
+imx6sxsabreauto         u-boot-imx       2015.04-imx_v2015.04_3.14.52_1.1.0_ga
 imx6sxsabresd           u-boot-fslc      v2015.10+git
 imx6ulevk               u-boot-fslc      v2015.10+git
 imx7dsabresd            u-boot-fslc      v2015.10+git
@@ -48,4 +49,4 @@ pcm052                  u-boot-fslc      v2015.10+git
 twr-vf65gs10            u-boot-fslc      v2015.10+git
 ventana                 u-boot           v2015.07+git
 wandboard               u-boot-fslc      v2015.10+git
-======================  ===============  ===================================
+======================  ===============  =====================================

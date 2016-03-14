@@ -22,8 +22,13 @@ Bug ID  Resolution  Summary
 7226    WORKSFORME  bitbake failure - MACHINE=cubox-i PACKAGE_CLASSES=package_deb
 7384    FIXED       u-boot-fslc fails in master
 7799    FIXED       Parse failure due to gstreamer 0.10 removal
+7811    FIXED       Buffer corruption after resizing wayland client
 7845    INVALID     bitbake fsl-image-qt5 build error for board VAR-SOM-MX6
 7998    WORKSFORME  qt-x11-free (meta-qt3) has host contamination
 8266    FIXED       meta-fsl-arm fails do_compile of xf86-video-imxfb-vivante
 8287    FIXED       meta-fsl* fails on perf install
+8737    WORKSFORME  xf86-video-imxfb-vivante build fails for imx6qsabresd on autobuilder
+8802    FIXED       meta-fsl-* fails in universe fetch
+8898    FIXED       meta-fsl-arm has unconditional bbappends for qt4
+8945    FIXED       meta-fsl-arm layer fails to parse with MACHINE = "imx28evk
 ======  ==========  =======================================================================================
