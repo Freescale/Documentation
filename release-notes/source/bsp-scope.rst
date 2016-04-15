@@ -4,14 +4,14 @@
 ***********************
 The scope of the |project_name| includes the meta layers:
 
- * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=jethro>`_:
+ * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=krogoth>`_:
    provides the base support and Freescale ARM reference boards;
- * `meta-fsl-arm-extra <https://github.com/Freescale/meta-fsl-arm-extra/tree/jethro>`_:
+ * `meta-fsl-arm-extra <https://github.com/Freescale/meta-fsl-arm-extra/tree/krogoth>`_:
    provides support for 3rd party and partner boards;
- * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/jethro>`_:
+ * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/krogoth>`_:
    provides images recipes, demo recipes, and packagegroups used to easy the
    development with Yocto Project.
- * `Documentation <https://github.com/Freescale/Documentation/tree/jethro>`_:
+ * `Documentation <https://github.com/Freescale/Documentation/tree/krogoth>`_:
    provides the source code for |project_name| Release Notes (RN), User Guide
    (UG) and Frequently Asked Questions (FAQ)
 

@@ -7,7 +7,9 @@
 * **linux-fslc-imx**: Linux kernel based on Freescale 3.14.52-1.1.0 GA release, used by FSL Community BSP in order to provide support for i.MX6 based platforms and include official Linux kernel stable updates, backported features and fixes coming from the vendors, kernel community or FSL Community itself.
 * **linux-gateworks-imx**: linux-gateworks-imx version 3.14-r0.
 * **linux-imx**: Linux Kernel provided and supported by Freescale with focus on i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU.
+* **linux-karo**: Linux Kernel for Ka-Ro electronics TX Computer-On-Modules.
 * **linux-ls1**: Linux Kernel provided and supported by Freescale with focus on Layerscape1 Family Boards. 
 * **linux-timesys**: Linux Kernel with added drivers and board support for Vybrid-based platforms.
 * **linux-toradex**: Linux kernel for Toradex Colibri VFxx Computer on Modules.
+* **linux-variscite**: linux-variscite version 3.14.28-r0.
 * **linux-wandboard**: Linux kernel for Wandboard.

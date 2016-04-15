@@ -1,5 +1,5 @@
 ======  ==========  =======================================================================================
-Bug ID  Resolution  Summary
+Bug ID  Resolution                                          Summary
 ======  ==========  =======================================================================================
 3719    WORKSFORME  fsl-image-gui image for imx6qsabreauto machine does not reboot
 4510    WONTFIX     GLX load vivante_dri.so failed
@@ -20,6 +20,7 @@ Bug ID  Resolution  Summary
 6703    FIXED       Kernel hangs on boot when HDMI cable is plugged
 6894    WONTFIX     kernel menuconfig unusable and errors during compileing
 7226    WORKSFORME  bitbake failure - MACHINE=cubox-i PACKAGE_CLASSES=package_deb
+7339    FIXED       Performance issue in do_rootfs (buildhistory_list_installed_image)
 7384    FIXED       u-boot-fslc fails in master
 7799    FIXED       Parse failure due to gstreamer 0.10 removal
 7811    FIXED       Buffer corruption after resizing wayland client

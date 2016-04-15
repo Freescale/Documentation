@@ -1,5 +1,5 @@
 ======================  ====================================
-Machine                 Name
+       Machine                          Name
 ======================  ====================================
 imx233-olinuxino-maxi   OLIMEX iMX233-OLinuXino-Maxi
 imx233-olinuxino-micro  OLIMEX iMX233-OLinuXino-Micro
