@@ -26,8 +26,9 @@ imx53qsb                linux-fslc           4.4+git
 imx6dl-riotboard        linux-fslc           4.4+git
 imx6dlsabreauto         linux-fslc-imx       4.1-1.0.x+git
 imx6dlsabresd           linux-fslc-imx       4.1-1.0.x+git
+imx6q-elo               linux-ge             3.14-1.1.x-fslc-imx-elo
 imx6qdl-variscite-som   linux-variscite      3.14.28-1.1.0
-imx6qpsabreauto         linux-imx            4.1.15-1.0.0
+imx6qpsabreauto         linux-imx            4.1.15-1.1.0
 imx6qpsabresd           linux-fslc-imx       4.1-1.0.x+git
 imx6qsabreauto          linux-fslc-imx       4.1-1.0.x+git
 imx6qsabrelite          linux-boundary       3.14.52-1.1.0_ga+yocto
@@ -38,9 +39,9 @@ imx6solosabreauto       linux-fslc-imx       4.1-1.0.x+git
 imx6solosabresd         linux-fslc-imx       4.1-1.0.x+git
 imx6sxsabreauto         linux-fslc-imx       4.1-1.0.x+git
 imx6sxsabresd           linux-fslc-imx       4.1-1.0.x+git
-imx6ulevk               linux-imx            4.1.15-1.0.0
+imx6ulevk               linux-imx            4.1.15-1.1.0
 imx7d-warp7             linux-fslc-imx       4.1-1.0.x+git
-imx7dsabresd            linux-imx            4.1.15-1.0.0
+imx7dsabresd            linux-imx            4.1.15-1.1.0
 ls1021atwr              linux-ls1            3.12+ls1
 m28evk                  linux-fslc           4.4+git
 m53evk                  linux-denx           3.9-master

@@ -26,6 +26,7 @@ imx53qsb                Freescale i.MX53 Quick Start Board                  i.MX
 imx6dl-riotboard        RIoTboard                                           i.MX6S       meta-fsl-arm-extra
 imx6dlsabreauto         Freescale i.MX6DL SABRE Automotive                  i.MX6DL      meta-fsl-arm
 imx6dlsabresd           Freescale i.MX6DL SABRE Smart Device                i.MX6DL      meta-fsl-arm
+imx6q-elo               General Electric ELO                                i.MX6Q       meta-fsl-arm-extra
 imx6qdl-variscite-som   Variscite i.MX6Q/DL VAR-SOM-MX6                     i.MX6Q/DL    meta-fsl-arm-extra
 imx6qpsabreauto         Freescale i.MX6Q Plus SABRE Automotive              i.MX6QP      meta-fsl-arm
 imx6qpsabresd           Freescale i.MX6Q Plus SABRE Smart Device            i.MX6QP      meta-fsl-arm

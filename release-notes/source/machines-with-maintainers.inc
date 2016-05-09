@@ -22,6 +22,7 @@ imx53qsb               Freescale i.MX53 Quick Start Board
 imx6dl-riotboard       RIoTboard
 imx6dlsabreauto        Freescale i.MX6DL SABRE Automotive
 imx6dlsabresd          Freescale i.MX6DL SABRE Smart Device
+imx6q-elo              General Electric ELO
 imx6qdl-variscite-som  Variscite i.MX6Q/DL VAR-SOM-MX6
 imx6qpsabreauto        Freescale i.MX6Q Plus SABRE Automotive
 imx6qpsabresd          Freescale i.MX6Q Plus SABRE Smart Device
@@ -44,8 +45,8 @@ nitrogen7              Boundary Devices Nitrogen7
 pcm052                 Phytec phyCORE Vybrid Development Kit
 twr-vf65gs10           Freescale Vybrid TWR-VF65GS10
 tx6q-10x0              Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module
-tx6s-8034              Ka-Ro electronics i.MX6S TX6S Computer-On-Module
-tx6u-80x0              Ka-Ro electronics i.MX6DL TX6DL Computer-On-Module
+tx6s-8035              Ka-Ro electronics i.MX6S TX6S Computer-On-Module
+tx6u-81x0              Ka-Ro electronics i.MX6DL TX6DL Computer-On-Module
 ventana                i.MX6Q/DL Ventana Platform
 wandboard              Wandboard i.MX6 Wandboard Quad/Dual/Solo
 =====================  ==================================================

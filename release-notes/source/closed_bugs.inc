@@ -9,7 +9,6 @@ Bug ID  Resolution                                          Summary
 5178    WORKSFORME  sabresd boot failure with preferred provider linux-fslc
 5202    NOTABUG     distorted images from gstreamer
 5219    FIXED       meta-fsl-arm kernel crash when using graphics acceleration
-5359    FIXED       [Yocto 1.5] su - USER -c 'COMMAND' env variable issue
 5361    FIXED       resolvconf fail to change dns-nameservers from /etc/network/interfaces
 5607    OBSOLETE    MCIMX-LVDS1 trhows unknown mouse event on Qt 4.8
 5826    FIXED       ARM: recipe xserver-xorg-2_1.15.0-r0: task do_compile: Failed
@@ -23,7 +22,6 @@ Bug ID  Resolution                                          Summary
 7339    FIXED       Performance issue in do_rootfs (buildhistory_list_installed_image)
 7384    FIXED       u-boot-fslc fails in master
 7799    FIXED       Parse failure due to gstreamer 0.10 removal
-7811    FIXED       Buffer corruption after resizing wayland client
 7845    INVALID     bitbake fsl-image-qt5 build error for board VAR-SOM-MX6
 7998    WORKSFORME  qt-x11-free (meta-qt3) has host contamination
 8266    FIXED       meta-fsl-arm fails do_compile of xf86-video-imxfb-vivante

@@ -26,6 +26,7 @@ imx53qsb                u-boot-fslc           v2016.03+git
 imx6dl-riotboard        u-boot-fslc           v2016.03+git
 imx6dlsabreauto         u-boot-fslc           v2016.03+git
 imx6dlsabresd           u-boot-fslc           v2016.03+git
+imx6q-elo               u-boot-ge             2015.10
 imx6qdl-variscite-som   u-boot-variscite      2013.10
 imx6qpsabreauto         u-boot-imx            2015.04-imx_v2015.04_4.1.15_1.0.0_ga
 imx6qpsabresd           u-boot-fslc           v2016.03+git
