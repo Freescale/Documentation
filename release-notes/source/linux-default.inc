@@ -39,9 +39,10 @@ imx6solosabreauto       linux-fslc-imx       4.1-1.0.x+git
 imx6solosabresd         linux-fslc-imx       4.1-1.0.x+git
 imx6sxsabreauto         linux-fslc-imx       4.1-1.0.x+git
 imx6sxsabresd           linux-fslc-imx       4.1-1.0.x+git
-imx6ulevk               linux-imx            4.1.15-1.1.0
+imx6ul-pico-hobbit      linux-fslc           4.4+git
+imx6ulevk               linux-fslc-imx       4.1-1.0.x+git
 imx7d-warp7             linux-fslc-imx       4.1-1.0.x+git
-imx7dsabresd            linux-imx            4.1.15-1.1.0
+imx7dsabresd            linux-fslc-imx       4.1-1.0.x+git
 ls1021atwr              linux-ls1            3.12+ls1
 m28evk                  linux-fslc           4.4+git
 m53evk                  linux-denx           3.9-master

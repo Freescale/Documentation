@@ -39,6 +39,7 @@ imx6solosabreauto       Freescale i.MX6Solo SABRE Automotive                i.MX
 imx6solosabresd         Freescale i.MX6Solo SABRE Smart Device              i.MX6S       meta-fsl-arm
 imx6sxsabreauto         Freescale i.MX6SoloX Sabre Automotive               i.MX6SX      meta-fsl-arm
 imx6sxsabresd           Freescale i.MX6SoloX SabreSD                        i.MX6SX      meta-fsl-arm
+imx6ul-pico-hobbit      Hobbitboard (PICO-IMX6UL)                           i.MX6UL      meta-fsl-arm-extra
 imx6ulevk               Freescale i.MX6UL Evaluation Kit                    i.MX6UL      meta-fsl-arm
 imx7d-warp7             WaRP7                                               i.MX7S       meta-fsl-arm-extra
 imx7dsabresd            Freescale i.MX7D SABRE Smart Device                 i.MX7D       meta-fsl-arm

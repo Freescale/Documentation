@@ -34,6 +34,7 @@ imx6slevk              Freescale i.MX6SL Evaluation Kit
 imx6solosabresd        Freescale i.MX6Solo SABRE Smart Device
 imx6sxsabreauto        Freescale i.MX6SoloX Sabre Automotive
 imx6sxsabresd          Freescale i.MX6SoloX SabreSD
+imx6ul-pico-hobbit     Hobbitboard (PICO-IMX6UL)
 imx6ulevk              Freescale i.MX6UL Evaluation Kit
 imx7d-warp7            WaRP7
 imx7dsabresd           Freescale i.MX7D SABRE Smart Device
