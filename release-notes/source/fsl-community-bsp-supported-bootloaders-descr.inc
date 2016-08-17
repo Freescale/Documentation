@@ -1,7 +1,6 @@
 * **barebox**: Barebox - a bootloader that inherits the best of U-Boot and the Linux kernel
 * **u-boot-boundary**: u-boot for Boundary Devices boards.
 * **u-boot-fslc**: U-Boot based on mainline U-Boot used by FSL Community BSP in order to provide support for some backported features and fixes, or because it was submitted for revision and it takes some time to become part of a stable version, or because it is not applicable for upstreaming.
-* **u-boot-ge**: U-Boot for GE i.MX6 BA16 based platforms
 * **u-boot-imx**: U-Boot provided by Freescale with focus on  i.MX reference boards.
 * **u-boot-karo**: u-boot for Ka-Ro electronics TX Computer-On-Modules.
 * **u-boot-ls1**: U-Boot provided by Freescale with focus on QorIQ Layerscape1 boards

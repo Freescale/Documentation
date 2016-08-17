@@ -12,7 +12,7 @@ fsl-alsa-plugins          --                        --                        --
 gpu-viv-bin-mx6q          --                        --                        --                        --                        --                        --
 gpu-viv-g2d               --                        --                        --                        --                        --                        --
 gst1.0-fsl-plugin         --                        --                        --                        --                        --                        --
-gstreamer1.0-plugins-imx  --                        --                        --                        0.12.1                    0.12.1                    --
+gstreamer1.0-plugins-imx  --                        --                        --                        0.12.2                    0.12.2                    --
 imx-kobs                  --                        --                        --                        --                        --                        --
 imx-lib                   --                        --                        --                        5.4                       5.4                       --
 imx-test                  --                        00.00.00                  00.00.00                  5.4.1                     5.4.1                     00.00.00
