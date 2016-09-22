@@ -1,6 +1,8 @@
 ======  ==================  ========================================================================================================================
 Bug ID        Status                                                                Summary
 ======  ==================  ========================================================================================================================
+10199   IN PROGRESS REVIEW  Toaster when fed with custom fixture raises error due to malformed path
+10316   WaitForUpstream     Vivante: Memory corruption in wayland client process after hiding window
 4155    IN PROGRESS REVIEW  i.MX6: VPU plugins for GStreamer do not work with appsink
 4156    NEW                 HTML5 video in GStreamer-enabled WebKit doesn't work with VPU acceleration
 5098    NEW                 gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-sfp.bin and gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-hfp.bin are missing OpenGL headers

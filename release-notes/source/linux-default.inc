@@ -43,7 +43,7 @@ imx6sxsabresd           linux-fslc-imx       4.1-1.0.x+git
 imx6ul-pico-hobbit      linux-fslc           4.4+git
 imx6ulevk               linux-fslc-imx       4.1-1.0.x+git
 imx7dsabresd            linux-fslc-imx       4.1-1.0.x+git
-imx7s-warp              linux-fslc-imx       4.1-1.0.x+git
+imx7s-warp              linux-warp7          4.1-4.1-1.0.x-imx-warp7
 ls1021atwr              linux-ls1            3.12+ls1
 m28evk                  linux-fslc           4.4+git
 m53evk                  linux-denx           3.9-master
