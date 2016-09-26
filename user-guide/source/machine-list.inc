@@ -28,6 +28,7 @@ imx6qsabresd               Freescale i.MX6Q SABRE Smart Device                 i
 imx6slevk                  Freescale i.MX6SL Evaluation Kit                    i.MX6SL     meta-fsl-arm
 imx6solosabreauto          Freescale i.MX6Solo SABRE Automotive                i.MX6S      meta-fsl-arm
 imx6solosabresd            Freescale i.MX6Solo SABRE Smart Device              i.MX6S      meta-fsl-arm
+ls1021atwr                 Freescale QorIQ® LS1021A Tower® System Module       ls102xa     meta-fsl-arm
 twr-vf65gs10               Freescale Vybrid TWR-VF65GS10                       vf60        meta-fsl-arm
 imx233-olinuxino-maxi      OLIMEX iMX233-OLinuXino-Maxi                        i.MX23      meta-fsl-arm-extra
 imx233-olinuxino-micro     OLIMEX iMX233-OLinuXino-Micro                       i.MX23      meta-fsl-arm-extra
