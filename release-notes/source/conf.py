@@ -50,7 +50,7 @@ copyright = u'2013-2016, FSL Community BSP Team'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The short X.Y version.
+# The short X.Y version or version name if applicable. 
 version = 'krogoth'
 # The full version, including alpha/beta/rc tags.
 release = '2.1'
