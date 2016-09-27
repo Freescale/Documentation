@@ -29,19 +29,50 @@ Build and boot in *N*-steps
     build $ bitbake-layers show-recipes "*image*" | grep ':'  # To list all possible images
     build $ bitbake <selected image>	# Bake! The first time can take several hours
 
-6. Flash your SD card::
+6. Flash your SD card:
 
-    # Insert your SD Card
-    # Type '$ dmesg | tail' to see the device node being used, e.g /dev/sdb
-    # In case the SD to be flashed has already some partitions, the host system may have 
-    # mounted these, so unmount them, e.g. '$ sudo umount /dev/sdb?'.
-    build $ ls -la 'tmp/deploy/images/<selected machine>/*.sdcard'
+    a) With a pre-formed sdcard image::
 
-    # Flash the soft link one
-    build $ sudo dd if=tmp/deploy/images/<selected machine>/<selected image>-<selected machine>.sdcard \
-                    of=/dev/sdX \
-                    bs=1M \
-                    conv=fsync
+        # Insert your SD Card
+        # Type '$ dmesg | tail' to see the device node being used, e.g /dev/sdb
+        # In case the SD to be flashed has already some partitions, the host system may have 
+        # mounted these, so unmount them, e.g. '$ sudo umount /dev/sdb?'.
+        build $ ls -la 'tmp/deploy/images/<selected machine>/*.sdcard'
+        
+        # Flash the soft link .sdcard image
+        build $ sudo dd \
+                  if=tmp/deploy/images/<selected machine>/<selected image>-<selected machine>.sdcard \
+                  of=/dev/sdX \
+                  bs=1M \
+                  conv=fsync
+
+    b) With a pre-formed root filesystem archive, kernel and device tree binary image::
+
+        # Insert your SD Card
+        # Check your card is mounted ls /media/<user name>/<mounted filesystem name>
+        build $ ls -la 'tmp/deploy/images/<selected machine>/*.tar.gz'
+        
+        # Inflate the the soft link .tar.gz onto the cards filesystem
+        build $ sudo tar -zxvf \
+                  tmp/deploy/images/<selected machine>/<selected image>-<selected machine>.tar.gz \
+                  -C /media/<user name>/<mounted filesystem name>
+        
+        # If you will use U-Boot from the SD Card it will need to be placed on 
+        # a small partition at the start of the card.  If you will use U-Boot 
+        # from flash or elsewhere you can have a single exfs2 parition on the 
+        # whole card.  
+        
+        # Copy over the kernel
+        build $ ls -la 'tmp/deploy/images/<selected machine>/uImage*.bin'
+        build $ sudo cp \
+                  'tmp/deploy/images/<selected machine>/uImage-<selected machine>.bin' \
+                  /media/<user name>/<mounted filesystem name>/boot/
+        
+        # Copy over the device tree binary
+        build $ ls -la 'tmp/deploy/images/<selected machine>/uImage*.dtb'
+        build $ sudo cp \
+                  'tmp/deploy/images/<selected machine>/uImage-<selected machine>.dtb' \
+                  /media/<user name>/<mounted filesystem name>/boot/
 
 7. Place your SD Card in the correct board's slot and boot!
 
