@@ -82,7 +82,7 @@ for machine in $machines; do
     echo "Using $build_dir as build directory"
     MACHINE=$machine . ./setup-environment `basename $build_dir`
 
-    MACHINE=$machine python $anchor/extract-bitbake-metadata.py \
+    MACHINE=$machine python3 $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
         apptrk \
         barebox \

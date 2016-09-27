@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """ From https://github.com/kergoth/bb/blob/master/libexec/bbcmd.py """
 
@@ -47,7 +47,7 @@ class Tinfoil(bb.tinfoil.Tinfoil):
         bb.providers.logger.setLevel(logging.ERROR)
         bb.taskdata.logger.setLevel(logging.CRITICAL)
         self.cooker_data = None
-        self.taskdata = None
+        self.taskdata = {}
 
         self.localdata = bb.data.createCopy(self.config_data)
         self.localdata.finalize()
@@ -56,9 +56,8 @@ class Tinfoil(bb.tinfoil.Tinfoil):
 
 
     def prepare_taskdata(self, provided=None, rprovided=None):
-        self.cache_data = self.cooker.recipecache
-        if self.taskdata is None:
-            self.taskdata = bb.taskdata.TaskData(abort=False)
+        self.cache_data = self.cooker.recipecaches['']
+        self.taskdata[''] = self.taskdata.get('', bb.taskdata.TaskData(abort=False))
 
         if provided:
             self.add_provided(provided)
@@ -68,9 +67,9 @@ class Tinfoil(bb.tinfoil.Tinfoil):
 
     def add_rprovided(self, rprovided):
         for item in rprovided:
-            self.taskdata.add_rprovider(self.localdata, self.cache_data, item)
+            self.taskdata[''].add_rprovider(self.localdata, self.cache_data, item)
 
-        self.taskdata.add_unresolved(self.localdata, self.cache_data)
+        self.taskdata[''].add_unresolved(self.localdata, self.cache_data)
 
     def add_provided(self, provided):
         if 'world' in provided:
@@ -84,9 +83,9 @@ class Tinfoil(bb.tinfoil.Tinfoil):
             provided.extend(self.cache_data.universe_target)
 
         for item in provided:
-            self.taskdata.add_provider(self.localdata, self.cache_data, item)
+            self.taskdata[''].add_provider(self.localdata, self.cache_data, item)
 
-        self.taskdata.add_unresolved(self.localdata, self.cache_data)
+        self.taskdata[''].add_unresolved(self.localdata, self.cache_data)
 
     def rec_get_dependees(self, targetid, depth=0, seen=None):
         if seen is None:
@@ -99,41 +98,41 @@ class Tinfoil(bb.tinfoil.Tinfoil):
                 yield _id, _depth
 
     def get_dependees(self, targetid, seen):
-        dep_fnids = self.taskdata.get_dependees(targetid)
+        dep_fnids = self.taskdata[''].get_dependees(targetid)
         for dep_fnid in dep_fnids:
             if dep_fnid in seen:
                 continue
             seen.add(dep_fnid)
-            for target in self.taskdata.build_targets:
-                if dep_fnid in self.taskdata.build_targets[target]:
+            for target in self.taskdata[''].build_targets:
+                if dep_fnid in self.taskdata[''].build_targets[target]:
                     yield dep_fnid, target
 
     def get_buildid(self, target):
-        if not self.taskdata.have_build_target(target):
+        if not self.taskdata[''].have_build_target(target):
             if target in self.cooker.recipecache.ignored_dependencies:
                 return
 
-            reasons = self.taskdata.get_reasons(target)
+            reasons = self.taskdata[''].get_reasons(target)
             if reasons:
                 self.logger.error("No buildable '%s' recipe found:\n%s", target, "\n".join(reasons))
             else:
                 self.logger.error("No '%s' recipe found", target)
             return
         else:
-            return self.taskdata.getbuild_id(target)
+            return self.taskdata[''].getbuild_id(target)
 
     def target_filenames(self):
         """Return the filenames of all of taskdata's targets"""
         filenames = set()
 
-        for targetid in self.taskdata.build_targets:
-            fnid = self.taskdata.build_targets[targetid][0]
-            fn = self.taskdata.fn_index[fnid]
+        for targetid in self.taskdata[''].build_targets:
+            fnid = self.taskdata[''].build_targets[targetid][0]
+            fn = self.taskdata[''].fn_index[fnid]
             filenames.add(fn)
 
-        for targetid in self.taskdata.run_targets:
-            fnid = self.taskdata.run_targets[targetid][0]
-            fn = self.taskdata.fn_index[fnid]
+        for targetid in self.taskdata[''].run_targets:
+            fnid = self.taskdata[''].run_targets[targetid][0]
+            fn = self.taskdata[''].fn_index[fnid]
             filenames.add(fn)
 
         return filenames
@@ -173,20 +172,16 @@ class Tinfoil(bb.tinfoil.Tinfoil):
     def build_target_to_fn(self, target):
         """Given a target, prepare taskdata and return a filename"""
         self.prepare_taskdata([target])
-        targetid = self.get_buildid(target)
-        if targetid is None:
-            return
-        fnid = self.taskdata.build_targets[targetid][0]
-        fn = self.taskdata.fn_index[fnid]
+        if target in self.taskdata[''].build_targets and self.taskdata[''].build_targets[target]:
+            fn = self.taskdata[''].build_targets[target][0]
         return fn
 
     def parse_recipe_file(self, recipe_filename):
         """Given a recipe filename, do a full parse of it"""
+        bb_cache = bb.cache.NoCache(self.cooker.databuilder)
         appends = self.cooker.collection.get_file_appends(recipe_filename)
         try:
-            recipe_data = bb.cache.Cache.loadDataFull(recipe_filename,
-                                                      appends,
-                                                      self.config_data)
+            recipe_data = bb_cache.loadDataFull(recipe_filename, appends)
         except Exception:
             raise
         return recipe_data
@@ -267,7 +262,7 @@ import pickle
 
 def load_data(data_file):
     try:
-        fd = open(data_file, 'r')
+        fd = open(data_file, 'rb')
         data = pickle.load(fd)
         fd.close()
         return data
@@ -275,8 +270,8 @@ def load_data(data_file):
         return {}
 
 def dump_data(data, data_file):
-    fd = open(data_file, 'w')
-    pickle.dump(data, fd)
+    fd = open(data_file, 'wb')
+    pickle.dump(data, fd, protocol=2)
     fd.close()
 
 def extract_bitbake_metadata(recipes):

@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # Call this file on the command line with "-h" as argument to get all the
 # available options.
 
@@ -8,7 +8,7 @@ import os
 import re
 import sys
 import time
-import urllib2
+import urllib.request
 from doc_utils import tabularize
 
 BASE_DIRECTORY = os.path.dirname(os.path.realpath(__file__ + "/../"))
@@ -20,8 +20,8 @@ OPEN_BUGS_URL = "https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-
 OPEN_BUGS_OUTPUT_FILE_PATH = BASE_DIRECTORY + "/release-notes/source/open_bugs.inc"
 
 def request_bug_list(url):
-    buffer = urllib2.urlopen(url)
-    csv_bug_list = buffer.read()
+    buffer = urllib.request.urlopen(url)
+    csv_bug_list = buffer.read().decode()
     buffer.close()
     return csv_bug_list
 

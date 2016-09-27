@@ -19,8 +19,7 @@ def tabularize(lines, spacing=2):
 
     spc = ' ' * spacing
     if lines:
-        col_widths = map(lambda col: apply(max, map(len, col) + [0]),
-                         apply(zip, lines))
+        col_widths = [max(*list(map(len, col)) + [0]) for col in zip(*lines)]
         return '\n'.join([format_header(lines[0], col_widths, spc),
                           format_body(lines[1:], col_widths, spc),
                           format_border(col_widths)]) + \

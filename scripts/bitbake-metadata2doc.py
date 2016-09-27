@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # -*- encoding: utf-8 -*-
 
 import os
@@ -496,7 +496,7 @@ gitdm_dir = sys.argv[4]
 start_commit = sys.argv[5]
 end_commit = sys.argv[6]
 
-data_fd = open(data_file, 'r')
+data_fd = open(data_file, 'rb')
 data = pickle.load(data_fd)
 data_fd.close()
 
