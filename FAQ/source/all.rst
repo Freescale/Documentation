@@ -116,9 +116,9 @@ How do I create a layer?
 What are the host packages needed for Yocto Project?
 ----------------------------------------------------
 
-* Make sure your Linux host / distribution is `supported <http://www.yoctoproject.org/docs/1.5.1/ref-manual/ref-manual.html#detailed-supported-distros>`_ by the Yocto Project.
+* Make sure your Linux host / distribution is `supported <http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#detailed-supported-distros>`_ by the Yocto Project.
 
-* Packages `needed <http://www.yoctoproject.org/docs/1.5.1/ref-manual/ref-manual.html#required-packages-for-the-host-development-system>`_
+* Packages `needed <http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#required-packages-for-the-host-development-system>`_
 
 
 How can I save space after a build?
@@ -135,7 +135,7 @@ How can I save space after a build?
 Where do I check for known bugs?
 --------------------------------
 
-The known bugs are tracked using `Yocto Project Bugzilla <https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm>`_
+The known bugs are tracked using `Yocto Project Bugzilla <https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-freescale>`_
 
 
 Are there prebuilt images available?
