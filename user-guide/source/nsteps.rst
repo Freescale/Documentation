@@ -10,18 +10,18 @@ Build and boot in *N*-steps
     $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo 
     $ chmod a+x ~/bin/repo
 
-3. Download the Yocto's Metadata::
+3. Download the Yocto Metadata::
 
     $ mkdir fsl-community-bsp # You can name it anything you want
     $ cd fsl-community-bsp
     fsl-community-bsp $ repo init \
                             -u https://github.com/Freescale/fsl-community-bsp-platform \
-                            -b krogoth
+                            -b morty
     fsl-community-bsp $ repo sync 
 
 4. Select your machine (:ref:`machines`) and prepare the environment for bitbake::
 
-    fsl-community-bsp $ MACHINE=<selected machine> source ./setup-environment build
+    fsl-community-bsp $ MACHINE=<selected machine> DISTRO=<selected distro> source setup-environment build
     build $
 
 5. Select your image (:ref:`images`) and build::

@@ -15,7 +15,7 @@ before proceeding check the main `Layer Index`_.
 1. To have access to Yocto scripts, run the setup environment script under your ``BASE``
    directory::
 
-    fsl-community-bsp $ . setup-environment build
+    fsl-community-bsp $ MACHINE=wandboard DISTRO=fslc-framebuffer source setup-environment build
 
 2. Move to the place you want to create your layer and choose a name
    (e.g. ``fsl-custom``)::
@@ -50,14 +50,14 @@ package development. However, if the need does arise, follow the steps listed be
 that you have already built the package you want to patch.
 
 * Create the patch or patches. In this example we are patching the
-  Linux kernel for `wandboard-dual machine <http://www.wandboard.org/>`_;
+  Linux kernel for `wandboard machine <http://www.wandboard.org/>`_;
   in other words, the value of ``MACHINE`` in ``build/conf/local.conf`` is
-  ``MACHINE ??= 'wandboard-dual'``
+  ``MACHINE ??= 'wandboard'``
 
 * If you already have the patches available, make sure they can be applied cleanly with
   the commands ``git apply --check <PATCH_NAME>``. To create new or additional patches::
 
-    build $ cd tmp/work/wandboard_dual-poky-linux-gnueabi/linux-wandboard/3.0.35-r0/git
+    build $ cd tmp/work/wandboard-fslc-linux-gnueabi/linux-wandboard/4.1.15-r0/git
     # Edit any files you want to change
     $ git add <modified file 1> <modified file 2> ..
     $ git commit -s -m '<your commit's title>'	# Create the commit
@@ -69,8 +69,8 @@ that you have already built the package you want to patch.
   and the ```.bbfile``::
 
     sources $ mkdir -p \
-                       meta-fsl-custom/recipes-kernel/linux/linux-wandboard-3.0.35/
-    sources $ cat > meta-fsl-custom/recipes-kernel/linux/linux-wandboard_3.0.35.bbappend << EOF
+                       meta-fsl-custom/recipes-kernel/linux/linux-wandboard-4.1.15/
+    sources $ cat > meta-fsl-custom/recipes-kernel/linux/linux-wandboard_4.1.15.bbappend << EOF
                     FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
                     SRC_URI += "file://0001-calibrate-Add-printk-example.patch"
                     PRINC := "${@int(PRINC) + 1}"
@@ -78,12 +78,12 @@ that you have already built the package you want to patch.
 
 * Move the patch to the new layer::
 
-    sources $ cp ../build/tmp/work/wandboard_dual-poky-linux-gnueabi/linux-wandboard/3.0.35-r0/git/0001-calibrate-Add-printk-example.patch \
-                 meta-fsl-custom/recipes-kernel/linux/linux-wandboard-3.0.35
+    sources $ cp ../build/tmp/work/wandboard-fslc-linux-gnueabi/linux-wandboard/4.1.15-r0/git/0001-calibrate-Add-printk-example.patch \
+                 meta-fsl-custom/recipes-kernel/linux/linux-wandboard-4.1.15
 
 * Setup the environment and clean previous package's build data (``sstate``)::
 
-    fsl-community-bsp $ . setup-environment build
+    fsl-community-bsp $ MACHINE=wandboard DISTRO=fslc-framebuffer source setup-environment build
     build $ bitbake -c cleansstate linux-wandboard
 
 * Compile and Deploy::
@@ -91,10 +91,10 @@ that you have already built the package you want to patch.
     build $ bitbake -f -c compile linux-wandboard # -f indicates bitbake to re-execute the compile task
     build $ bitbake -c deploy linux-wandboard
 
-* Insert the SD into your Host and copy the ``uImage`` into the first partition.
+* Insert the SD into your Host and copy the ``zImage`` into the first partition.
   Do not forget to unmount the partition before removing the card!::
 
-    build $ sudo cp tmp/deploy/images/uImage /media/Boot
+    build $ sudo cp tmp/deploy/images/wandboard/zImage /media/Boot
 
 * Insert the SD into your board and test your change.
 
@@ -105,7 +105,7 @@ Building the Kernel Manually
 
 * Prepare the Yocto/BitBake environment::
 
-    fsl-community-bsp $ . setup-environment build
+    fsl-community-bsp $ MACHINE=wandboard DISTRO=fslc-framebuffer source setup-environment build
 
 * Build the toolchain::
 
@@ -116,11 +116,11 @@ Building the Kernel Manually
 
 * Install it on your PC::
 
-    build $ sudo sh tmp/deploy/sdk/poky-eglibc-x86_64-arm-toolchain-<version>.sh
+    build $ sudo sh tmp/deploy/sdk/fslc-framebuffer-glibc-x86_64-meta-toolchain-armv7at2hf-neon-toolchain-2.2.sh
 
 * Setup the toolchain environment::
 
-    build $ source /opt/poky/<version>/environment-setup-armv7a-vfp-neon-poky-linux-gnueabi
+    build $ source /opt/fslc-framebuffer/2.2/environment-setup-armv7at2hf-neon-fslc-linux-gnueabi
 
 * Get the Linux Kernel source code::
 
@@ -129,24 +129,24 @@ Building the Kernel Manually
 
 * Create a local branch::
 
-    linux-imx $ BRANCH=imx_3.0.35_4.0.0 # Change to any branch you want,
+    linux-imx $ BRANCH=imx_4.1.15_2.0.0_ga # Change to any branch you want,
                                         # Use 'git branch -a' to list all
     linux-imx $ git checkout -b my-${BRANCH} origin/${BRANCH}
 
 * Define/Export ``ARCH`` and ``CROSS_COMPILE``::
 
     linux-imx $ export ARCH=arm
-    linux-imx $ export CROSS_COMPILE=arm-poky-linux-gnueabi-
+    linux-imx $ export CROSS_COMPILE=arm-fslc-linux-gnueabi-
     linux-imx $ unset LDFLAGS
 
 * Choose a configuration and compile::
 
-    linux-imx $ make imx6_defconfig
-    linux-imx $ make uImage
+    linux-imx $ make imx_v7_defconfig
+    linux-imx $ make zImage
 
-* To Test your changes, copy the ``uImage`` into your SD Card::
+* To Test your changes, copy the ``zImage`` into your SD Card::
 
-    linux-imx $ sudo cp arch/arm/boot/uImage /media/Boot
+    linux-imx $ sudo cp arch/arm/boot/zImage /media/Boot
 
 * If you want your changes to be reflected in your Yocto Framework,
   create the patches following the subsection :ref:`patching-kernel`
@@ -184,14 +184,14 @@ Follow these steps to contribute:
 Where ``<branch name>`` is any name you want to give to your local branch (e.g.
 ``fix_uboot_recipe``, ``new_gstreamer_recipe``, etc.)
 
-* Make your changes in any Freescale related folder (e.g. ``sources/meta-fsl-arm``).
+* Make your changes in any Freescale related folder (e.g. ``sources/meta-freescale``).
   In case you modified a recipe (.bb) or include (.inc) file, do not forget to `bump`
   (increase the value by one) either the ``PR`` or ``INC_PR`` value
 
-* Commit your changes using `GIT`. In this example we assume your change is on ``meta-fsl-arm`` folder::
+* Commit your changes using `GIT`. In this example we assume your change is on ``meta-freescale`` folder::
 
-    sources/meta-fsl-arm $ git add <file 1> <file 2>
-    sources/meta-fsl-arm $ git commit
+    sources/meta-freescale $ git add <file 1> <file 2>
+    sources/meta-freescale $ git commit
 
 In the commit's log, the title must start with the filename that was changed or created,
 followed by a brief description of the patch's goal. On subsequent lines, provide a thorough description of the changes.
@@ -199,11 +199,15 @@ Make sure you follow the standards (type ` git log --pretty=oneline` to see prev
 
 * Create a patch::
 
-    sources/meta-fsl-arm $ git format-patch -s --subject-prefix='<meta-fsl-arm][PATCH' -1
+    sources/meta-freescale $ git format-patch -s -1
 
 Where the last parameter (``-1``) indicate to patch the last commit.
 In case you want to create patches for older commits, just indicate the correct index.
-If your patch is done in another folder, just make sure you change the `--subject-prefix` value.
+If your patch is done in another folder, you need to add `--subject-prefix`. The
+values are::
+
+   meta-freescale-3rdparty: --subject-prefix='3rdparty][PATCH'
+   meta-freescale-distro: --subject-prefix='distro][PATCH'
 
 * Send your patch or patches with::
 
@@ -213,7 +217,7 @@ where ``<patch>`` is the file created by ``git format-patch``.
 
 * Keep track of patch responses on the mailing list. In case you need to rework your patch,
   repeat the steps but this time change the patch's subject to
-  ``--subject-prefix='<meta-fsl-*][PATCH v2'``
+  ``--subject-prefix='[PATCH v2'``
 
 * Once your patch has been approved, you can delete your working branches::
 

@@ -32,37 +32,32 @@ Build's local configuration file ``build/conf/local.conf``
 
 By default, the ``setup-enviroment`` script creates a ``local.conf`` like this::
 
-    MACHINE ??= 'wandboard-dual'
-    DISTRO ?= 'poky'
-    #PACKAGE_CLASSES ?= "package_rpm"
-    EXTRA_IMAGE_FEATURES = "debug-tweaks"
+    MACHINE ??= 'wandboard'
+    DISTRO ?= 'fslc-framebuffer'
+    PACKAGE_CLASSES ?= "package_rpm"
+    EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
     USER_CLASSES ?= "buildstats image-mklibs image-prelink"
     PATCHRESOLVE = "noop"
     BB_DISKMON_DIRS = "\
         STOPTASKS,${TMPDIR},1G,100K \
         STOPTASKS,${DL_DIR},1G,100K \
         STOPTASKS,${SSTATE_DIR},1G,100K \
+        STOPTASKS,/tmp,100M,100K \
         ABORT,${TMPDIR},100M,1K \
         ABORT,${DL_DIR},100M,1K \
-        ABORT,${SSTATE_DIR},100M,1K" 
+        ABORT,${SSTATE_DIR},100M,1K \
+        ABORT,/tmp,10M,1K"
+    PACKAGECONFIG_append_pn-qemu-native = " sdl"
+    PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
     CONF_VERSION = "1"
 
-    BB_NUMBER_THREADS = '4'
-    PARALLEL_MAKE = '-j 4'
-    ACCEPT_FSL_EULA = ""
-    #added by bitbake
-    DL_DIR = "/home/b42214/fsl-local/yocto/fsl-community-bsp-dylan/downloads/"
-    #added by bitbake
-    SSTATE_MIRRORS = ""
-    #added by bitbake
-    PACKAGE_CLASSES = "package_rpm"
+    DL_DIR ?= "${BSPDIR}/downloads/"
 
 Important variables:
 
-* ``MACHINE``: Specifies the machine, ``imx6qsabresd`` is the default
-* ``BB_NUMBER_THREADS`` and ``PARALLEL_MAKE``: Specifies the max number of threads when
-  baking and compiling
-* ``DL_DIR``: Tarball repository. Several users can share the same folder, so data can 
+* ``MACHINE``: Specifies the machine
+* ``DISTRO``: Specifies the distro
+* ``DL_DIR``: Tarball repository. Several users can share the same folder, so data can
   be reused.
 
 Build's layer configuration file ``build/conf/bblayers.conf``
@@ -83,13 +78,14 @@ Build's layer configuration file ``build/conf/bblayers.conf``
       ${BSPDIR}/sources/poky/meta-yocto \
       \
       ${BSPDIR}/sources/meta-openembedded/meta-oe \
+      ${BSPDIR}/sources/meta-openembedded/meta-multimedia \
       \
-      ${BSPDIR}/sources/meta-fsl-arm \
-      ${BSPDIR}/sources/meta-fsl-arm-extra \
-      ${BSPDIR}/sources/meta-fsl-demos \
+      ${BSPDIR}/sources/meta-freescale \
+      ${BSPDIR}/sources/meta-freescale-3rdparty \
+      ${BSPDIR}/sources/meta-freescale-distro \
     "
 
-Layer configuration file ``meta-fsl-arm/conf/layer.conf``
+Layer configuration file ``meta-freescale/conf/layer.conf``
 ---------------------------------------------------------
 
 This is basically a template that specifies the layer's name and structure::
@@ -101,52 +97,79 @@ This is basically a template that specifies the layer's name and structure::
     BBFILES += "${LAYERDIR}/recipes-*/*/*.bb \
                 ${LAYERDIR}/recipes-*/*/*.bbappend"
 
-    BBFILE_COLLECTIONS += "fsl-arm"
-    BBFILE_PATTERN_fsl-arm := "^${LAYERDIR}/"
-    BBFILE_PRIORITY_fsl-arm = "5"
+    BBFILE_COLLECTIONS += "freescale-layer"
+    BBFILE_PATTERN_freescale-layer := "^${LAYERDIR}/"
+    BBFILE_PRIORITY_freescale-layer = "5"
+
+    # Add the Freescale-specific licenses into the metadata
+    LICENSE_PATH += "${LAYERDIR}/custom-licenses"
 
     FSL_EULA_FILE = "${LAYERDIR}/EULA"
 
-    FSL_MIRROR ?= "http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/"
+    IMX_MIRROR ?= "http://www.freescale.com/lgfiles/NMG/MAD/YOCTO/"
+    QORIQ_MIRROR ?= "http://git.freescale.com/source/"
+
+    # FIXME: set this to avoid changing all the recipes that use it
+    FSL_MIRROR ?= "${IMX_MIRROR}"
 
     MIRRORS += " \
-    ${FSL_MIRROR}	http://download.ossystems.com.br/bsp/freescale/source/ \n \
+    ${IMX_MIRROR}   http://download.ossystems.com.br/bsp/freescale/source/ \n \
+    ${QORIQ_MIRROR} http://download.ossystems.com.br/bsp/freescale/source/ \n \
     "
+
+    # The dynamic-layers directory hosts the extensions and layer specific
+    # modifications related to Freescale products.
+    #
+    # The .bbappend and .bb files are included if the respective layer
+    # collection is available.
+    BBFILES += "${@' '.join('${LAYERDIR}/dynamic-layers/%s/recipes*/*/*.bbappend' % layer \
+                   for layer in BBFILE_COLLECTIONS.split())}"
+    BBFILES += "${@' '.join('${LAYERDIR}/dynamic-layers/%s/recipes*/*/*.bb' % layer \
+                   for layer in BBFILE_COLLECTIONS.split())}"
 
 Important variables:
 
 * ``BBFILES``: Specifies where BitBake looks for ``.bb*`` files
-* ``BBFILE_PRIORITY_fsl-arm``: Specifies priority for recipes in the meta-fsl-arm layer
+* ``BBFILE_PRIORITY_freescale``: Specifies priority for recipes in the meta-freescale layer
 * ``MIRRORS``: Specifies additional paths where the build system can find source code
 
 
-Machine configuration file: ``meta-fsl-arm/conf/imx6qsabresd.conf``
+Machine configuration file: ``meta-freescale/conf/imx6slevk.conf``
 -------------------------------------------------------------------
 
 Machine configurations look like this::
 
     #@TYPE: Machine
-    #@NAME: i.MX6Q SABRE SD
-    #@DESCRIPTION: Machine configuration for Freescale i.MX6Q SABRE SD
+    #@NAME: Freescale i.MX6SL Evaluation Kit
+    #@SOC: i.MX6SL
+    #@DESCRIPTION: Machine configuration for Freescale i.MX6SL Evaluation Kit
+    #@MAINTAINER: Otavio Salvador <otavio@ossystems.com.br>
+
+    MACHINEOVERRIDES =. "mx6:mx6sl:"
 
     include conf/machine/include/imx-base.inc
     include conf/machine/include/tune-cortexa9.inc
 
-    SOC_FAMILY = "mx6:mx6q"
+    KERNEL_DEVICETREE = "imx6sl-evk.dtb imx6sl-evk-csi.dtb imx6sl-evk-ldo.dtb \
+                         imx6sl-evk-uart.dtb imx6sl-evk-btwifi.dtb"
 
-    KERNEL_DEVICETREE = "${S}/arch/arm/boot/dts/imx6q-sabresd.dts"
-
-    UBOOT_MACHINE = "mx6qsabresd_config"
+    UBOOT_CONFIG ??= "sd"
+    UBOOT_CONFIG[sd] = "mx6slevk_config,sdcard"
+    UBOOT_CONFIG[epdc] = "mx6slevk_epdc_config"
+    UBOOT_CONFIG[spinor] = "mx6slevk_spinor_config"
+    UBOOT_CONFIG[mfgtool] = "mx6slevk_config"
 
     SERIAL_CONSOLE = "115200 ttymxc0"
 
     MACHINE_FEATURES += " pci wifi bluetooth"
 
+    MACHINE_FIRMWARE += "linux-firmware-ath6k firmware-imx-epdc"
+
 Important variables:
 
-* ``IMAGE_FSTYPES``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
-  Defines the type of outputs for the root filesystem. Default is: ``"tar.bz2 ext3 sdcard"``
-* ``UBOOT_ENTRYPOINT_*``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/tree/conf/machine/include/imx-base.inc>`_.
+* ``IMAGE_FSTYPES``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-freescale/tree/conf/machine/include/imx-base.inc>`_.
+  Defines the type of outputs for the root filesystem. Default is: ``"sdcard.gz"``
+* ``UBOOT_ENTRYPOINT_*``: Located in `imx-base.inc <http://git.yoctoproject.org/cgit/cgit.cgi/meta-freescale/tree/conf/machine/include/imx-base.inc>`_.
   Defines where the Kernel is loaded by U-boot
 * ``SOC_FAMILY``: Defines the machine's family. Only recipes with the same ``SOC_FAMILY`` (defined with the recipe's variable ``COMPATIBLE_MACHINE``)
   are taken into account when baking for a particular machine.

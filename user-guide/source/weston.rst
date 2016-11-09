@@ -1,17 +1,22 @@
 Weston
 ======
 
-In order to test Weston, the reference implementation of a Wayland compositor, use the image *core-image-weston*
+In order to test Weston, the reference implementation of a Wayland compositor,
+use FSLC Distro *fslc-wayland* and the image *core-image-weston*
 
-Add the following to conf/local.conf::
+If you are starting a new build run::
 
-    DISTRO_FEATURES_remove = "x11"
+    $ MACHINE=<selected machine> DISTRO=fslc-wayland source setup-environment build
+
+if you already start setup-environment, set DISTRO to fslc-wayland in conf/local.conf::
+
+    DISTRO = "fslc-wayland"
 
 And bake the image::
 
 	$ bitbake core-image-weston
 
-Remember to use a clean build-dir when changing `DISTRO_FEATURES`
+Remember to use a clean build-dir when changing `DISTRO`
 
 
 Simple tests

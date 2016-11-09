@@ -17,6 +17,7 @@ Contents:
    devtasks
    weston
    machines
+   distros
    images
 
 
