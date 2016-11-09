@@ -9,9 +9,9 @@
 * **linux-gateworks-imx**: linux-gateworks-imx version 3.14-r0.
 * **linux-imx**: Linux Kernel provided and supported by Freescale with focus on i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU.
 * **linux-karo**: Linux Kernel for Ka-Ro electronics TX Computer-On-Modules.
-* **linux-ls1**: Linux Kernel provided and supported by Freescale with focus on Layerscape1 Family Boards. 
+* **linux-qoriq**: Linux Kernel for Freescale QorIQ platforms.
 * **linux-timesys**: Linux Kernel with added drivers and board support for Vybrid-based platforms.
 * **linux-toradex**: Linux kernel for Toradex Freescale i.MX based modules.
-* **linux-variscite**: linux-variscite version 3.14.28-r0.
+* **linux-variscite**: linux-variscite version 4.1.15-r0.
 * **linux-wandboard**: Linux kernel for Wandboard.
 * **linux-warp7**: linux-warp7 version 4.1-r0.

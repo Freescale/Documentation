@@ -5,3 +5,4 @@
 * **packagegroup-fsl-tools-gpu**: Package group used by FSL Community to add the packages which provide GPU support.
 * **packagegroup-fsl-tools-gpu-external**: Package group used by FSL Community to provide graphic packages used to test the several hardware accelerated graphics APIs including packages not provided by Freescale.
 * **packagegroup-fsl-tools-testapps**: Packagegroup used by FSL Community to provide a set of packages and utilities for hardware test.
+* **packagegroup-imx-tools-audio**: Set of audio tools for inclusion on images.
