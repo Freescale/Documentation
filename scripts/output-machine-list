@@ -36,7 +36,7 @@ REPO=$1
 COMMAND=$2
 
 TMP=`mktemp`
-MACHINE_LAYERS="meta-fsl-arm meta-fsl-arm-extra"
+MACHINE_LAYERS="meta-freescale meta-freescale-3rdparty"
 
 list_machine_files() {
     for l in $MACHINE_LAYERS; do

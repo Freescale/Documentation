@@ -46,7 +46,7 @@ gitdm_dir="$2"
 start_commit="$3"
 end_commit="$4"
 anchor="`pwd`"
-fsl_layers="meta-fsl-arm meta-fsl-arm-extra meta-fsl-demos"
+fsl_layers="meta-freescale meta-freescale-3rdparty meta-freescale-distro"
 
 machines=
 if [ -n "$MACHINES" ]; then
@@ -80,9 +80,9 @@ build_dir=`mktemp -d --tmpdir=$yocto_dir`
 for machine in $machines; do
     cd $yocto_dir
     echo "Using $build_dir as build directory"
-    MACHINE=$machine . ./setup-environment `basename $build_dir`
+    MACHINE=$machine DISTRO=fslc-framebuffer . ./setup-environment `basename $build_dir`
 
-    MACHINE=$machine python3 $anchor/extract-bitbake-metadata.py \
+    MACHINE=$machine DISTRO=fslc-framebuffer python3 $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
         apptrk \
         barebox \

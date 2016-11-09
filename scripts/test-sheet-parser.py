@@ -11,7 +11,7 @@ def usage(exit_code=None):
 <csv file> is the CSV file with the for responses.
 
 <fsl repos dir> is the directory under which the Freescale
-repositories (meta-fsl-arm and meta-fsl-arm-extra) can be found.
+repositories (meta-freescale and meta-freescale-3rdparty) can be found.
 ''' % os.path.basename(sys.argv[0])
     if exit_code is not None and exit_code != 0:
         sys.stderr.write(msg)

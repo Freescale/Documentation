@@ -112,8 +112,8 @@ def write_fsl_community_bsp_supported_kernels(data, out_dir):
         kernel = board_data['recipes']['virtual/kernel']
         recipe = kernel['recipe']
         recipe_file = kernel['file']
-        if (('/sources/meta-fsl-arm/' in recipe_file) or \
-                ('/sources/meta-fsl-arm-extra/' in recipe_file)) and \
+        if (('/sources/meta-freescale/' in recipe_file) or \
+                ('/sources/meta-freescale-3rdparty/' in recipe_file)) and \
                 recipe not in kernel_recipes:
             kernels += [[recipe, kernel['description']]]
             kernel_recipes.append(recipe)
@@ -128,8 +128,8 @@ def write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir):
                 bootloader = board_data['recipes'][bootloader_software]
                 recipe = bootloader['recipe']
                 recipe_file = bootloader['file']
-                if (('/sources/meta-fsl-arm/' in recipe_file) or \
-                        ('/sources/meta-fsl-arm-extra/' in recipe_file)) and \
+                if (('/sources/meta-freescale/' in recipe_file) or \
+                        ('/sources/meta-freescale-3rdparty/' in recipe_file)) and \
                         recipe not in bootloader_recipes:
                     bootloaders += [[recipe, bootloader['description']]]
                     bootloader_recipes.append(recipe)
@@ -305,14 +305,14 @@ def write_soc_pkg(data, out_dir):
 
 
 def write_maintainers_tables(data, out_dir, bsp_dir):
-    meta_fsl_arm_machines_dir = os.path.join(bsp_dir, 'sources', 'meta-fsl-arm', 'conf', 'machine')
-    meta_fsl_arm_extra_machines_dir = os.path.join(bsp_dir, 'sources', 'meta-fsl-arm-extra', 'conf', 'machine')
-    get_maintainer_script = os.path.join(bsp_dir, 'sources', 'meta-fsl-arm', 'scripts', 'get-maintainer')
+    meta_freescale_machines_dir = os.path.join(bsp_dir, 'sources', 'meta-freescale', 'conf', 'machine')
+    meta_freescale_3rdparty_machines_dir = os.path.join(bsp_dir, 'sources', 'meta-freescale-3rdparty', 'conf', 'machine')
+    get_maintainer_script = os.path.join(bsp_dir, 'sources', 'meta-freescale', 'scripts', 'get-maintainer')
     try:
         get_maintainer_pipe = subprocess.Popen([get_maintainer_script,
                                                 '--dump',
-                                                meta_fsl_arm_machines_dir,
-                                                meta_fsl_arm_extra_machines_dir],
+                                                meta_freescale_machines_dir,
+                                                meta_freescale_3rdparty_machines_dir],
                                                stdout=subprocess.PIPE)
     except OSError:
         error('Could not run the get-maintainer script (attempted %s)' % (get_maintainer_script,))

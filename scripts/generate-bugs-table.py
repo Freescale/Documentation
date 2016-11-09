@@ -13,10 +13,10 @@ from doc_utils import tabularize
 
 BASE_DIRECTORY = os.path.dirname(os.path.realpath(__file__ + "/../"))
 
-CLOSED_BUGS_URL = "https://bugzilla.yoctoproject.org/buglist.cgi?v4=meta-fsl-arm&o5=substring&f1=OP&o3=substring&v6=meta-fsl-arm&o7=matches&f0=OP&f8=CP&v3=meta-fsl-arm&o2=substring&o6=substring&v7=%22meta-fsl-arm%22&f9=CP&f4=alias&chfieldto=Now&v5=meta-fsl-arm&chfield=bug_status&query_format=advanced&j1=OR&f3=component&chfieldfrom=<<START_DATE>>&f2=product&o4=substring&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=short_desc&f6=status_whiteboard&v2=meta-fsl-arm&f7=content&ctype=csv"
+CLOSED_BUGS_URL = "https://bugzilla.yoctoproject.org/buglist.cgi?v4=meta-freescale&o5=substring&f1=OP&o3=substring&v6=meta-freescale&o7=matches&f0=OP&f8=CP&v3=meta-freescale&o2=substring&o6=substring&v7=%22meta-freescale%22&f9=CP&f4=alias&chfieldto=Now&v5=meta-freescale&chfield=bug_status&query_format=advanced&j1=OR&f3=component&chfieldfrom=<<START_DATE>>&f2=product&o4=substring&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=short_desc&f6=status_whiteboard&v2=meta-freescale&f7=content&ctype=csv"
 CLOSED_BUGS_OUTPUT_FILE_PATH = BASE_DIRECTORY + "/release-notes/source/closed_bugs.inc"
 
-OPEN_BUGS_URL = "https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm&chfieldfrom=<<START_DATE>>&ctype=csv"
+OPEN_BUGS_URL = "https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-freescale&chfieldfrom=<<START_DATE>>&ctype=csv"
 OPEN_BUGS_OUTPUT_FILE_PATH = BASE_DIRECTORY + "/release-notes/source/open_bugs.inc"
 
 def request_bug_list(url):
@@ -62,7 +62,7 @@ def generate_bugs_file(url, output_file_path, columns_to_keep):
     write_to_file(output_file_path, table)
 
 def process_arguments():
-    desc = ('Generates a ReST table of the meta-fsl-arm bugs present on the ' +
+    desc = ('Generates a ReST table of the meta-freescale bugs present on the ' +
             'Bugzilla bug list of the Yocto Project.')
     parser = argparse.ArgumentParser(description=desc)
     group = parser.add_mutually_exclusive_group()
