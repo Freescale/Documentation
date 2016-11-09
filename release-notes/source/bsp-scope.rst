@@ -4,14 +4,14 @@
 ***********************
 The scope of the |project_name| includes the meta layers:
 
- * `meta-fsl-arm <http://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm/?h=krogoth>`_:
-   provides the base support and Freescale ARM reference boards;
- * `meta-fsl-arm-extra <https://github.com/Freescale/meta-fsl-arm-extra/tree/krogoth>`_:
+ * `meta-freescale <http://git.yoctoproject.org/cgit/cgit.cgi/meta-freescale/?h=morty>`_:
+   provides the base support and Freescale ARM and PPC reference boards;
+ * `meta-freescale-3rdparty <https://github.com/Freescale/meta-freescale-3rdparty/tree/morty>`_:
    provides support for 3rd party and partner boards;
- * `meta-fsl-demos <https://github.com/Freescale/meta-fsl-demos/tree/krogoth>`_:
-   provides images recipes, demo recipes, and packagegroups used to easy the
-   development with Yocto Project.
- * `Documentation <https://github.com/Freescale/Documentation/tree/krogoth>`_:
+ * `meta-freescale-distro <https://github.com/Freescale/meta-freescale-distro/tree/morty>`_:
+   provides distros support, images recipes, demo recipes, and packagegroups
+   used to easy the development with Yocto Project.
+ * `Documentation <https://github.com/Freescale/Documentation/tree/morty>`_:
    provides the source code for |project_name| Release Notes (RN), User Guide
    (UG) and Frequently Asked Questions (FAQ)
 
@@ -36,8 +36,8 @@ regular open source licenses (GPLv2 for example).
 
 The close sourced packages are released under the Freescale License (known as
 EULA). Each package has a copy of EULA inside itself and a copy of the EULA text
-is also included inside **meta-fsl-arm** root dir
-(``sources/meta-fsl-arm/EULA``).
+is also included inside **meta-freescale** root dir
+(``sources/meta-freescale/EULA``).
 
 The |project_name| handles the EULA acceptance by prompting user to read and
 accept EULA text at the very first environment setup. It is user's duty to read
@@ -107,8 +107,8 @@ Machine Maintainers
 -------------------
 
 Since |project_name| Release 1.6 (Daisy), the maintainer field in machine
-configuration files of **meta-fsl-arm** and **meta-fsl-arm-extra** is mandatory
-for any new board to be added.
+configuration files of **meta-freescale** and **meta-freescale-3rdparty**
+is mandatory for any new board to be added.
 
 So now on, every new board must have someone assigned as maintainer.
 This ensures, in long term, all boards with a maintainer assigned.
@@ -124,7 +124,7 @@ The maintainer duties:
  * Keep the most usual images building and booting
 
 When a build error is detected, the maintainer will "fix" it. For those
-maintainers with kernel control (meta-fsl-arm-extra), it is expected that they
+maintainers with kernel control (meta-freescale-3rdparty), it is expected that they
 properly fix the kernel issue (when it's a kernel issue). However, anything out
 of community control should be worked around anyway.
 

@@ -132,8 +132,9 @@ In addition to the normal Yocto Project upstream process, there is also a BSP up
 The BSP upstream cycle starts just after a |freescale_release_name|
 is published in `git.freescale.com <http://git.freescale.com/git/cgit.cgi/imx/fsl-arm-yocto-bsp.git/>`_.
 The patches to adapt the recipes from **meta-fsl-bsp-release** are sent out for review
-to the **meta-freescale** mailing list and are merged in the **meta-fsl-arm** and
-**meta-fsl-demos** layers or upstreamed to Yocto Project accordingly.
+to the **meta-freescale** mailing list and are merged in the **meta-freescale**,
+**meta-freescale-3rdparty** or **meta-freescale-distro** layers or upstreamed
+to Yocto Project accordingly.
 
 A more detailed step-by-step process is shown below:
 
@@ -172,7 +173,7 @@ layer. Therefore, the release does not receive updates and bug fixes.
 The |project_name| is a reference system that can be used as a base for products
 and is an open project that accepts contributions from the community.
 It supports a wide range of boards which range from Freescale evaluation boards
-(**meta-fsl-arm** layer) to third-party boards (**meta-fsl-arm-extra**).
+(**meta-freescale** layer) to third-party boards (**meta-freescale-3rdparty**).
 The release is a "*moving target*”, so there are updates on top of the released
 source code, such as the addition of new features and bug fixes.
 

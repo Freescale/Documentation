@@ -37,8 +37,8 @@ Here's an example:
   $ ./bitbake-metadata2doc.sh ~/src/fsl-community-bsp ~/src/gitdm 1.5 1.6
 
 By default, bitbake-metadata2doc.sh collects data out of bitbake's
-metadata for all machines it can find in the meta-fsl-arm and
-meta-fsl-arm-extra layers.  You can restrict the machines to collect
+metadata for all machines it can find in the meta-freescale and
+meta-freescale-3erparty. You can restrict the machines to collect
 data from by setting the MACHINES variable in your environment.
 
 bitbake-metadata2doc.sh will write its output to release-note's `source'

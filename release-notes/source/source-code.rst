@@ -151,3 +151,12 @@ Project's reference images in `Yocto Project Reference Manual
 <http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#ref-images>`_
 
 .. include:: images.inc
+
+Distros
+-------
+
+The following distros are supported by |project_name|.
+
+.. include:: distros.inc
+
+*NOTE: Poky's distros are still available to use.*

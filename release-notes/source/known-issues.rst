@@ -40,7 +40,7 @@ Known Issues
    Open
    ----
    In order to see the current bug list, please use following URL:
-   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
+   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-freescale
 
    .. table:: List of open bugs
 
@@ -60,7 +60,7 @@ Known Issues
    The list of known issues for the |project_name| can be seen at the following
    URL:
 
-   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-fsl-arm
+   https://bugzilla.yoctoproject.org/buglist.cgi?quicksearch=meta-freescale
 
    It has not been included here as it changes every time bug fixes are
    included during the maintenance cycle of the release and it would

@@ -51,9 +51,9 @@ copyright = u'2013-2016, FSL Community BSP Team'
 # built documents.
 #
 # The short X.Y version or version name if applicable. 
-version = 'krogoth'
+version = 'morty'
 # The full version, including alpha/beta/rc tags.
-release = '2.1'
+release = '2.2'
 
 if tags.has('draft'):
     release = release + " (Draft document)"
@@ -269,7 +269,7 @@ texinfo_documents = [
 epub_title = u'FSL Community BSP Release Notes'
 epub_author = u'FSL Community BSP Team'
 epub_publisher = u'FSL Community BSP Team'
-epub_copyright = u'2013, FSL Community BSP Team'
+epub_copyright = u'2013-2016, FSL Community BSP Team'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
