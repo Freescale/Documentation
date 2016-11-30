@@ -10,7 +10,7 @@ The scope of the |project_name| includes the meta layers:
    provides support for 3rd party and partner boards;
  * `meta-freescale-distro <https://github.com/Freescale/meta-freescale-distro/tree/morty>`_:
    provides distros support, images recipes, demo recipes, and packagegroups
-   used to easy the development with Yocto Project.
+   used to ease the development with Yocto Project.
  * `Documentation <https://github.com/Freescale/Documentation/tree/morty>`_:
    provides the source code for |project_name| Release Notes (RN) and User Guide
    (UG).
