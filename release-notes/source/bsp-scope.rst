@@ -12,8 +12,8 @@ The scope of the |project_name| includes the meta layers:
    provides distros support, images recipes, demo recipes, and packagegroups
    used to easy the development with Yocto Project.
  * `Documentation <https://github.com/Freescale/Documentation/tree/morty>`_:
-   provides the source code for |project_name| Release Notes (RN), User Guide
-   (UG) and Frequently Asked Questions (FAQ)
+   provides the source code for |project_name| Release Notes (RN) and User Guide
+   (UG).
 
 License
 =======
