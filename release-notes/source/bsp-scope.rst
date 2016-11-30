@@ -15,6 +15,39 @@ The scope of the |project_name| includes the meta layers:
    provides the source code for |project_name| Release Notes (RN) and User Guide
    (UG).
 
+Meta-freescale
+==============
+
+Since the Yocto Project release 2.2 (Morty) the |project_name| changed the meta
+layers names. You can see the announcement
+`here <https://lists.yoctoproject.org/pipermail/meta-freescale/2016-October/019429.html>`_.
+
+The following table show the renaming upgrade path:
+
+================== ======================
+Krogoth            Morty
+================== ======================
+meta-fsl-arm       meta-freescale
+meta-fsl-ppc       meta-freescale
+meta-fsl-arm-extra meta-freescale-3rdparty
+meta-fsl-demos     meta-freescale-distros
+================== ======================
+
+The **meta-fsl-arm** and **meta-fsl-ppc** meta layers are deprecated. The last
+release for these meta layers is **krogoth**. Do not expect any update to the
+layer other than critical bug-fixes. **Meta-fsl-arm** and **meta-fsl-ppc** must
+be replaced by **meta-freescale**.
+
+The **meta-freescale** meta layer goal is to integrate the ARM and PPC SoC
+based source code from Freescale, it includes **i.MX**, **Vybrid**, **QorIQ**
+and **Layerscape** BSPs.
+
+The **meta-fsl-arm-extra** now is **meta-freescale-3rdparty**, any local copy
+should work as there is a mirror set.
+
+The **meta-fsl-demos** now is **meta-freescale-distros**, any local copy
+should work as there is a mirror set.
+
 License
 =======
 
