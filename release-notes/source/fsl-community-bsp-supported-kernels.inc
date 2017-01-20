@@ -14,4 +14,4 @@
 * **linux-toradex**: Linux kernel for Toradex Freescale i.MX based modules.
 * **linux-variscite**: linux-variscite version 4.1.15-r0.
 * **linux-wandboard**: Linux kernel for Wandboard.
-* **linux-warp7**: linux-warp7 version 4.1-r0.
+* **linux-warp7**: Linux kernel based on linux-fsl-imx branch 4.1-1.0.x-imx from FSL Community BSP with additional patches to cover devices specific on WaRP7 board.

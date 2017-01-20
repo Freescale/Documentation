@@ -46,6 +46,8 @@ imx7dsabresd           Freescale i.MX7D SABRE Smart Device
 imx7s-warp             WaRP7
 ls1021atwr             Freescale LS1021ATWR board
 ls1043ardb             NXP LS1043ARDB board
+ls1043ardb-32b         NXP LS1043ARDB-32B
+ls1046ardb             NXP LS1046ARDB
 ls2080ardb             NXP LS2080ARDB board
 nitrogen6sx            Boundary Devices Nitrogen6SX
 nitrogen6x             Boundary Devices Nitrogen6X
@@ -59,22 +61,22 @@ p5020ds-64b            Freescale P5020DS-64B
 p5040ds                Freescale P5040DS
 p5040ds-64b            Freescale P5040DS-64B
 pcm052                 Phytec phyCORE Vybrid Development Kit
-t1023rdb-64b           Freescale T1023RDB
+t1023rdb               Freescale T1023RDB
 t1024rdb-64b           Freescale T1024RDB
-t1040d4rdb-64b         Freescale T1040D4RDB
+t1040d4rdb             Freescale T1040D4RDB
 t1042d4rdb-64b         Freescale T1042D4RDB
 t2080qds               Freescale T2080QDS
 t2080qds-64b           Freescale T2080QDS-64B
-t2080rdb-64b           Freescale T2080RDB
+t2080rdb               Freescale T2080RDB
 t4160qds               Freescale T4160QDS
 t4160qds-64b           Freescale T4160QDS-64B
 t4240qds               Freescale T4240QDS
 t4240qds-64b           Freescale T4240QDS-64B
-t4240rdb-64b           Freescale T4240RDB
+t4240rdb               Freescale T4240RDB
 twr-vf65gs10           Freescale Vybrid TWR-VF65GS10
-tx6q-10x0              Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module
-tx6s-8034              Ka-Ro electronics i.MX6S TX6S Computer-On-Module
-tx6u-80x0              Ka-Ro electronics i.MX6DL TX6DL Computer-On-Module
+tx6q-11x0              Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module
+tx6s-8035              Ka-Ro electronics i.MX6S TX6S Computer-On-Module
+tx6u-8033              Ka-Ro electronics i.MX6DL TX6DL Computer-On-Module
 ventana                i.MX6Q/DL Ventana Platform
 wandboard              Wandboard i.MX6 Wandboard Quad/Dual/Solo
 =====================  ==================================================

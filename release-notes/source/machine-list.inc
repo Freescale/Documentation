@@ -51,6 +51,9 @@ imx7dsabresd            Freescale i.MX7D SABRE Smart Device                 i.MX
 imx7s-warp              WaRP7                                               i.MX7S                   meta-freescale-3rdparty
 ls1021atwr              Freescale LS1021ATWR board                          ls102xa                  meta-freescale
 ls1043ardb              NXP LS1043ARDB board                                LSCH2                    meta-freescale
+ls1043ardb-32b          NXP LS1043ARDB-32B                                  LSCH2                    meta-freescale
+ls1046ardb              NXP LS1046ARDB                                      LSCH2                    meta-freescale
+ls1046ardb-32b          NXP LS1046ARDB                                      LSCH2                    meta-freescale
 ls2080ardb              NXP LS2080ARDB board                                LSCH3                    meta-freescale
 m28evk                  DENX M28 SoM Evaluation Kit                         i.MX28                   meta-freescale-3rdparty
 m53evk                  DENX M53 SoM Evaluation Kit                         i.MX53                   meta-freescale-3rdparty
