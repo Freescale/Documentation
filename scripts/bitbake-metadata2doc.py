@@ -372,6 +372,8 @@ def write_soc_tree(data, out_dir):
         re.compile("ls102xa"): 'Layerscape'
     }
 
+    VALID_SOCS = re.compile(r'mxs|mx2[0-9]|mx5[0-9]?|mx6(?:dl|q|sl|sx|ul+)?|mx7[d]?|ls104[3-6]a]|vf(?:[5-6]0)?|ls102xa')
+
     PADDING="   "
 
     def print_tree(tree, fd, padding=PADDING):
@@ -409,7 +411,9 @@ def write_soc_tree(data, out_dir):
 
     soc_families = []
     for board, board_data in data.items():
-        soc_family = board_data['soc-family']
+        sf = board_data['soc-family']
+        result = VALID_SOCS.findall(sf)
+        soc_family = ":".join(result)
         if soc_family not in soc_families:
             soc_families.append(soc_family)
 
