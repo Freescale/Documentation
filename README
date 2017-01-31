@@ -4,9 +4,10 @@ Freescale Community BSP Documentation
 The documentation is written using the Sphinx documentation system. To
 install it in Debian/Ubuntu, please do:
 
-  #: apt-get install libfreetype6-dev libjpeg8-dev python-dev python-pip \
-     python-sphinx texlive-fonts-recommended texlive-latex-extra zlib1g-dev
-  #: pip install reportlab sphinxcontrib-blockdiag
+  #: apt-get install libfreetype6-dev libjpeg8-dev python3-dev python3-pip \
+     python3-sphinx texlive-fonts-recommended texlive-latex-extra zlib1g-dev \
+     fonts-liberation
+  #: pip3 install reportlab sphinxcontrib-blockdiag
 
 Once this has been completed, you can run 'make' in each of the Documentation
 folders to review the available targets for building.
