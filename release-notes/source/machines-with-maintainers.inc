@@ -26,23 +26,23 @@ imx51evk               Freescale i.MX51 Evaluation Kit
 imx53ard               Freescale i.MX53 SABRE Automotive Board
 imx53qsb               Freescale i.MX53 Quick Start Board
 imx6dl-riotboard       RIoTboard
-imx6dlsabreauto        Freescale i.MX6DL SABRE Automotive
-imx6dlsabresd          Freescale i.MX6DL SABRE Smart Device
+imx6dlsabreauto        NXP i.MX6DL SABRE Automotive
+imx6dlsabresd          NXP i.MX6DL SABRE Smart Device
 imx6q-dms-ba16         Advantech DMS BA16
 imx6qdl-variscite-som  Variscite i.MX6Q/DL VAR-SOM-MX6
-imx6qpsabreauto        Freescale i.MX6Q Plus SABRE Automotive
-imx6qpsabresd          Freescale i.MX6Q Plus SABRE Smart Device
-imx6qsabreauto         Freescale i.MX6Q SABRE Automotive
+imx6qpsabreauto        NXP i.MX6Q Plus SABRE Automotive
+imx6qpsabresd          NXP i.MX6Q Plus SABRE Smart Device
+imx6qsabreauto         NXP i.MX6Q SABRE Automotive
 imx6qsabrelite         Boundary Devices i.MX6Q SABRE Lite
-imx6qsabresd           Freescale i.MX6Q SABRE Smart Device
+imx6qsabresd           NXP i.MX6Q SABRE Smart Device
 imx6sl-warp            WaRP
-imx6slevk              Freescale i.MX6SL Evaluation Kit
-imx6solosabresd        Freescale i.MX6Solo SABRE Smart Device
-imx6sxsabreauto        Freescale i.MX6SoloX Sabre Automotive
-imx6sxsabresd          Freescale i.MX6SoloX SabreSD
+imx6slevk              NXP i.MX6SL Evaluation Kit
+imx6solosabresd        NXP i.MX6Solo SABRE Smart Device
+imx6sxsabreauto        NXP i.MX6SoloX Sabre Automotive
+imx6sxsabresd          NXP i.MX6SoloX SabreSD
 imx6ul-pico-hobbit     Hobbitboard (PICO-IMX6UL)
-imx6ulevk              Freescale i.MX6UL Evaluation Kit
-imx7dsabresd           Freescale i.MX7D SABRE Smart Device
+imx6ulevk              NXP i.MX6UL Evaluation Kit
+imx7dsabresd           NXP i.MX7D SABRE Smart Device
 imx7s-warp             WaRP7
 ls1021atwr             Freescale LS1021ATWR board
 ls1043ardb             NXP LS1043ARDB board

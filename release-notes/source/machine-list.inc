@@ -30,24 +30,24 @@ imx51evk                Freescale i.MX51 Evaluation Kit                     i.MX
 imx53ard                Freescale i.MX53 SABRE Automotive Board             i.MX53                   meta-freescale
 imx53qsb                Freescale i.MX53 Quick Start Board                  i.MX53                   meta-freescale
 imx6dl-riotboard        RIoTboard                                           i.MX6S                   meta-freescale-3rdparty
-imx6dlsabreauto         Freescale i.MX6DL SABRE Automotive                  i.MX6DL                  meta-freescale
-imx6dlsabresd           Freescale i.MX6DL SABRE Smart Device                i.MX6DL                  meta-freescale
+imx6dlsabreauto         NXP i.MX6DL SABRE Automotive                        i.MX6DL                  meta-freescale
+imx6dlsabresd           NXP i.MX6DL SABRE Smart Device                      i.MX6DL                  meta-freescale
 imx6q-dms-ba16          Advantech DMS BA16                                  i.MX6Q                   meta-freescale-3rdparty
 imx6qdl-variscite-som   Variscite i.MX6Q/DL VAR-SOM-MX6                     i.MX6Q/DL                meta-freescale-3rdparty
-imx6qpsabreauto         Freescale i.MX6Q Plus SABRE Automotive              i.MX6QP                  meta-freescale
-imx6qpsabresd           Freescale i.MX6Q Plus SABRE Smart Device            i.MX6QP                  meta-freescale
-imx6qsabreauto          Freescale i.MX6Q SABRE Automotive                   i.MX6Q                   meta-freescale
+imx6qpsabreauto         NXP i.MX6Q Plus SABRE Automotive                    i.MX6QP                  meta-freescale
+imx6qpsabresd           NXP i.MX6Q Plus SABRE Smart Device                  i.MX6QP                  meta-freescale
+imx6qsabreauto          NXP i.MX6Q SABRE Automotive                         i.MX6Q                   meta-freescale
 imx6qsabrelite          Boundary Devices i.MX6Q SABRE Lite                  i.MX6Q                   meta-freescale-3rdparty
-imx6qsabresd            Freescale i.MX6Q SABRE Smart Device                 i.MX6Q                   meta-freescale
+imx6qsabresd            NXP i.MX6Q SABRE Smart Device                       i.MX6Q                   meta-freescale
 imx6sl-warp             WaRP                                                i.MX6SL                  meta-freescale-3rdparty
-imx6slevk               Freescale i.MX6SL Evaluation Kit                    i.MX6SL                  meta-freescale
-imx6solosabreauto       Freescale i.MX6Solo SABRE Automotive                i.MX6S                   meta-freescale
-imx6solosabresd         Freescale i.MX6Solo SABRE Smart Device              i.MX6S                   meta-freescale
-imx6sxsabreauto         Freescale i.MX6SoloX Sabre Automotive               i.MX6SX                  meta-freescale
-imx6sxsabresd           Freescale i.MX6SoloX SabreSD                        i.MX6SX                  meta-freescale
+imx6slevk               NXP i.MX6SL Evaluation Kit                          i.MX6SL                  meta-freescale
+imx6solosabreauto       NXP i.MX6Solo SABRE Automotive                      i.MX6S                   meta-freescale
+imx6solosabresd         NXP i.MX6Solo SABRE Smart Device                    i.MX6S                   meta-freescale
+imx6sxsabreauto         NXP i.MX6SoloX Sabre Automotive                     i.MX6SX                  meta-freescale
+imx6sxsabresd           NXP i.MX6SoloX SabreSD                              i.MX6SX                  meta-freescale
 imx6ul-pico-hobbit      Hobbitboard (PICO-IMX6UL)                           i.MX6UL                  meta-freescale-3rdparty
-imx6ulevk               Freescale i.MX6UL Evaluation Kit                    i.MX6UL                  meta-freescale
-imx7dsabresd            Freescale i.MX7D SABRE Smart Device                 i.MX7D                   meta-freescale
+imx6ulevk               NXP i.MX6UL Evaluation Kit                          i.MX6UL                  meta-freescale
+imx7dsabresd            NXP i.MX7D SABRE Smart Device                       i.MX7D                   meta-freescale
 imx7s-warp              WaRP7                                               i.MX7S                   meta-freescale-3rdparty
 ls1021atwr              Freescale LS1021ATWR board                          ls102xa                  meta-freescale
 ls1043ardb              NXP LS1043ARDB board                                LSCH2                    meta-freescale
