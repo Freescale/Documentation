@@ -2,11 +2,11 @@
        Machine                                Name
 =====================  ==================================================
 apalis-imx6            Toradex Apalis iMX6Q/D
-b4420qds               Freescale B4420QDS
-b4420qds-64b           Freescale B4420QDS-64B
-b4860qds               Freescale B4860QDS
-b4860qds-64b           Freescale B4860QDS-64B
-c293pcie               Freescale C293PCIE
+b4420qds               NXP B4420QDS
+b4420qds-64b           NXP B4420QDS-64B
+b4860qds               NXP B4860QDS
+b4860qds-64b           NXP B4860QDS-64B
+c293pcie               NXP C293PCIE
 cfa10036               Crystalfontz CFA-10036
 cfa10037               Crystalfontz CFA-10037
 cfa10049               Crystalfontz CFA-10049
@@ -20,11 +20,11 @@ colibri-imx6           Toradex Colibri iMX6DL/S
 colibri-imx7           Toradex Colibri iMX7D/S
 colibri-vf             Toradex Colibri VF50/VF61
 cubox-i                SolidRun CuBox-i and HummingBoard
-imx23evk               Freescale i.MX23 Evaluation Kit
-imx28evk               Freescale i.MX28 Evaluation Kit
-imx51evk               Freescale i.MX51 Evaluation Kit
-imx53ard               Freescale i.MX53 SABRE Automotive Board
-imx53qsb               Freescale i.MX53 Quick Start Board
+imx23evk               NXP i.MX23 Evaluation Kit
+imx28evk               NXP i.MX28 Evaluation Kit
+imx51evk               NXP i.MX51 Evaluation Kit
+imx53ard               NXP i.MX53 SABRE Automotive Board
+imx53qsb               NXP i.MX53 Quick Start Board
 imx6dl-riotboard       RIoTboard
 imx6dlsabreauto        NXP i.MX6DL SABRE Automotive
 imx6dlsabresd          NXP i.MX6DL SABRE Smart Device
@@ -44,7 +44,7 @@ imx6ul-pico-hobbit     Hobbitboard (PICO-IMX6UL)
 imx6ulevk              NXP i.MX6UL Evaluation Kit
 imx7dsabresd           NXP i.MX7D SABRE Smart Device
 imx7s-warp             WaRP7
-ls1021atwr             Freescale LS1021ATWR board
+ls1021atwr             NXP LS1021ATWR board
 ls1043ardb             NXP LS1043ARDB board
 ls1043ardb-32b         NXP LS1043ARDB-32B
 ls1046ardb             NXP LS1046ARDB
@@ -53,27 +53,27 @@ nitrogen6sx            Boundary Devices Nitrogen6SX
 nitrogen6x             Boundary Devices Nitrogen6X
 nitrogen6x-lite        Boundary Devices Nitrogen6X Lite
 nitrogen7              Boundary Devices Nitrogen7
-p2041rdb               Freescale P2041RDB
-p3041ds                Freescale P3041DS
-p4080ds                Freescale P4080DS
-p5020ds                Freescale P5020DS
-p5020ds-64b            Freescale P5020DS-64B
-p5040ds                Freescale P5040DS
-p5040ds-64b            Freescale P5040DS-64B
+p2041rdb               NXP P2041RDB
+p3041ds                NXP P3041DS
+p4080ds                NXP P4080DS
+p5020ds                NXP P5020DS
+p5020ds-64b            NXP P5020DS-64B
+p5040ds                NXP P5040DS
+p5040ds-64b            NXP P5040DS-64B
 pcm052                 Phytec phyCORE Vybrid Development Kit
-t1023rdb               Freescale T1023RDB
-t1024rdb-64b           Freescale T1024RDB
-t1040d4rdb             Freescale T1040D4RDB
-t1042d4rdb-64b         Freescale T1042D4RDB
-t2080qds               Freescale T2080QDS
-t2080qds-64b           Freescale T2080QDS-64B
-t2080rdb               Freescale T2080RDB
-t4160qds               Freescale T4160QDS
-t4160qds-64b           Freescale T4160QDS-64B
-t4240qds               Freescale T4240QDS
-t4240qds-64b           Freescale T4240QDS-64B
-t4240rdb               Freescale T4240RDB
-twr-vf65gs10           Freescale Vybrid TWR-VF65GS10
+t1023rdb               NXP T1023RDB
+t1024rdb-64b           NXP T1024RDB
+t1040d4rdb             NXP T1040D4RDB
+t1042d4rdb-64b         NXP T1042D4RDB
+t2080qds               NXP T2080QDS
+t2080qds-64b           NXP T2080QDS-64B
+t2080rdb               NXP T2080RDB
+t4160qds               NXP T4160QDS
+t4160qds-64b           NXP T4160QDS-64B
+t4240qds               NXP T4240QDS
+t4240qds-64b           NXP T4240QDS-64B
+t4240rdb               NXP T4240RDB
+twr-vf65gs10           NXP Vybrid TWR-VF65GS10
 tx6q-11x0              Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module
 tx6s-8035              Ka-Ro electronics i.MX6S TX6S Computer-On-Module
 tx6u-8033              Ka-Ro electronics i.MX6DL TX6DL Computer-On-Module

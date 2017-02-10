@@ -2,11 +2,11 @@
        Machine                                 Name                                   SoC                     Layer
 ======================  ==================================================  =======================  =======================
 apalis-imx6             Toradex Apalis iMX6Q/D                              i.MX6                    meta-freescale-3rdparty
-b4420qds                Freescale B4420QDS                                  b4420                    meta-freescale
-b4420qds-64b            Freescale B4420QDS-64B                              b4420                    meta-freescale
-b4860qds                Freescale B4860QDS                                  b4860                    meta-freescale
-b4860qds-64b            Freescale B4860QDS-64B                              b4860                    meta-freescale
-c293pcie                Freescale C293PCIE                                  c293pcie                 meta-freescale
+b4420qds                NXP B4420QDS                                        b4420                    meta-freescale
+b4420qds-64b            NXP B4420QDS-64B                                    b4420                    meta-freescale
+b4860qds                NXP B4860QDS                                        b4860                    meta-freescale
+b4860qds-64b            NXP B4860QDS-64B                                    b4860                    meta-freescale
+c293pcie                NXP C293PCIE                                        c293pcie                 meta-freescale
 cfa10036                Crystalfontz CFA-10036                              i.MX28                   meta-freescale-3rdparty
 cfa10037                Crystalfontz CFA-10037                              i.MX28                   meta-freescale-3rdparty
 cfa10049                Crystalfontz CFA-10049                              i.MX28                   meta-freescale-3rdparty
@@ -24,11 +24,11 @@ imx233-olinuxino-maxi   OLIMEX iMX233-OLinuXino-Maxi                        i.MX
 imx233-olinuxino-micro  OLIMEX iMX233-OLinuXino-Micro                       i.MX23                   meta-freescale-3rdparty
 imx233-olinuxino-mini   OLIMEX iMX233-OLinuXino-Mini                        i.MX23                   meta-freescale-3rdparty
 imx233-olinuxino-nano   OLIMEX iMX233-OLinuXino-Nano                        i.MX23                   meta-freescale-3rdparty
-imx23evk                Freescale i.MX23 Evaluation Kit                     i.MX23                   meta-freescale
-imx28evk                Freescale i.MX28 Evaluation Kit                     i.MX28                   meta-freescale
-imx51evk                Freescale i.MX51 Evaluation Kit                     i.MX51                   meta-freescale
-imx53ard                Freescale i.MX53 SABRE Automotive Board             i.MX53                   meta-freescale
-imx53qsb                Freescale i.MX53 Quick Start Board                  i.MX53                   meta-freescale
+imx23evk                NXP i.MX23 Evaluation Kit                           i.MX23                   meta-freescale
+imx28evk                NXP i.MX28 Evaluation Kit                           i.MX28                   meta-freescale
+imx51evk                NXP i.MX51 Evaluation Kit                           i.MX51                   meta-freescale
+imx53ard                NXP i.MX53 SABRE Automotive Board                   i.MX53                   meta-freescale
+imx53qsb                NXP i.MX53 Quick Start Board                        i.MX53                   meta-freescale
 imx6dl-riotboard        RIoTboard                                           i.MX6S                   meta-freescale-3rdparty
 imx6dlsabreauto         NXP i.MX6DL SABRE Automotive                        i.MX6DL                  meta-freescale
 imx6dlsabresd           NXP i.MX6DL SABRE Smart Device                      i.MX6DL                  meta-freescale
@@ -49,7 +49,7 @@ imx6ul-pico-hobbit      Hobbitboard (PICO-IMX6UL)                           i.MX
 imx6ulevk               NXP i.MX6UL Evaluation Kit                          i.MX6UL                  meta-freescale
 imx7dsabresd            NXP i.MX7D SABRE Smart Device                       i.MX7D                   meta-freescale
 imx7s-warp              WaRP7                                               i.MX7S                   meta-freescale-3rdparty
-ls1021atwr              Freescale LS1021ATWR board                          ls102xa                  meta-freescale
+ls1021atwr              NXP LS1021ATWR board                                ls102xa                  meta-freescale
 ls1043ardb              NXP LS1043ARDB board                                LSCH2                    meta-freescale
 ls1043ardb-32b          NXP LS1043ARDB-32B                                  LSCH2                    meta-freescale
 ls1046ardb              NXP LS1046ARDB                                      LSCH2                    meta-freescale
@@ -61,33 +61,33 @@ nitrogen6sx             Boundary Devices Nitrogen6SX                        i.MX
 nitrogen6x              Boundary Devices Nitrogen6X                         i.MX6 Q/DL               meta-freescale-3rdparty
 nitrogen6x-lite         Boundary Devices Nitrogen6X Lite                    i.MX6S                   meta-freescale-3rdparty
 nitrogen7               Boundary Devices Nitrogen7                          i.MX7D                   meta-freescale-3rdparty
-p2041rdb                Freescale P2041RDB                                  p2041                    meta-freescale
-p3041ds                 Freescale P3041DS                                   p3041                    meta-freescale
-p4080ds                 Freescale P4080DS                                   p4080                    meta-freescale
-p5020ds                 Freescale P5020DS                                   p5020                    meta-freescale
-p5020ds-64b             Freescale P5020DS-64B                               p5020                    meta-freescale
-p5040ds                 Freescale P5040DS                                   p5040                    meta-freescale
-p5040ds-64b             Freescale P5040DS-64B                               p5040                    meta-freescale
+p2041rdb                NXP P2041RDB                                        p2041                    meta-freescale
+p3041ds                 NXP P3041DS                                         p3041                    meta-freescale
+p4080ds                 NXP P4080DS                                         p4080                    meta-freescale
+p5020ds                 NXP P5020DS                                         p5020                    meta-freescale
+p5020ds-64b             NXP P5020DS-64B                                     p5020                    meta-freescale
+p5040ds                 NXP P5040DS                                         p5040                    meta-freescale
+p5040ds-64b             NXP P5040DS-64B                                     p5040                    meta-freescale
 pcm052                  Phytec phyCORE Vybrid Development Kit               vf60                     meta-freescale-3rdparty
-t1023rdb                Freescale T1023RDB                                  t1023                    meta-freescale
-t1023rdb-64b            Freescale T1023RDB                                  t1023                    meta-freescale
-t1024rdb                Freescale T1024RDB                                  t1024                    meta-freescale
-t1024rdb-64b            Freescale T1024RDB                                  t1024                    meta-freescale
-t1040d4rdb              Freescale T1040D4RDB                                t1040                    meta-freescale
-t1040d4rdb-64b          Freescale T1040D4RDB                                t1040                    meta-freescale
-t1042d4rdb              Freescale T1042D4RDB                                t1042                    meta-freescale
-t1042d4rdb-64b          Freescale T1042D4RDB                                t1042                    meta-freescale
-t2080qds                Freescale T2080QDS                                  t2080                    meta-freescale
-t2080qds-64b            Freescale T2080QDS-64B                              t2080                    meta-freescale
-t2080rdb                Freescale T2080RDB                                  t2080                    meta-freescale
-t2080rdb-64b            Freescale T2080RDB                                  t2080                    meta-freescale
-t4160qds                Freescale T4160QDS                                  t4160                    meta-freescale
-t4160qds-64b            Freescale T4160QDS-64B                              t4160                    meta-freescale
-t4240qds                Freescale T4240QDS                                  t4240                    meta-freescale
-t4240qds-64b            Freescale T4240QDS-64B                              t4240                    meta-freescale
-t4240rdb                Freescale T4240RDB                                  t4240                    meta-freescale
-t4240rdb-64b            Freescale T4240RDB                                  t4240                    meta-freescale
-twr-vf65gs10            Freescale Vybrid TWR-VF65GS10                       VF610                    meta-freescale
+t1023rdb                NXP T1023RDB                                        t1023                    meta-freescale
+t1023rdb-64b            NXP T1023RDB                                        t1023                    meta-freescale
+t1024rdb                NXP T1024RDB                                        t1024                    meta-freescale
+t1024rdb-64b            NXP T1024RDB                                        t1024                    meta-freescale
+t1040d4rdb              NXP T1040D4RDB                                      t1040                    meta-freescale
+t1040d4rdb-64b          NXP T1040D4RDB                                      t1040                    meta-freescale
+t1042d4rdb              NXP T1042D4RDB                                      t1042                    meta-freescale
+t1042d4rdb-64b          NXP T1042D4RDB                                      t1042                    meta-freescale
+t2080qds                NXP T2080QDS                                        t2080                    meta-freescale
+t2080qds-64b            NXP T2080QDS-64B                                    t2080                    meta-freescale
+t2080rdb                NXP T2080RDB                                        t2080                    meta-freescale
+t2080rdb-64b            NXP T2080RDB                                        t2080                    meta-freescale
+t4160qds                NXP T4160QDS                                        t4160                    meta-freescale
+t4160qds-64b            NXP T4160QDS-64B                                    t4160                    meta-freescale
+t4240qds                NXP T4240QDS                                        t4240                    meta-freescale
+t4240qds-64b            NXP T4240QDS-64B                                    t4240                    meta-freescale
+t4240rdb                NXP T4240RDB                                        t4240                    meta-freescale
+t4240rdb-64b            NXP T4240RDB                                        t4240                    meta-freescale
+twr-vf65gs10            NXP Vybrid TWR-VF65GS10                             VF610                    meta-freescale
 tx6q-10x0               Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module    i.MX6Q                   meta-freescale-3rdparty
 tx6q-11x0               Ka-Ro electronics i.MX6Q TX6Q Computer-On-Module    i.MX6Q                   meta-freescale-3rdparty
 tx6s-8034               Ka-Ro electronics i.MX6S TX6S Computer-On-Module    i.MX6S                   meta-freescale-3rdparty

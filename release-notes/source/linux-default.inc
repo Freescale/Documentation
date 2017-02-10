@@ -14,7 +14,7 @@ cfa10055                linux-cfa            4.1.13
 cfa10056                linux-cfa            4.1.13
 cfa10057                linux-cfa            4.1.13
 cfa10058                linux-cfa            4.1.13
-cgtqmx6                 linux-congatec       3.14-1.0.x-mx6-qmx6
+cgtqmx6                 linux-congatec       4.1.15
 cm-fx6                  linux-compulab       3.14.28-cm-fx6
 colibri-imx6            linux-toradex        3.14.52-v2.6b2.1
 colibri-imx7            linux-toradex        4.1.15-v2.6b2.1
@@ -37,7 +37,7 @@ imx6qdl-variscite-som   linux-variscite      4.1.15-1.1.0
 imx6qpsabreauto         linux-imx            4.1.15-2.0.0
 imx6qpsabresd           linux-fslc-imx       4.1-2.0.x+git
 imx6qsabreauto          linux-fslc-imx       4.1-2.0.x+git
-imx6qsabrelite          linux-boundary       4.1.15-2.0.0_ga+yocto
+imx6qsabrelite          linux-boundary       4.1.15-2.0.0-ga+yocto
 imx6qsabresd            linux-fslc-imx       4.1-2.0.x+git
 imx6sl-warp             linux-fslc-imx       4.1-2.0.x+git
 imx6slevk               linux-fslc-imx       4.1-2.0.x+git
@@ -57,10 +57,10 @@ ls1046ardb-32b          linux-qoriq          4.1
 ls2080ardb              linux-qoriq          4.1
 m28evk                  linux-fslc           4.8+git
 m53evk                  linux-denx           3.9-master
-nitrogen6sx             linux-boundary       4.1.15-2.0.0_ga+yocto
-nitrogen6x              linux-boundary       4.1.15-2.0.0_ga+yocto
-nitrogen6x-lite         linux-boundary       4.1.15-2.0.0_ga+yocto
-nitrogen7               linux-boundary       4.1.15-2.0.0_ga+yocto
+nitrogen6sx             linux-boundary       4.1.15-2.0.0-ga+yocto
+nitrogen6x              linux-boundary       4.1.15-2.0.0-ga+yocto
+nitrogen6x-lite         linux-boundary       4.1.15-2.0.0-ga+yocto
+nitrogen7               linux-boundary       4.1.15-2.0.0-ga+yocto
 p2041rdb                linux-qoriq          4.1
 p3041ds                 linux-qoriq          4.1
 p4080ds                 linux-qoriq          4.1
