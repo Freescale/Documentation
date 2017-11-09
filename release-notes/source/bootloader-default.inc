@@ -14,7 +14,7 @@ cfa10055                barebox               2015.10.0
 cfa10056                barebox               2015.10.0
 cfa10057                barebox               2015.10.0
 cfa10058                barebox               2015.10.0
-cgtqmx6                 u-boot-fslc           v2016.11+git
+cgtqmx6                 u-boot-congatec       2016.01
 cm-fx6                  u-boot-fslc           v2016.11+git
 colibri-imx6            u-boot-toradex        v2015.04-v2.6b2.1+git
 colibri-imx7            u-boot-toradex        v2015.04-v2.6b2.1+git
