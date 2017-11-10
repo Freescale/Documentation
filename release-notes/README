@@ -38,7 +38,7 @@ Here's an example:
 
 By default, bitbake-metadata2doc.sh collects data out of bitbake's
 metadata for all machines it can find in the meta-freescale and
-meta-freescale-3erparty. You can restrict the machines to collect
+meta-freescale-3rdparty. You can restrict the machines to collect
 data from by setting the MACHINES variable in your environment.
 
 bitbake-metadata2doc.sh will write its output to release-note's `source'
