@@ -41,6 +41,7 @@ imx6qsabrelite          Boundary Devices i.MX6Q SABRE Lite                  i.MX
 imx6qsabresd            NXP i.MX6Q SABRE Smart Device                       i.MX6Q                   meta-freescale
 imx6sl-warp             WaRP                                                i.MX6SL                  meta-freescale-3rdparty
 imx6slevk               NXP i.MX6SL Evaluation Kit                          i.MX6SL                  meta-freescale
+imx6sllevk              Freescale i.MX6SLL Evaluation Kit                   i.MX6SLL                 meta-freescale
 imx6solosabreauto       NXP i.MX6Solo SABRE Automotive                      i.MX6S                   meta-freescale
 imx6solosabresd         NXP i.MX6Solo SABRE Smart Device                    i.MX6S                   meta-freescale
 imx6sxsabreauto         NXP i.MX6SoloX Sabre Automotive                     i.MX6SX                  meta-freescale
@@ -49,12 +50,17 @@ imx6ul-pico-hobbit      Hobbitboard (PICO-IMX6UL)                           i.MX
 imx6ulevk               NXP i.MX6UL Evaluation Kit                          i.MX6UL                  meta-freescale
 imx7dsabresd            NXP i.MX7D SABRE Smart Device                       i.MX7D                   meta-freescale
 imx7s-warp              WaRP7                                               i.MX7S                   meta-freescale-3rdparty
+ls1012afrdm             NXP LS1012AFRDM board                               LSCH2                    meta-freescale
+ls1012afrdm-32b         NXP LS1012AFRDM board                               LSCH2                    meta-freescale
+ls1012ardb              NXP LS1012ARDB board                                LSCH2                    meta-freescale
+ls1012ardb-32b          NXP LS1012ARDB board                                LSCH2                    meta-freescale
 ls1021atwr              NXP LS1021ATWR board                                ls102xa                  meta-freescale
 ls1043ardb              NXP LS1043ARDB board                                LSCH2                    meta-freescale
 ls1043ardb-32b          NXP LS1043ARDB-32B                                  LSCH2                    meta-freescale
 ls1046ardb              NXP LS1046ARDB                                      LSCH2                    meta-freescale
 ls1046ardb-32b          NXP LS1046ARDB                                      LSCH2                    meta-freescale
 ls2080ardb              NXP LS2080ARDB board                                LSCH3                    meta-freescale
+ls2088ardb              NXP LS2088ARDB                                      LSCH3                    meta-freescale
 m28evk                  DENX M28 SoM Evaluation Kit                         i.MX28                   meta-freescale-3rdparty
 m53evk                  DENX M53 SoM Evaluation Kit                         i.MX53                   meta-freescale-3rdparty
 nitrogen6sx             Boundary Devices Nitrogen6SX                        i.MX6SX                  meta-freescale-3rdparty

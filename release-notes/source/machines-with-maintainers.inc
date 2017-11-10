@@ -37,6 +37,7 @@ imx6qsabrelite         Boundary Devices i.MX6Q SABRE Lite
 imx6qsabresd           NXP i.MX6Q SABRE Smart Device
 imx6sl-warp            WaRP
 imx6slevk              NXP i.MX6SL Evaluation Kit
+imx6sllevk             Freescale i.MX6SLL Evaluation Kit
 imx6solosabresd        NXP i.MX6Solo SABRE Smart Device
 imx6sxsabreauto        NXP i.MX6SoloX Sabre Automotive
 imx6sxsabresd          NXP i.MX6SoloX SabreSD
@@ -44,11 +45,14 @@ imx6ul-pico-hobbit     Hobbitboard (PICO-IMX6UL)
 imx6ulevk              NXP i.MX6UL Evaluation Kit
 imx7dsabresd           NXP i.MX7D SABRE Smart Device
 imx7s-warp             WaRP7
+ls1012afrdm-32b        NXP LS1012AFRDM board
+ls1012ardb             NXP LS1012ARDB board
 ls1021atwr             NXP LS1021ATWR board
 ls1043ardb             NXP LS1043ARDB board
 ls1043ardb-32b         NXP LS1043ARDB-32B
 ls1046ardb             NXP LS1046ARDB
 ls2080ardb             NXP LS2080ARDB board
+ls2088ardb             NXP LS2088ARDB
 nitrogen6sx            Boundary Devices Nitrogen6SX
 nitrogen6x             Boundary Devices Nitrogen6X
 nitrogen6x-lite        Boundary Devices Nitrogen6X Lite

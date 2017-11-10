@@ -7,7 +7,7 @@ devregs                   1.0+AUTOINC+34ed402b92  1.0+AUTOINC+34ed402b92  1.0+AU
 directfb                  1.7.7                   1.7.7                   1.7.7                   1.7.7                   1.7.7                   1.7.7
 directfb-examples         1.7.0                   1.7.0                   1.7.0                   1.7.0                   1.7.0                   1.7.0
 elftosb                   10.12.01                10.12.01                10.12.01                10.12.01                10.12.01                10.12.01
-firmware-imx              --                      --                      5.4                     5.4                     5.4                     --
+firmware-imx              5.4                     5.4                     5.4                     5.4                     5.4                     5.4
 fsl-alsa-plugins          --                      --                      --                      1.0.26                  1.0.26                  --
 gpu-viv-bin-mx6q          --                      --                      --                      --                      --                      --
 gpu-viv-g2d               --                      --                      --                      --                      --                      --
@@ -18,8 +18,8 @@ imx-lib                   --                      --                      --    
 imx-test                  --                      00.00.00                00.00.00                5.7                     5.7                     00.00.00
 imx-uuc                   0.5.1+git               0.5.1+git               0.5.1+git               0.5.1+git               0.5.1+git               0.5.1+git
 imx-vpu                   --                      --                      --                      5.4.35                  5.4.35                  --
-libfslcodec               --                      --                      --                      4.1.4                   4.1.4                   --
-libfslparser              --                      --                      --                      4.1.4                   4.1.4                   --
+libfslcodec               --                      --                      --                      4.1.6                   4.1.6                   --
+libfslparser              --                      --                      --                      4.1.6                   4.1.6                   --
 libfslvpuwrap             --                      --                      --                      1.0.68                  --                      --
 libmcc                    --                      --                      --                      --                      --                      1.05.1
 mqxboot                   --                      --                      --                      --                      --                      2.0.1
