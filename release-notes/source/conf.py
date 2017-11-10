@@ -44,16 +44,16 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'FSL Community BSP Release Notes'
-copyright = u'2013-2016, FSL Community BSP Team'
+copyright = u'2013-2017, FSL Community BSP Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version or version name if applicable. 
-version = 'morty'
+version = 'pyro'
 # The full version, including alpha/beta/rc tags.
-release = '2.2'
+release = '2.3'
 
 if tags.has('draft'):
     release = release + " (Draft document)"

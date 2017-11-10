@@ -139,7 +139,7 @@ when using |project_name|.
 
 You can understand what a PACKAGEGROUPS is and learn how to use it in `Yocto
 Project Development Manual
-<http://www.yoctoproject.org/docs/current/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
+<http://www.yoctoproject.org/docs/2.3/dev-manual/dev-manual.html#usingpoky-extend-customimage-customtasks>`_
 
 .. include:: packagegroups.inc
 
@@ -148,7 +148,7 @@ Images
 
 The following images are provided by |project_name| only. See the list of Yocto
 Project's reference images in `Yocto Project Reference Manual
-<http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#ref-images>`_
+<http://www.yoctoproject.org/docs/2.3/ref-manual/ref-manual.html#ref-images>`_
 
 .. include:: images.inc
 

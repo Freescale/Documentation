@@ -4,14 +4,14 @@
 ***********************
 The scope of the |project_name| includes the meta layers:
 
- * `meta-freescale <http://git.yoctoproject.org/cgit/cgit.cgi/meta-freescale/?h=morty>`_:
+ * `meta-freescale <http://git.yoctoproject.org/cgit/cgit.cgi/meta-freescale/?h=pyro>`_:
    provides the base support and Freescale ARM and PPC reference boards;
- * `meta-freescale-3rdparty <https://github.com/Freescale/meta-freescale-3rdparty/tree/morty>`_:
+ * `meta-freescale-3rdparty <https://github.com/Freescale/meta-freescale-3rdparty/tree/pyro>`_:
    provides support for 3rd party and partner boards;
- * `meta-freescale-distro <https://github.com/Freescale/meta-freescale-distro/tree/morty>`_:
+ * `meta-freescale-distro <https://github.com/Freescale/meta-freescale-distro/tree/pyro>`_:
    provides distros support, images recipes, demo recipes, and packagegroups
    used to ease the development with Yocto Project.
- * `Documentation <https://github.com/Freescale/Documentation/tree/morty>`_:
+ * `Documentation <https://github.com/Freescale/Documentation/tree/pyro>`_:
    provides the source code for |project_name| Release Notes (RN) and User Guide
    (UG).
 
@@ -59,7 +59,7 @@ Most of |project_name|'s metadata is under MIT license, however the extensive
 and accurate list of package's license provided by the Yocto Project's metadata
 can be generated with few commands, for detailed information on how license is
 handled by Yocto Project see the `Reference Manual
-<http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#licenses>`_.
+<http://www.yoctoproject.org/docs/2.3/ref-manual/ref-manual.html#licenses>`_.
 
 End User License Agreement (EULA)
 ---------------------------------
