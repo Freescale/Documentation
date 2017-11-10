@@ -3,7 +3,7 @@
 Machines
 ========
 
-The scope of this release includes both meta-fsl-arm and meta-fsl-arm-extra.
+The scope of this release includes both meta-freescale and meta-freescale-3rdparty.
 Please refer to the table below for the complete list of supported boards.
 
 

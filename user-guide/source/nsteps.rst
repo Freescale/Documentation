@@ -16,7 +16,7 @@ Build and boot in *N*-steps
     $ cd fsl-community-bsp
     fsl-community-bsp $ repo init \
                             -u https://github.com/Freescale/fsl-community-bsp-platform \
-                            -b morty
+                            -b pyro
     fsl-community-bsp $ repo sync 
 
 4. Select your machine (:ref:`machines`) and prepare the environment for bitbake::

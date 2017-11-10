@@ -116,11 +116,11 @@ Building the Kernel Manually
 
 * Install it on your PC::
 
-    build $ sudo sh tmp/deploy/sdk/fslc-framebuffer-glibc-x86_64-meta-toolchain-armv7at2hf-neon-toolchain-2.2.sh
+    build $ sudo sh tmp/deploy/sdk/fslc-framebuffer-glibc-x86_64-meta-toolchain-armv7at2hf-neon-toolchain-2.3.sh
 
 * Setup the toolchain environment::
 
-    build $ source /opt/fslc-framebuffer/2.2/environment-setup-armv7at2hf-neon-fslc-linux-gnueabi
+    build $ source /opt/fslc-framebuffer/2.3/environment-setup-armv7at2hf-neon-fslc-linux-gnueabi
 
 * Get the Linux Kernel source code::
 
