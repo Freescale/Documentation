@@ -1,6 +1,6 @@
 ============  ================  =======
   Package     Board/SoC Family  Version
 ============  ================  =======
-gstreamer1.0  All               1.10.4
-udev          All               3.2.1
+gstreamer1.0  All               1.12.2
+udev          All               3.2.2
 ============  ================  =======

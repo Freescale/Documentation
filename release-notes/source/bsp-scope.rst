@@ -59,7 +59,7 @@ Most of |project_name|'s metadata is under MIT license, however the extensive
 and accurate list of package's license provided by the Yocto Project's metadata
 can be generated with few commands, for detailed information on how license is
 handled by Yocto Project see the `Reference Manual
-<http://www.yoctoproject.org/docs/2.3/ref-manual/ref-manual.html#licenses>`_.
+<http://www.yoctoproject.org/docs/2.4/ref-manual/ref-manual.html#licenses>`_.
 
 End User License Agreement (EULA)
 ---------------------------------
