@@ -225,4 +225,4 @@ where ``<patch>`` is the file created by ``git format-patch``.
 
 .. links
 .. _Layer Index: http://layers.openembedded.org/layerindex/layers/
-.. _meta-freescale Mailing List: https://lists.yoctoproject.org/listinfo/meta-freescale
+.. _meta-freescale Mailing List: https://lists.yoctoproject.org/g/meta-freescale/

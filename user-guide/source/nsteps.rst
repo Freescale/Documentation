@@ -81,4 +81,4 @@ Found errors? Subscribe and report it to `meta-freescale list`_
 .. links
 .. _required host packages: https://www.yoctoproject.org/docs/current/yocto-project-qs/yocto-project-qs.html#packages
 .. _repo: http://source.android.com/source/downloading.html
-.. _meta-freescale list: https://lists.yoctoproject.org/listinfo/meta-freescale
+.. _meta-freescale list: https://lists.yoctoproject.org/g/meta-freescale/

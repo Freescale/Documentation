@@ -15,7 +15,7 @@ support for OpenEmbedded and Yocto Project.
       considered finished*.  In case you wish to contribute with
       suggestions, fixes or comments, then please get in touch
       through the `meta-freescale
-      <https://lists.yoctoproject.org/listinfo/meta-freescale>`_
+      <https://lists.yoctoproject.org/g/meta-freescale/>`_
       mailing list.
 
 .. only:: latex
@@ -50,7 +50,7 @@ The |project_name| provides:
 
  * common environment configuration;
  * multiple download layers with the use of `repo <https://github.com/Freescale/fsl-community-bsp-platform>`_;
- * common `location <https://lists.yoctoproject.org/listinfo/meta-freescale>`_
+ * common `location <https://lists.yoctoproject.org/g/meta-freescale/>`_
    for discussing Freescale SoCs, kernels, bootloaders, user space
    packages, (BSP in general), bugs, how-tos, and so on
 
