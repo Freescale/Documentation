@@ -84,10 +84,7 @@ def write_linux_default(data, out_dir):
 def write_bootloader_default(data, out_dir):
     boards_bloaders = {}
     for  board, board_data in data.items():
-        image_bootloader = board_data['image-bootloader']
-        if image_bootloader:
-            boards_bloaders[board] = (image_bootloader, board_data['recipes'][image_bootloader]['version'])
-        elif board_data['recipes'].has_key('u-boot'):
+        if board_data['recipes'].has_key('u-boot'):
             bootloader = board_data['recipes']['u-boot']
             boards_bloaders[board] = (bootloader['recipe'], bootloader['version'])
         elif board_data['recipes'].has_key('virtual/bootloader'):
