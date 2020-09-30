@@ -79,7 +79,8 @@ build_dir=`mktemp -d --tmpdir=$yocto_dir`
 
 for machine in $machines; do
     cd $yocto_dir
-    echo "Using $build_dir as build directory"
+    echo "Using $build_dir as build directory with MACHINE as '$machine'"
+
     MACHINE=$machine DISTRO=fslc-framebuffer . ./setup-environment `basename $build_dir`
 
     MACHINE=$machine DISTRO=fslc-framebuffer python3 $anchor/extract-bitbake-metadata.py \
