@@ -10,7 +10,7 @@ def process_machines_table(csv_table):
 
 def read_csv_file(csv_file):
     try:
-        with open(csv_file, 'rb') as csv_fd:
+        with open(csv_file, 'r') as csv_fd:
             reader = csv.reader(csv_fd, delimiter=',')
             return list(reader)
     except IOError:
