@@ -8,6 +8,7 @@ import pickle
 import subprocess
 import copy
 import shutil
+from functools import reduce
 from doc_utils import tabularize
 
 def info(fmt, *args):
@@ -84,10 +85,10 @@ def write_linux_default(data, out_dir):
 def write_bootloader_default(data, out_dir):
     boards_bloaders = {}
     for  board, board_data in data.items():
-        if board_data['recipes'].has_key('u-boot'):
+        if 'u-boot' in board_data['recipes']:
             bootloader = board_data['recipes']['u-boot']
             boards_bloaders[board] = (bootloader['recipe'], bootloader['version'])
-        elif board_data['recipes'].has_key('virtual/bootloader'):
+        elif 'virtual/bootloader' in board_data['recipes']:
             bootloader = board_data['recipes']['virtual/bootloader']
             boards_bloaders[board] = (bootloader['recipe'], bootloader['version'])
         else:
@@ -121,7 +122,7 @@ def write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir):
     bootloader_recipes = [] # just to keep track of recipes already collected
     for board, board_data in data.items():
         for bootloader_software in ['u-boot', 'barebox']:
-            if board_data['recipes'].has_key(bootloader_software):
+            if bootloader_software in board_data['recipes']:
                 bootloader = board_data['recipes'][bootloader_software]
                 recipe = bootloader['recipe']
                 recipe_file = bootloader['file']
@@ -216,7 +217,7 @@ def write_soc_pkg(data, out_dir):
     board_in_multiple_socs = False
     for soc, boards in socs.items():
         for board in boards:
-            if boards_socs.has_key(board):
+            if board in boards_socs:
                 board_in_multiple_socs = True
                 error('Board %s has been found in both %s and %s SoCs' % (board, boards_socs[board], soc))
             else:
@@ -232,7 +233,7 @@ def write_soc_pkg(data, out_dir):
             if boards:
                 pkg_versions = {}
                 for board in boards:
-                    if pkg in data[board]['recipes'].keys():
+                    if pkg in data[board]['recipes']:
                         recipe = data[board]['recipes'][pkg]
                         compatible_machine = recipe['compatible-machine']
                         if compatible_machine is None:
@@ -245,14 +246,14 @@ def write_soc_pkg(data, out_dir):
                             pkg_versions[board] = -1
                     else:
                         pkg_versions[board] = -1
-                versions = pkg_versions.values()
+
                 versions_histogram = {}
-                for version in versions:
-                    if versions_histogram.has_key(version):
+                for version in pkg_versions.values():
+                    if version in versions_histogram:
                         versions_histogram[version] += 1
                     else:
                         versions_histogram[version] = 1
-                versions_freq = versions_histogram.values()
+                versions_freq = list(versions_histogram.values())
                 most_freq = max(versions_freq)
                 num_most_freq = versions_freq.count(most_freq)
 
@@ -281,7 +282,7 @@ def write_soc_pkg(data, out_dir):
 
     ## Build up the table body
     body = []
-    soc_names = filter(lambda soc: socs[soc], sorted(socs.keys()))
+    soc_names = list(filter(lambda soc: socs[soc], sorted(socs.keys())))
     for pkg in pkgs:
         versions = [ pkgs_socs_versions[(pkg, soc)] for soc in soc_names ]
         def replace_noversions(versions):
@@ -297,7 +298,7 @@ def write_soc_pkg(data, out_dir):
     ## Finally write the table
     write_tabular(out_dir,
                   'soc-pkg.inc',
-                  ['Package name'] + map(lambda soc: 'mx6q / mx6dl' if soc == 'mx6dl' else soc,  soc_names),
+                  ['Package name'] + list(map(lambda soc: 'mx6q / mx6dl' if soc == 'mx6dl' else soc,  soc_names)),
                   body)
 
 
@@ -315,10 +316,10 @@ def write_maintainers_tables(data, out_dir, bsp_dir):
         error('Could not run the get-maintainer script (attempted %s)' % (get_maintainer_script,))
         sys.exit(1)
 
-    get_maintainer_output, err = get_maintainer_pipe.communicate()
+    get_maintainer_output = get_maintainer_pipe.communicate()[0].decode()
     maintained = []
     not_maintained = []
-    for line in get_maintainer_output.split('\n'):
+    for line in get_maintainer_output.splitlines():
         if line == '':
             continue
         columns = line.split('\t')
@@ -358,7 +359,7 @@ def write_machines_list(data, out_dir, bsp_dir):
     out_file = os.path.join(out_dir, 'machine-list.inc')
     info('Writing %s' % out_file)
     fd = open(out_file, 'w')
-    fd.write(out)
+    fd.write(str(out))
     fd.close()
 
 
@@ -385,7 +386,7 @@ def write_soc_tree(data, out_dir):
         if not isinstance(b, dict):
             return b
         result = copy.deepcopy(a)
-        for k, v in b.iteritems():
+        for k, v in b.items():
             if k in result and isinstance(result[k], dict):
                     result[k] = dict_merge(result[k], v)
             else:
@@ -420,8 +421,8 @@ def write_soc_tree(data, out_dir):
                        soc_families)))
 
     socs_dict = {}
-    for key, value in socs2dict(socs).iteritems():
-        for pattern, family in SOCS_FAMILIES.iteritems():
+    for key, value in socs2dict(socs).items():
+        for pattern, family in SOCS_FAMILIES.items():
             if pattern.match(key):
                 if not family in socs_dict.keys():
                     socs_dict[family] = {}
