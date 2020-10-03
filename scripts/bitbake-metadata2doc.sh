@@ -83,6 +83,8 @@ for machine in $machines; do
 
     MACHINE=$machine DISTRO=fslc-framebuffer . ./setup-environment `basename $build_dir`
 
+    grep -q 'IMX_DEFAULT_BSP' conf/local.conf || echo 'IMX_DEFAULT_BSP = "nxp"' >> conf/local.conf
+
     MACHINE=$machine DISTRO=fslc-wayland python3 $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
         apptrk \
