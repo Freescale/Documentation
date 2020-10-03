@@ -87,44 +87,72 @@ for machine in $machines; do
 
     MACHINE=$machine DISTRO=fslc-wayland python3 $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
-        apptrk \
-        barebox \
-        cst \
-        devregs \
-        directfb \
-        directfb-examples \
-        libdrm \
-        elftosb \
+        firmware-imx-8 \
+        firmware-imx-8m \
         firmware-imx \
-        fsl-alsa-plugins \
-        gpu-viv-bin-mx6q \
-        gpu-viv-g2d \
-        gst1.0-fsl-plugin \
-        gstreamer \
-        gstreamer1.0 \
-        gstreamer1.0-plugins-imx \
+        firmware-sof-imx \
+        firmware-qca6174 \
+        firmware-qca9377 \
+        qca-tools \
+        imx-atf \
         imx-kobs \
         imx-lib \
+        imx-boot \
+        imx-mkimage \
+        imx-sc-firmware \
+        imx-seco-libs \
+        imx-seco \
         imx-test \
         imx-uuc \
+        imx-vpu-hantro-vc \
+        imx-vpu-hantro \
         imx-vpu \
-        libfslcodec \
-        libfslparser \
-        libfslvpuwrap \
-        libmcc \
-        mqxboot \
+        libimxdmabuffer \
         mxsldr \
-        qe-ucode \
-        qemu-fsl \
-        rcw \
+        u-boot \
+        u-boot-imx-tools \
+        udev \
+        devregs \
+        imx-usb-loader \
+        libdrm-armada \
+        libdrm \
+        imx-dpu-g2d \
+        imx-gpu-apitrace \
+        imx-gpu-g2d \
+        imx-gpu-viv \
+        imx-gpu-viv \
+        wayland-protocols \
+        weston \
+        xf86-video-armada \
+        xf86-video-imx-vivante \
+        kernel-module-imx-gpu-viv \
+        kernel-module-qca6174 \
+        kernel-module-qca9377 \
         virtual/kernel \
         virtual/bootloader \
-        udev \
-        u-boot \
-        xserver-xorg \
-        xf86-dri-vivante \
-        xf86-video-imxfb \
-        xf86-video-imxfb-vivante \
+        linux-fslc-imx \
+        linux-fslc-lts-4.19 \
+        linux-imx \
+        imx-alsa-plugins \
+        gstreamer1.0-libav \
+        gstreamer1.0-plugins-bad \
+        gstreamer1.0-plugins-base \
+        gstreamer1.0-plugins-good \
+        gstreamer1.0-plugins-imx \
+        gstreamer1.0-plugins-ugly \
+        gstreamer1.0-rtsp-server \
+        gstreamer1.0 \
+        imx-gst1.0-plugin \
+        imx-codec \
+        imx-dspc-asrc \
+        imx-parser \
+        imx-vpuwrap \
+        libimxvpuapi2 \
+        libimxvpuapi \
+        optee-client \
+        optee-os \
+        optee-test \
+        systemd \
         $images \
         $packagegroups
 

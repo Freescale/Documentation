@@ -172,42 +172,118 @@ def write_userspace_pkg(data, out_dir):
 
 
 def write_soc_pkg(data, out_dir):
-    socs = {'mx28': [],
-            'mx5': [],
-            'mx6sl': [],
-            'mx6dl': [],
-            'vf60': [],
-            'ls102xa': []}
-    pkgs = ['imx-test',
-            'libfslcodec',
-            'libfslparser',
-            'imx-vpu',
-            'imx-lib',
-            'firmware-imx',
-            'mxsldr',
-            'gpu-viv-g2d',
-            'xf86-video-imxfb-vivante',
-            'gpu-viv-bin-mx6q',
-            'directfb',
-            'directfb-examples',
-            'xf86-video-imxfb',
-            'libfslvpuwrap',
-            'fsl-alsa-plugins',
-            'gstreamer1.0-plugins-imx',
-            'imx-uuc',
-            'libmcc',
-            'apptrk',
-            'elftosb',
-            'imx-kobs',
-            'qe-ucode',
-            'rcw',
-            'cst',
-            'devregs',
-            'qemu-fsl',
-            'gst1.0-fsl-plugin',
-            'mqxboot']
+    boards = [
+        'imx23evk',
+        'imx25pdk',
+        'imx28evk',
+        'imx51evk',
+        'imx53ard',
+        'imx53qsb',
+        'imx6qdlsabreauto',
+        'imx6qdlsabresd',
+        'imx6slevk',
+        'imx6sllevk',
+        'imx6sxsabreauto',
+        'imx6sxsabresd',
+        'imx6ulevk',
+        'imx6ullevk',
+        'imx7dsabresd',
+        'imx7ulpevk',
+        'imx8mmevk',
+        'imx8mnevk',
+        'imx8mpevk',
+        'imx8mqevk',
+        'imx8qmmek',
+        'imx8qxpmek'
+    ]
+
+    socs = {
+        'mxs': [],
+        'mx5': [],
+        'mx6sl': [],
+        'mx6dl': [],
+        'vf60': [],
+        'mx8qm': [],
+        'mx8mm': [],
+        'mx8mn': [],
+        'mx8mp': [],
+        'mx8mq': [],
+        'mx8qxp': []
+    }
+
+    pkgs = [
+        'firmware-imx-8',
+        'firmware-imx-8m',
+        'firmware-imx',
+        'firmware-sof-imx',
+        'firmware-qca6174',
+        'firmware-qca9377',
+        'qca-tools',
+        'imx-atf',
+        'imx-kobs',
+        'imx-lib',
+        'imx-boot',
+        'imx-mkimage',
+        'imx-sc-firmware',
+        'imx-seco-libs',
+        'imx-seco',
+        'imx-test',
+        'imx-uuc',
+        'imx-vpu-hantro-vc',
+        'imx-vpu-hantro',
+        'imx-vpu',
+        'libimxdmabuffer',
+        'mxsldr',
+        'u-boot-fslc',
+        'u-boot-imx',
+        'u-boot-imx-tools',
+        'udev',
+        'devregs',
+        'imx-usb-loader',
+        'libdrm-armada',
+        'libdrm',
+        'imx-dpu-g2d',
+        'imx-gpu-apitrace',
+        'imx-gpu-g2d',
+        'imx-gpu-viv',
+        'imx-gpu-viv',
+        'wayland-protocols',
+        'weston',
+        'xf86-video-armada',
+        'xf86-video-imx-vivante',
+        'kernel-module-imx-gpu-viv',
+        'kernel-module-qca6174',
+        'kernel-module-qca9377',
+        'linux-fslc-imx',
+        'linux-fslc-lts-4.19',
+        'linux-imx',
+        'imx-alsa-plugins',
+        'gstreamer1.0-libav',
+        'gstreamer1.0-plugins-bad',
+        'gstreamer1.0-plugins-base',
+        'gstreamer1.0-plugins-good',
+        'gstreamer1.0-plugins-imx',
+        'gstreamer1.0-plugins-ugly',
+        'gstreamer1.0-rtsp-server',
+        'gstreamer1.0',
+        'imx-gst1.0-plugin',
+        'imx-codec',
+        'imx-dspc-asrc',
+        'imx-parser',
+        'imx-vpuwrap',
+        'libimxvpuapi2',
+        'libimxvpuapi',
+        'optee-client',
+        'optee-os',
+        'optee-test',
+        'systemd'
+    ]
+
     ## Fill the socs dictionary
     for board, board_data in data.items():
+        if board not in boards:
+            continue
+
         soc_family = board_data['soc-family']
         for soc in socs.keys():
             if is_in_soc_family(soc, soc_family):
@@ -370,7 +446,7 @@ def write_soc_tree(data, out_dir):
         re.compile("ls102xa"): 'Layerscape'
     }
 
-    VALID_SOCS = re.compile(r'mxs|mx2[0-9]|mx5[0-9]?|mx6(?:dl|q|sl|sx|ul+)?|mx7[d]?|ls104[3-6]a]|vf(?:[5-6]0)?|ls102xa')
+    VALID_SOCS = re.compile(r'mxs|mx2[0-9]|mx5[0-9]?|mx6(?:dl|q|sl+|sx|ul+)?|mx7(?:d?|ulp)|mx8(?:mm|mn|mp|pq|qm|qxp)|ls104[3-6]a]|vf(?:[5-6]0)?|ls102xa')
 
     PADDING="   "
 
