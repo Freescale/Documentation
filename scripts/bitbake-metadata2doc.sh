@@ -83,7 +83,7 @@ for machine in $machines; do
 
     MACHINE=$machine DISTRO=fslc-framebuffer . ./setup-environment `basename $build_dir`
 
-    MACHINE=$machine DISTRO=fslc-framebuffer python3 $anchor/extract-bitbake-metadata.py \
+    MACHINE=$machine DISTRO=fslc-wayland python3 $anchor/extract-bitbake-metadata.py \
         $anchor/$marshalled_data_file \
         apptrk \
         barebox \
