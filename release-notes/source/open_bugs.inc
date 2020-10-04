@@ -1,8 +1,8 @@
-======  ==================  ========================================================================================================
-Bug ID        Status                                                        Summary
-======  ==================  ========================================================================================================
-11125   NEW                 freescale GPU driver imx-gpu-viv is incompatible with kernel linux-fscl
+======  ==================  ================================================================================
+Bug ID        Status                                            Summary
+======  ==================  ================================================================================
 11881   NEW                 add infrastructure to allow BSPs to switch between *set* of configurations
-12151   NEW                 Packages tslib-conf, tslib-tests and tslib-calibrate do not get installed in root filesystem without X11
+13251   IN PROGRESS DESIGN  Symlinks overridden when building multitple kernels
+13938   ACCEPTED            devtool modify virtual/kernel fails when EXTRAVERSION field is empty in Makefile
 6428    IN PROGRESS DESIGN  Improve the ability to isolate changes that have caused a rebuild
-======  ==================  ========================================================================================================
+======  ==================  ================================================================================
