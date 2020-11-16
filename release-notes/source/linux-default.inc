@@ -80,6 +80,6 @@ t2080rdb                linux-qoriq          5.4.3+git
 t2080rdb-64b            linux-qoriq          5.4.3+git
 t4240rdb                linux-qoriq          5.4.3+git
 t4240rdb-64b            linux-qoriq          5.4.3+git
-ventana                 linux-gateworks-imx  ${LINUX_VERSION}+git
+ventana                 linux-gateworks-imx  3.14+git
 wandboard               linux-fslc           5.4.75+git
 ======================  ===================  ==================================
