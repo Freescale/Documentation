@@ -13,6 +13,80 @@ The following tree shows the SoC hierarchy:
    :scale: 60%
    :align: center
 
+.. _machine-overrides-extender:
+
+What is machine-overrides-extender Class
+========================================
+
+The `Machine Overrides Extender class <https://github.com/Freescale/meta-freescale/blob/master/classes/machine-overrides-extender.bbclass>`_
+is a class from **meta-freescale** created to extend some machine overrides
+depending on which `SoC <https://en.wikipedia.org/wiki/System_on_a_chip>`_
+is part of a
+`MPSoC <https://en.wikipedia.org/wiki/Multiprocessor_system_on_a_chip>`_.
+For example, a MPSoC has IPU, and GPU for 3D, but does not have GPU for 2D.
+
+The list of SoC on a given MPSoC is known and does not change overtime. The
+current MPSoC configuration can be found in file
+`imx-base.inc <https://github.com/Freescale/meta-freescale/blob/master/conf/machine/include/imx-base.inc>`_,
+the lines where the variable ``MACHINEOVERRIDES_EXTENDER`` is set for each MPSoC.
+When a new machine file is added to **meta-freescale**, defining the MPSoC is
+enough.
+
+The Machine Overrides Extender class adds the pre-determined list of SoC
+configured for that MPSoC to the ``MACHINEOVERRIDE``, and as a consequence,
+the BSP packages are properly configured for that machine by default.
+
+In other words, when adding a new machine support, the user only need to know
+the MPSoC for that machine, the **meta-freescale** BSP support is already
+configured to provide the proper package depending on the MPSoC (and this is
+configured via Machine Overrides Extender).
+
+This meas any new machine added in future can use the configured BSP provided by
+**meta-freescale**.
+
+On top of the hardware architecture which impacts the BSP, there are also the
+software architecture. There are three supported BSPs:
+
+* ``imx-generic-bsp``: Used to configure any generic aspect of the BSP, for example,
+  those configurations that depends only on the MPSoC.
+
+* ``imx-mainline-bsp``: Used to configure the mainline packages.
+
+* ``imx-nxp-bsp``: Used to configure the packages provided by NXP.
+
+The BPS overrides are provided to allow the user to chose between the BSPs and
+using the proper package for each case.
+
+For example, the recipe
+`weston_9.0.0.imx.bb <https://github.com/Freescale/meta-freescale/blob/master/recipes-graphics/wayland/weston_9.0.0.imx.bb#L180-L183>`_
+with focus on the following lines::
+
+   PACKAGECONFIG:remove:imxfbdev = "kms"
+   PACKAGECONFIG:append:imxfbdev = " fbdev clients"
+   PACKAGECONFIG:append:imxgpu   = " imxgpu"
+   PACKAGECONFIG:append:imxgpu2d = " imxg2d"
+
+In this recipe, the ``PACKAGECONFIG`` is configured depending on the SoC, for
+the SoCs with ``imxfvdev``, the weston package should not include the
+configuration ``kms``, and includes ``fbdev`` and ``clients``.
+
+For the MPSoC ``mx6q``, the overrides does include ``imxfbdev``, ``imxgpu``
+and ``imxgpu2``::
+
+   MACHINEOVERRIDES_EXTENDER:mx6q:use-nxp-bsp = "imx-generic-bsp:imx-nxp-bsp: \
+   imxfbdev:imxipu:imxvpu:imxgpu:imxgpu2d:imxgpu3d:mx6-generic-bsp:mx6-nxp-bsp: \
+   mx6q-generic-bsp:mx6q-nxp-bsp"
+
+
+For the MPSoC ``mx8mm``, the overrides does not include ``imxfbdev`` and include
+``imxgpu`` and ``imxgpu2``::
+
+   MACHINEOVERRIDES_EXTENDER:mx8mm:use-nxp-bsp = "imx-generic-bsp:imx-nxp-bsp: \
+   imxdrm:imxvpu:imxgpu:imxgpu2d:imxgpu3d:mx8-generic-bsp:mx8-nxp-bsp: \
+   mx8m-generic-bsp:mx8m-nxp-bsp:mx8mm-generic-bsp:mx8mm-nxp-bsp"
+
+The Weston configuration has a different value for ``mx6q`` and ``mx8mm``,
+because both MPSoC are different.
 
 .. _linux-providers:
 
