@@ -1,69 +1,69 @@
-=========================  ======================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  ======================
-       Package name                 mx5                       mx6q / mx6dl                          mx6sl                              mx8mm                              mx8mn                              mx8mp                              mx8mq                              mx8qm                              mx8qxp                        mxs
-=========================  ======================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  ======================
-devregs                    1.0+AUTOINC+d5f6223027  1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027             1.0+AUTOINC+d5f6223027
-firmware-imx               8.8                     8.8                                8.8                                8.8                                8.8                                8.8                                8.8                                8.8                                8.8                                8.8
-firmware-imx-8             --                      --                                 --                                 --                                 --                                 --                                 --                                 8.8                                --                                 --
-firmware-imx-8m            --                      --                                 --                                 8.8                                8.8                                8.8                                8.8                                --                                 --                                 --
-firmware-qca6174           3.0.2                   3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2
-firmware-qca9377           3.0.2                   3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2
-firmware-sof-imx           1.5.0-1                 1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1                            1.5.0-1
-gstreamer1.0               1.16.2                  1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2
-gstreamer1.0-libav         --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-gstreamer1.0-plugins-bad   1.16.2                  1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2
-gstreamer1.0-plugins-base  1.16.2                  1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2
-gstreamer1.0-plugins-good  1.16.2                  1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2
-gstreamer1.0-plugins-imx   --                      0.13.1+git                         0.13.1+git                         --                                 --                                 --                                 --                                 --                                 --                                 --
-gstreamer1.0-plugins-ugly  --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-gstreamer1.0-rtsp-server   1.16.2                  1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2                             1.16.2
-imx-alsa-plugins           --                      1.0.26                             1.0.26                             1.0.26                             1.0.26                             1.0.26                             1.0.26                             1.0.26                             1.0.26                             --
-imx-atf                    --                      --                                 --                                 2.2+git                            2.2+git                            2.2+git                            2.2+git                            2.2+git                            2.2+git                            --
-imx-boot                   --                      --                                 --                                 1.0                                1.0                                1.0                                1.0                                1.0                                1.0                                --
-imx-codec                  --                      4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              --
-imx-dpu-g2d                --                      --                                 --                                 --                                 --                                 --                                 --                                 1.8.7                              1.8.7                              --
-imx-dspc-asrc              --                      --                                 --                                 1.0.1                              1.0.1                              1.0.1                              1.0.1                              1.0.1                              1.0.1                              --
-imx-gpu-apitrace           --                      9.0.0                              9.0.0                              9.0.0                              9.0.0                              9.0.0                              9.0.0                              9.0.0                              9.0.0                              --
-imx-gpu-g2d                --                      6.4.0.p2.4                         6.4.0.p2.4                         6.4.0.p2.4                         --                                 6.4.0.p2.4                         --                                 --                                 --                                 --
-imx-gpu-viv                --                      6.4.0.p2.4-aarch32                 6.4.0.p2.4-aarch32                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 --
-imx-gpu-viv                --                      6.4.0.p2.4-aarch32                 6.4.0.p2.4-aarch32                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 6.4.0.p2.4-aarch64                 --
-imx-gst1.0-plugin          --                      4.5.3                              4.5.3                              4.5.3                              4.5.3                              4.5.3                              4.5.3                              4.5.3                              4.5.3                              --
-imx-kobs                   5.5+git                 5.5+git                            5.5+git                            5.5+git                            5.5+git                            5.5+git                            5.5+git                            5.5+git                            5.5+git                            5.5+git
-imx-lib                    --                      5.8+AUTOINC+3f777974c0             5.8+AUTOINC+3f777974c0             --                                 --                                 --                                 --                                 --                                 --                                 --
-imx-mkimage                git                     git                                git                                git                                git                                git                                git                                git                                git                                git
-imx-parser                 --                      4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              4.5.5                              --
-imx-sc-firmware            --                      --                                 --                                 --                                 --                                 --                                 --                                 1.5.0                              1.5.0                              --
-imx-seco                   --                      --                                 --                                 --                                 --                                 --                                 --                                 3.6.3                              3.6.3                              --
-imx-seco-libs              --                      --                                 --                                 --                                 --                                 --                                 --                                 git                                git                                --
-imx-test                   00.00.00                7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             7.0+AUTOINC+6d20e84f2d             00.00.00
-imx-usb-loader             1.0+AUTOINC+f009770d84  1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84             1.0+AUTOINC+f009770d84
-imx-uuc                    0.5.1+git               0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git                          0.5.1+git
-imx-vpu                    --                      5.4.39.3                           --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-imx-vpu-hantro             --                      --                                 --                                 1.18.0                             --                                 1.18.0                             1.18.0                             --                                 --                                 --
-imx-vpu-hantro-vc          --                      --                                 --                                 --                                 --                                 1.1.0                              --                                 --                                 --                                 --
-imx-vpuwrap                --                      4.5.5                              --                                 4.5.5                              --                                 4.5.5                              4.5.5                              --                                 --                                 --
-kernel-module-imx-gpu-viv  6.4.0.p2.4+fslc+git     6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git                6.4.0.p2.4+fslc+git
-kernel-module-qca6174      3.0                     3.0                                3.0                                3.0                                3.0                                3.0                                3.0                                3.0                                3.0                                3.0
-kernel-module-qca9377      3.1                     3.1                                3.1                                3.1                                3.1                                3.1                                3.1                                3.1                                3.1                                3.1
-libdrm                     2.4.102                 2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.99.imx                         2.4.102
-libdrm-armada              0.1+git                 0.1+git                            0.1+git                            0.1+git                            0.1+git                            0.1+git                            0.1+git                            0.1+git                            0.1+git                            0.1+git
-libimxdmabuffer            --                      1.0.1+git                          1.0.1+git                          1.0.1+git                          1.0.1+git                          1.0.1+git                          1.0.1+git                          1.0.1+git                          1.0.1+git                          --
-libimxvpuapi               --                      0.10.3+AUTOINC+3a1ee3a54f          --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-libimxvpuapi2              --                      2.0.1+git                          --                                 2.0.1+git                          --                                 2.0.1+git                          2.0.1+git                          --                                 --                                 --
-linux-fslc-imx             --                      5.4.67+git                         5.4.67+git                         5.4.67+git                         5.4.67+git                         5.4.67+git                         5.4.67+git                         5.4.67+git                         5.4.67+git                         --
-linux-fslc-lts-4.19        --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-linux-imx                  --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-mxsldr                     0.0.0+git               0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git                          0.0.0+git
-optee-client               --                      3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          --
-optee-os                   3.7.0.imx               3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx
-optee-test                 --                      3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          3.7.0.imx                          --
-qca-tools                  3.0.2                   3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2                              3.0.2
-systemd                    246.6                   246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6
-u-boot-fslc                --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-u-boot-imx                 --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-u-boot-imx-tools           --                      2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  2020.04-imx_v2020.04_5.4.24_2.1.0  --
-udev                       246.6                   246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6                              246.6
-wayland-protocols          1.20                    1.18.imx                           1.18.imx                           1.18.imx                           1.18.imx                           1.18.imx                           1.18.imx                           1.18.imx                           1.18.imx                           1.20
-weston                     9.0.0                   8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          8.0.0.imx                          9.0.0
-xf86-video-armada          --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-xf86-video-imx-vivante     --                      --                                 --                                 --                                 --                                 --                                 --                                 --                                 --                                 --
-=========================  ======================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  =================================  ======================
+=========================  ======================  ======================
+       Package name                 mx5                     mxs
+=========================  ======================  ======================
+devregs                    1.0+AUTOINC+dcc3e3f26d  1.0+AUTOINC+dcc3e3f26d
+firmware-imx               8.15                    8.15
+firmware-imx-8             --                      --
+firmware-imx-8m            --                      --
+firmware-qca6174           --                      --
+firmware-qca9377           --                      --
+firmware-sof-imx           1.9.0-1                 1.9.0-1
+gstreamer1.0               1.20.2                  1.20.2
+gstreamer1.0-libav         --                      --
+gstreamer1.0-plugins-bad   1.20.2                  1.20.2
+gstreamer1.0-plugins-base  1.20.2                  1.20.2
+gstreamer1.0-plugins-good  1.20.2                  1.20.2
+gstreamer1.0-plugins-imx   --                      --
+gstreamer1.0-plugins-ugly  --                      --
+gstreamer1.0-rtsp-server   1.20.2                  1.20.2
+imx-alsa-plugins           --                      --
+imx-atf                    --                      --
+imx-boot                   --                      --
+imx-codec                  --                      --
+imx-dpu-g2d                --                      --
+imx-dspc-asrc              --                      --
+imx-gpu-apitrace           --                      --
+imx-gpu-g2d                --                      --
+imx-gpu-viv                --                      --
+imx-gpu-viv                --                      --
+imx-gst1.0-plugin          --                      --
+imx-kobs                   5.5+git                 5.5+git
+imx-lib                    --                      --
+imx-mkimage                git                     git
+imx-parser                 --                      --
+imx-sc-firmware            --                      --
+imx-seco                   --                      --
+imx-seco-libs              --                      --
+imx-test                   00.00.00                00.00.00
+imx-usb-loader             1.0+AUTOINC+f009770d84  1.0+AUTOINC+f009770d84
+imx-uuc                    0.5.1+git               0.5.1+git
+imx-vpu                    --                      --
+imx-vpu-hantro             --                      --
+imx-vpu-hantro-vc          --                      --
+imx-vpuwrap                --                      --
+kernel-module-imx-gpu-viv  --                      --
+kernel-module-qca6174      --                      --
+kernel-module-qca9377      --                      --
+libdrm                     2.4.110                 2.4.110
+libdrm-armada              --                      --
+libimxdmabuffer            --                      --
+libimxvpuapi               --                      --
+libimxvpuapi2              --                      --
+linux-fslc-imx             --                      --
+linux-fslc-lts-4.19        --                      --
+linux-imx                  --                      --
+mxsldr                     0.0.0+git               0.0.0+git
+optee-client               --                      --
+optee-os                   --                      --
+optee-test                 --                      --
+qca-tools                  --                      --
+systemd                    250.5                   250.5
+u-boot-fslc                --                      --
+u-boot-imx                 --                      --
+u-boot-imx-tools           --                      --
+udev                       250.5                   250.5
+wayland-protocols          1.25                    1.25
+weston                     10.0.0                  10.0.0
+xf86-video-armada          --                      --
+xf86-video-imx-vivante     --                      --
+=========================  ======================  ======================

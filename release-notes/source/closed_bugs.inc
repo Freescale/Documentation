@@ -21,6 +21,10 @@ Bug ID  Resolution                                                              
 13972   FIXED       Build fails on fetching iso-codes
 14068   FIXED       dunfell tzcode-native compile make awk crash
 14069   FIXED       nativesdk-packagegroup-sdk-host-1.0-r12 do_package: Error executing a python function in exec_python_func() autogener
+14134   FIXED       configure: error: The e5500 subspecies of powerpc64 is not supported.
+14247   NOTABUG     python3-native(3.7.8-r0) task do_configure failed (Yocto version ZEUS, target "imx8mqevk"
+14636   INVALID     Frequent pseudo aborts with tcp-wrappers, complains about hardlinks in packages-split
+14715   INVALID     Outdated sstate used after updated kernel
 4155    WONTFIX     i.MX6: VPU plugins for GStreamer do not work with appsink
 4156    WONTFIX     HTML5 video in GStreamer-enabled WebKit doesn't work with VPU acceleration
 5098    WONTFIX     gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-sfp.bin and gpu-viv-bin-mx6q-3.5.7-1.0.0-alpha.2-hfp.bin are missing OpenGL headers

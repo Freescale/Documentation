@@ -1,9 +1,9 @@
 * **packagegroup-fsl-gstreamer1.0**: Package group used by FSL Community to provide audio, video, networking and debug GStreamer plugins with the required hardware acceleration (if supported by the SoC).
 * **packagegroup-fsl-gstreamer1.0-full**: Package group used by FSL Community to provide all GStreamer plugins from the base, good, and bad packages, as well as the ugly and libav ones if commercial packages are whitelisted, and plugins for the required hardware acceleration (if supported by the SoC).
+* **packagegroup-fsl-isp**: Add packages for ISP build
 * **packagegroup-fsl-mfgtool**: Freescale Manufacturing Tool requirements.
 * **packagegroup-fsl-network**: Package group used by FSL Community to add the packages which provide (QorIQ) networking support.
-* **packagegroup-fsl-qca6174**: Qualcomm Wi-Fi support.
-* **packagegroup-fsl-qca9377**: Qualcomm Wi-Fi support.
+* **packagegroup-fsl-opencv-imx**: Add packages for opencv i.MX build
 * **packagegroup-fsl-tools-benchmark**: Package group used by FSL Community to provide a set of benchmark applications.
 * **packagegroup-fsl-tools-gpu**: Package group used by FSL Community to add the packages which provide GPU support.
 * **packagegroup-fsl-tools-gpu-external**: Package group used by FSL Community to provide graphic packages used to test the several hardware accelerated graphics APIs including packages not provided by Freescale.

@@ -1,29 +1,15 @@
 blockdiag SoCs {
    default_fontsize = 18;
 
-   i.MX -> mx25 -> mx25;
-   i.MX -> mx5 -> mx51;
-   i.MX -> mx5 -> mx53;
-   i.MX -> mx6 -> mx6dl;
-   i.MX -> mx6 -> mx6q;
-   i.MX -> mx6 -> mx6sl;
-   i.MX -> mx6 -> mx6sll;
-   i.MX -> mx6 -> mx6sx;
-   i.MX -> mx6 -> mx6ul;
-   i.MX -> mx6 -> mx6ull;
-   i.MX -> mx6q;
-   i.MX -> mx6sl;
-   i.MX -> mx6ul;
+   i.MX -> mx5 -> mx5;
+   i.MX -> mx6 -> mx6;
    i.MX -> mx7 -> mx7;
-   i.MX -> mx7 -> mx7d;
-   i.MX -> mx7d;
    i.MX -> mx8mm -> mx8mm;
    i.MX -> mx8mn -> mx8mn;
    i.MX -> mx8mp -> mx8mp;
    i.MX -> mx8qm -> mx8qm;
    i.MX -> mx8qxp -> mx8qxp;
-   i.MX -> mxs -> mx23;
-   i.MX -> mxs -> mx28;
+   i.MX -> mxs -> mxs;
    Layerscape -> ls102xa;
-   Vybrid -> vf -> vf50;
+   Vybrid -> vf -> vf;
 }
