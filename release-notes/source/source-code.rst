@@ -161,18 +161,6 @@ The package version and variety varies on SoC variety.
 For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is
 not needed. There are differences, as well, in GPU support recipes.
 
-Version by SoC variety
-^^^^^^^^^^^^^^^^^^^^^^
-
-The following table shows the version of each package depending on the
-SoC variety.
-
-.. tabularcolumns:: L | C | C | C | C | C | C
-.. table:: User space package version by SoC hierarchy
-
-   .. include:: soc-pkg.inc
-
-
 Hardware relation by SoC variety
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
