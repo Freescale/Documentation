@@ -174,10 +174,8 @@ def write_userspace_pkg(data, out_dir):
 def write_soc_pkg(data, out_dir):
     boards = [
         'imx23evk',
-        'imx25pdk',
         'imx28evk',
         'imx51evk',
-        'imx53ard',
         'imx53qsb',
         'imx6qdlsabreauto',
         'imx6qdlsabresd',
@@ -187,14 +185,21 @@ def write_soc_pkg(data, out_dir):
         'imx6sxsabresd',
         'imx6ulevk',
         'imx6ullevk',
+        'imx6ulz-14x14-evk',
         'imx7dsabresd',
         'imx7ulpevk',
-        'imx8mmevk',
-        'imx8mnevk',
-        'imx8mpevk',
-        'imx8mqevk',
-        'imx8qmmek',
-        'imx8qxpmek'
+        'imx8dxl-ddr3l-evk',
+        'imx8dxl-lpddr4-evk',
+        'imx8dx-mek',
+        'imx8mm-ddr4-evk',
+        'imx8mm-lpddr4-evk',
+        'imx8mn-ddr4-evk',
+        'imx8mn-lpddr4-evk',
+        'imx8mp-ddr4-evk',
+        'imx8mp-lpddr4-evk',
+        'imx8mq-evk',
+        'imx8qm-mek',
+        'imx8qxp-mek'
     ]
 
     socs = {
