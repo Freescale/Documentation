@@ -133,44 +133,6 @@ def write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir):
                     bootloader_recipes.append(recipe)
     write_inc_file(out_dir, 'fsl-community-bsp-supported-bootloaders-descr.inc', describe(bootloaders))
 
-def write_userspace_pkg(data, out_dir):
-    pkgs = {'gstreamer1.0': [],
-            'udev': []}
-    for board, board_data in data.items():
-        for pkg in pkgs.keys():
-            versions = pkgs[pkg]
-            version = board_data['recipes'][pkg]['version']
-            if version not in versions:
-                pkgs[pkg].append(version)
-
-    ## Check if all the versions are the same for each package
-    multiple_versions = []
-    for pkg, versions in pkgs.items():
-        if len(versions) > 1:
-            multiple_versions.append((pkg, versions))
-    for pkg, vs in multiple_versions:
-        error('multiple versions have been found for %s: %s' % (pkg, ', '.join(map(str, vs))))
-    if multiple_versions:
-        sys.exit(1)
-
-    ## Check if packages are available for all SoCs:
-    pkg_board_restriction = False
-    for pkg in pkgs:
-        for board_data in data.values():
-            compatible_machine = board_data['recipes'][pkg]['compatible-machine']
-            if compatible_machine:
-                pkg_board_restriction = True
-                error('Package %s has restrictions with regard to boards: COMPATIBLE_MACHINE=%s' % (pkg, compatible_machine))
-    if pkg_board_restriction:
-        sys.exit(1)
-
-    ## Finaly write the table
-    write_tabular(out_dir,
-                  'userspace-pkg.inc',
-                  ['Package', 'Board/SoC Family', 'Version'],
-                  [ [pkg, 'All', format_version(version[0])] for pkg, version in pkgs.items() ])
-
-
 def write_soc_pkg(data, out_dir):
     boards = [
         'imx23evk',
@@ -597,7 +559,6 @@ write_linux_default(data, out_dir)
 write_fsl_community_bsp_supported_kernels(data, out_dir)
 write_fsl_community_bsp_supported_bootloaders_descr(data, out_dir)
 write_bootloader_default(data, out_dir)
-write_userspace_pkg(data, out_dir)
 write_soc_pkg(data, out_dir)
 write_maintainers_tables(data, out_dir, bsp_dir)
 write_machines_list(data, out_dir, bsp_dir)
