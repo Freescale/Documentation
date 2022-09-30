@@ -2,17 +2,6 @@
 Software Architecture
 *********************
 
-.. _soc-hierarchy:
-
-SoC Hierarchy
-============================
-
-The following tree shows the SoC hierarchy:
-
-.. blockdiag:: soc-tree.diag
-   :scale: 60%
-   :align: center
-
 .. _machine-overrides-extender:
 
 What is machine-overrides-extender Class
@@ -168,15 +157,15 @@ hardware optimization or some hardware test tools.
    imx boards. It can be cross-compiled for any other core, although
    it will only behave as expect if executed on imx boards.
 
-The package version and variety varies on :ref:`soc-hierarchy`.
+The package version and variety varies on SoC variety.
 For example, machines with i.MX28 SoC does not have VPU, the recipe imx-vpu is
 not needed. There are differences, as well, in GPU support recipes.
 
-Version by :ref:`soc-hierarchy`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Version by SoC variety
+^^^^^^^^^^^^^^^^^^^^^^
 
 The following table shows the version of each package depending on the
-:ref:`soc-hierarchy`.
+SoC variety.
 
 .. tabularcolumns:: L | C | C | C | C | C | C
 .. table:: User space package version by SoC hierarchy
@@ -184,11 +173,11 @@ The following table shows the version of each package depending on the
    .. include:: soc-pkg.inc
 
 
-Hardware relation by :ref:`soc-hierarchy`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hardware relation by SoC variety
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following table shows how packages interact with hardware depending on the
-:ref:`soc-hierarchy`
+SoC variety:
 
 .. tabularcolumns:: L | C | C  | C  | C
 .. table:: Hardware dependent packages
