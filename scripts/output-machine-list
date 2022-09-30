@@ -64,7 +64,7 @@ tabularize_machines() {
         done
     done
 
-    python format_machine_list.py $TMP
+    python3 format_machine_list.py $TMP
 
     rm $TMP
 }

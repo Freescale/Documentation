@@ -166,7 +166,7 @@ done
 rm -rf $build_dir
 
 cd $anchor
-python ./bitbake-metadata2doc.py $marshalled_data_file "../release-notes/source" "$yocto_dir" "$gitdm_dir" "$start_commit" "$end_commit"
+python3 ./bitbake-metadata2doc.py $marshalled_data_file "../release-notes/source" "$yocto_dir" "$gitdm_dir" "$start_commit" "$end_commit"
 ret=$?
 if [ $ret -ne 0 ]; then
     echo 'Error running bitbake-metadata2doc.py.  Aborting.' >&2
