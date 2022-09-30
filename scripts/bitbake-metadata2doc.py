@@ -406,81 +406,6 @@ def write_machines_list(data, out_dir, bsp_dir):
     fd.write(str(out))
     fd.close()
 
-
-def write_soc_tree(data, out_dir):
-    SOCS_FAMILIES = {
-        re.compile("mx(\d|s)"): 'i.MX',
-        re.compile("vf(\d+)?"): 'Vybrid',
-        re.compile("ls102xa"): 'Layerscape'
-    }
-
-    VALID_SOCS = re.compile(r'mxs|mx2[0-9]|mx5[0-9]?|mx6(?:dl|q|sl+|sx|ul+)?|mx7(?:d?|ulp)|mx8(?:mm|mn|mp|pq|qm|qxp)|ls104[3-6]a]|vf(?:[5-6]0)?|ls102xa')
-
-    PADDING="   "
-
-    def print_tree(tree, fd, padding=PADDING):
-        for key in sorted(tree.keys(), key=lambda s: s.lower()):
-            value = tree[key]
-            if any(value):
-                print_tree(value, fd, padding + key + " -> ")
-            else:
-                fd.write(padding + key + ";\n")
-
-    def dict_merge(a, b):
-        if not isinstance(b, dict):
-            return b
-        result = copy.deepcopy(a)
-        for k, v in b.items():
-            if k in result and isinstance(result[k], dict):
-                    result[k] = dict_merge(result[k], v)
-            else:
-                result[k] = copy.deepcopy(v)
-        return result
-
-    def socs2dict(socs):
-        tree = {}
-        for branch in socs:
-            tmp = {}
-            reduce(lambda d, key: d.setdefault(key, {}), branch, tmp)
-            tree = dict_merge(tree, tmp)
-        return tree
-
-    def include_preample(preample_file, fd):
-        with open(preample_file, 'r') as preamble:
-            for line in preamble:
-                fd.write(PADDING + line)
-        fd.write("\n")
-
-    soc_families = []
-    for board, board_data in data.items():
-        sf = board_data['soc-family']
-        result = VALID_SOCS.findall(sf)
-        soc_family = ":".join(result)
-        if soc_family not in soc_families:
-            soc_families.append(soc_family)
-
-    max_depth = 2
-    socs = map(lambda i: i[0][0:max_depth],
-               zip(map(lambda soc_family: soc_family.split(':'),
-                       soc_families)))
-
-    socs_dict = {}
-    for key, value in socs2dict(socs).items():
-        for pattern, family in SOCS_FAMILIES.items():
-            if pattern.match(key):
-                if not family in socs_dict.keys():
-                    socs_dict[family] = {}
-                socs_dict[family][key] = value
-
-    out_file = os.path.join(out_dir, 'soc-tree.diag')
-    info('Writing %s' % out_file)
-    fd = open(out_file, 'w')
-    fd.write("blockdiag SoCs {\n")
-    include_preample('./blockdiag.preample', fd)
-    print_tree(socs_dict, fd)
-    fd.write("}\n")
-    fd.close()
-
 def write_recipe_descriptions(recipe_pattern, data, out_file):
     wanted = {}
     for board, board_data in data.items():
@@ -562,7 +487,6 @@ write_bootloader_default(data, out_dir)
 write_soc_pkg(data, out_dir)
 write_maintainers_tables(data, out_dir, bsp_dir)
 write_machines_list(data, out_dir, bsp_dir)
-write_soc_tree(data, out_dir)
 write_image_descriptions(data, out_dir)
 write_packagegroup_descriptions(data, out_dir)
 write_acknowledgements(out_dir, bsp_dir, gitdm_dir, start_commit, end_commit)
