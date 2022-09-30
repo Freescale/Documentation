@@ -203,17 +203,18 @@ def write_soc_pkg(data, out_dir):
     ]
 
     socs = {
-        'mxs': [],
-        'mx5': [],
-        'mx6sl': [],
-        'mx6dl': [],
-        'vf60': [],
-        'mx8qm': [],
-        'mx8mm': [],
-        'mx8mn': [],
-        'mx8mp': [],
-        'mx8mq': [],
-        'mx8qxp': []
+        'mxs-generic-bsp': [],
+        'mx5-generic-bsp': [],
+        'mx6-generic-bsp': [],
+        'mx6sl-generic-bsp': [],
+        'mx6dl-generic-bsp': [],
+        'mx8qm-generic-bsp': [],
+        'mx8mm-generic-bsp': [],
+        'mx8mn-generic-bsp': [],
+        'mx8mp-generic-bsp': [],
+        'mx8mq-generic-bsp': [],
+        'mx8qxp-generic-bsp': [],
+        'vf60': []
     }
 
     pkgs = [
