@@ -1,6 +1,12 @@
 Freescale Community BSP Documentation
 -------------------------------------
 
+DEPRECATED
+----------
+
+This repository is archived. It is not up-to-date and so far there is no plan
+to update this.
+
 The documentation is written using the Sphinx documentation system. To
 install it in Debian/Ubuntu, please do:
 
